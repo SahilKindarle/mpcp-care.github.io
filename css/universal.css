@@ -16,4 +16,10 @@
 
 #nav-mobile li a {
     font-family: "fontLight";
+    color: blue;
 }
+
+#nav-mobile li {
+    width: 150px;
+}
+
