@@ -14,12 +14,13 @@
   font-style: normal;
 }
 
-#nav-mobile li a {
+#nav-mobile li a,
+#nav-links li a {
     font-family: "fontLight";
     color: blue;
 }
 
-#nav-mobile li {
+#nav-links li {
     width: 150px;
 }
 
