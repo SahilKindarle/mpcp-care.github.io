@@ -17,10 +17,16 @@
 #nav-mobile li a,
 #nav-links li a {
     font-family: "fontLight";
-    color: blue;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 #nav-links li {
     width: 150px;
 }
 
+.brand-logo img{
+    width: 25%;
+}
