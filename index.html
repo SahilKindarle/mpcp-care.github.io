@@ -16,6 +16,8 @@
     <script src="js/materialize.min.js"></script>
     <link rel="stylesheet" href="css/universal.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/aos.css">
+    <script src="js/aos.js"></script>
     <title>Layout File</title>
 </head>
 
@@ -57,10 +59,10 @@
 
     </header>
 
-    <!-- 
-    <div id="index-banner" class="parallax-container" style="height:60vh;">
-        <div class="section"> -->
-    <!-- <div class="row container" style="margin-top: 15%;">
+
+    <!-- <div id="index-banner" class="parallax-container" style="height:90vh;">
+        <div class="section">
+            <div class="row container" style="margin-top: 15%;">
                 <h1 class="black-text left" data-aos="zoom-in"> ICETET-ISA 2019</h1>
                 <h5 class="black-text left" data-aos="fade-right"> International Conference on Emerging Trends in
                     Engineering & Technology on Information Security and Analytics.
@@ -68,11 +70,9 @@
                 </h5>
                 <h5 data-aos="fade-left" class="center white-text"> Nagpur, Maharashtra
                     <br> June 1-2 2019</h5>
-            </div> -->
-
-    <!-- </div>
-        <div class="parallax"><img src="images/ppt1.png" width="100%"
-                alt="Unsplashed background img 1" ></div>
+            </div>
+        </div>
+        <div class="parallax"><img src="images/bg.png" width="100%" alt="Unsplashed background img 1"></div>
     </div> -->
 
 
@@ -80,7 +80,9 @@
     <section>
         <!-- style="background: rgb(60,62,150);
         background: linear-gradient(0deg, rgba(60,62,150,1) 22%, rgba(255,255,255,1) 100%);" -->
-        <div class="row">
+        <div class="row" data-aos="zoom-out" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000"
+            data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false"
+            data-aos-anchor-placement="top-center">
             <div class="col s12 m6 ">
                 <div class="center" style="padding: 10%;">
                     <img src="/images/MPCP Logo.png" width="40%" class="responsive-img z-depth-5"
@@ -94,8 +96,8 @@
 
             </div>
         </div>
-    </section>
-    <!-- <div class="row" style="background: #C9C0B1;height: 100vh; overflow: hidden;">
+        <!-- </section> -->
+        <!-- <div class="row" style="background: #C9C0B1;height: 100vh; overflow: hidden;">
         <div class="col s12 m6">
 
         </div>
@@ -104,16 +106,18 @@
         </div>
     </div> -->
 
-
+        <!-- 
 
     <div class="row center">
         <img src="/images/silk_bottle.png" alt="" width="30%" style="margin-top: -10%;" class="responsive-img">
     </div>
 
+ -->
 
-
-
-    <script src="js/universal.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <script src="js/universal.js"></script>
 
 </body>
 
