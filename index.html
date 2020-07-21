@@ -75,11 +75,41 @@
         <div class="parallax"><img src="images/bg.png" width="100%" alt="Unsplashed background img 1"></div>
     </div> -->
 
+    <div class="slider fullscreen">
+        <ul class="slides">
+            <li>
+                <img src="/images/ppt1.png"> <!-- random image -->
+                <div class="caption center-align">
+                    <h3>This is our big Tagline!</h3>
+                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                </div>
+            </li>
+            <li>
+                <img src="/images/ppt2.png"> <!-- random image -->
+                <div class="caption left-align">
+                    <h3>Left Aligned Caption</h3>
+                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                </div>
+            </li>
+            <li>
+                <img src="/images/all_pro.png"> <!-- random image -->
+                <div class="caption right-align">
+                    <h3>Right Aligned Caption</h3>
+                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                </div>
+            </li>
+            <li>
+                <img src="https://lorempixel.com/580/250/nature/4"> <!-- random image -->
+                <div class="caption center-align">
+                    <h3>This is our big Tagline!</h3>
+                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                </div>
+            </li>
+        </ul>
+    </div>
 
-
+    <!-- 
     <section>
-        <!-- style="background: rgb(60,62,150);
-        background: linear-gradient(0deg, rgba(60,62,150,1) 22%, rgba(255,255,255,1) 100%);" -->
         <div class="row" data-aos="zoom-out" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000"
             data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false"
             data-aos-anchor-placement="top-center">
@@ -95,9 +125,9 @@
                 <img src="images/candid.png" alt="" class="right" width="75%">
 
             </div>
-        </div>
-        <!-- </section> -->
-        <!-- <div class="row" style="background: #C9C0B1;height: 100vh; overflow: hidden;">
+        </div> -->
+    <!-- </section> -->
+    <!-- <div class="row" style="background: #C9C0B1;height: 100vh; overflow: hidden;">
         <div class="col s12 m6">
 
         </div>
@@ -106,7 +136,7 @@
         </div>
     </div> -->
 
-        <!-- 
+    <!-- 
 
     <div class="row center">
         <img src="/images/silk_bottle.png" alt="" width="30%" style="margin-top: -10%;" class="responsive-img">
@@ -114,10 +144,14 @@
 
  -->
 
-        <script>
-            AOS.init();
-        </script>
-        <script src="js/universal.js"></script>
+    <script>
+        AOS.init();
+        $(document).ready(function () {
+            $('.slider').slider();
+        });
+    </script>
+    <script src="js/universal.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </body>
 
