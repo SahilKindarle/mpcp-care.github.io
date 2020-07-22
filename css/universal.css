@@ -14,20 +14,22 @@
   font-style: normal;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 
-.mont{
-  font-family: 'Montserrat', sans-serif;
+.mont {
+  font-family: "Montserrat", sans-serif;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Gotu&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Gotu&display=swap");
 
-.gotu{
-  font-family: 'Gotu', sans-serif;
+.gotu {
+  font-family: "Gotu", sans-serif;
+  font-style: italic;
 }
 
 .mont {
-  font-family: 'Raleway', sans-serif;}
+  font-family: "Raleway", sans-serif;
+}
 
 :root {
   --primary: #4681cd;
@@ -57,11 +59,10 @@
   margin-top: 40px; */
 }
 
-
-
-.landing{
-  background-image: url('../images/bg.jpg');
+.landing {
+  background-image: url("../images/finalbanner.png");
   background-position: center;
+  height: 100vh;
 }
 .story {
   color: var(--primary);
@@ -75,18 +76,20 @@
   font-size: 46.3333px;
 }
 
+.screen-height {
+  height: 100vh;
+}
 
-
-.products{
+.products {
   border-bottom: 6px solid white;
   /* border-left: 6px solid var(--primary);
   border-right: 6px solid var(--primary); */
   /* margin-top: 40px; */
   width: auto;
-  padding: 30px 50px 
+  padding: 30px 50px;
 }
 
-.icons{
+.icons {
   height: 45px;
   width: 45px;
   padding-top: 2px;
@@ -95,13 +98,13 @@
   text-align: center;
 }
 
-footer{
+footer {
   margin-top: 100vh;
   box-shadow: 0px 0px 8px 0px #888888;
   padding-top: 10px;
   cursor: pointer;
 }
 
-a{
+a {
   color: black;
 }
