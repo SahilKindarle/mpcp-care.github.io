@@ -169,8 +169,9 @@ a {
     font-size: x-large;
     margin-left: 2px;
   }
-  .parallax{
+  .banner{
     margin-left: -90%;
+    width: min-content;
   }
 
 }
