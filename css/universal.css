@@ -46,6 +46,9 @@
   font-weight: 700;
 }
 
+.parallax-container .parallax img{
+  opacity: 1;
+}
 #nav-links li {
   width: 150px;
 }
@@ -94,7 +97,7 @@
 .HomeLogo{
    /* margin-top: -25% ; */
    margin-top: 20px;
-   margin-left: -10%;
+   /* margin-left: -10%; */
    border-radius: 50%;
 }
 
@@ -139,6 +142,13 @@ a {
 .pic1{
   display: block;
 }
+
+
+button:focus{
+  background-color: transparent;
+}
+
+
 
 @media only screen and (max-width: 600px){
   .footer{
