@@ -25,6 +25,8 @@
 .gotu {
   font-family: "Gotu", sans-serif;
   font-style: italic;
+  color: #3C3E96;
+  margin-left: -6%;
 }
 
 .mont {
@@ -89,6 +91,13 @@
   padding: 30px 50px;
 }
 
+.HomeLogo{
+   margin-top: -25% ;
+   margin-left: -10%;
+   border-radius: 50%;
+}
+
+
 .icons {
   height: 45px;
   width: 45px;
@@ -105,7 +114,63 @@ footer {
   cursor: pointer;
 }
 
+.footer{
+  display: flex;
+  direction: row;
+  justify-content: space-around;
+}
+
 a {
   color: black;
 }
 
+.logofooter{
+  max-width: 5vw
+}
+
+.banner{
+  padding-top: 70px; 
+  padding-bottom: 50px;
+}
+
+
+
+.pic1{
+  display: block;
+}
+
+@media only screen and (max-width: 600px){
+  .footer{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 30px;
+
+  }
+  .logofooter{
+    max-width: 15vw;
+  }
+  .title{
+    font-size: 15px;
+  }
+  .HomeLogo{
+   margin-top: 2px;
+   /* margin-bottom: 120% ; */
+   margin-left: -2%;
+   border-radius: 50%;
+   max-width: 40vw;
+  }
+  .logores{
+    color: #3C3E96;
+   /* margin-left: -6%; */
+   margin-bottom: 130% ;
+
+  }
+  .gotu{
+    font-size: x-large;
+    margin-left: 2px;
+  }
+  .parallax{
+    margin-left: -90%;
+  }
+
+}
