@@ -92,7 +92,8 @@
 }
 
 .HomeLogo{
-   margin-top: -25% ;
+   /* margin-top: -25% ; */
+   margin-top: 20px;
    margin-left: -10%;
    border-radius: 50%;
 }
