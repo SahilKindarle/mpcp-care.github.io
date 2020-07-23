@@ -7,6 +7,14 @@
 }
 
 @font-face {
+  font-family: "avantgardebold";
+  src: url("/fonts/avantgarde_bold-webfont.woff2") format("woff2"),
+    url("/fonts/avantgarde_bold-webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "fontLight";
   src: url("/fonts/gilroy-light-webfont.woff2") format("woff2"),
     url("/fonts/gilroy-light-webfont.woff") format("woff");
@@ -25,7 +33,7 @@
 .gotu {
   font-family: "Gotu", sans-serif;
   font-style: italic;
-  color: #3C3E96;
+  color: #3c3e96;
   margin-left: -6%;
 }
 
@@ -40,13 +48,13 @@
 #nav-mobile li a,
 #nav-links li a {
   font-family: "fontLight";
-  color: black;
+  color: white;
   text-align: center;
   text-transform: uppercase;
   font-weight: 700;
 }
 
-.parallax-container .parallax img{
+.parallax-container .parallax img {
   opacity: 1;
 }
 #nav-links li {
@@ -94,13 +102,12 @@
   padding: 30px 50px;
 }
 
-.HomeLogo{
-   /* margin-top: -25% ; */
-   margin-top: 20px;
-   /* margin-left: -10%; */
-   border-radius: 50%;
+.HomeLogo {
+  /* margin-top: -25% ; */
+  margin-top: 20px;
+  /* margin-left: -10%; */
+  border-radius: 50%;
 }
-
 
 .icons {
   height: 45px;
@@ -118,7 +125,7 @@ footer {
   cursor: pointer;
 }
 
-.footer{
+.footer {
   display: flex;
   direction: row;
   justify-content: space-around;
@@ -128,61 +135,95 @@ a {
   color: black;
 }
 
-.logofooter{
-  max-width: 5vw
+.logofooter {
+  max-width: 5vw;
 }
 
-.banner{
-  padding-top: 70px; 
+.banner {
+  padding-top: 70px;
   padding-bottom: 50px;
 }
 
-
-
-.pic1{
+.pic1 {
   display: block;
 }
 
-
-button:focus{
+button:focus {
   background-color: transparent;
 }
 
-
-
-@media only screen and (max-width: 600px){
-  .footer{
+@media only screen and (max-width: 600px) {
+  .footer {
     display: flex;
     flex-direction: column;
     margin: 20px 30px;
-
   }
-  .logofooter{
+  .logofooter {
     max-width: 15vw;
   }
-  .title{
+  .title {
     font-size: 15px;
   }
-  .HomeLogo{
-   margin-top: 2px;
-   /* margin-bottom: 120% ; */
-   margin-left: -2%;
-   border-radius: 50%;
-   max-width: 40vw;
+  .HomeLogo {
+    margin-top: 2px;
+    /* margin-bottom: 120% ; */
+    margin-left: -2%;
+    border-radius: 50%;
+    max-width: 40vw;
   }
-  .logores{
-    color: #3C3E96;
-   /* margin-left: -6%; */
-   margin-bottom: 130% ;
-
+  .logores {
+    color: #3c3e96;
+    /* margin-left: -6%; */
+    margin-bottom: 130%;
   }
-  .gotu{
+  .gotu {
     font-size: x-large;
     margin-left: 2px;
   }
-  .banner{
+  .banner {
     margin-left: -90%;
     width: min-content;
   }
+}
 
+.iris {
+  background-image: url("../images/bg.jpg");
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+}
+
+.card {
+  margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .valign-wrapper p {
+    font-size: 35px !important;
+    text-align: center;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+  }
+
+  .valign-wrapper img {
+    text-align: center;
+    margin-left: 30%;
+  }
+}
+
+.navbar-fixed {
+  position: absolute;
+  z-index: 999999999;
+}
+
+nav.scroll {
+  background-color: #a1572f;
+  color: #eef;
+}
+
+nav.defines{
+  background-color: transparent;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
 }

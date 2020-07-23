@@ -25,7 +25,7 @@
 <body>
     <header style="margin-bottom: 0px;padding-bottom: 0px">
         <div class="navbar-fixed">
-            <nav class="white">
+            <nav class="defines">
                 <div class="nav-wrapper">
                     <div class="container">
                         <a class="black-text sidenav-trigger hide-on-large-only" href="#" data-target="nav-mobile">
@@ -83,7 +83,24 @@
         </ul>
     </div> -->
 
-    <div class="parallax-container screen-height valign-wrapper show-on-medium-and-up hide-on-small-only">
+
+
+    <div class="iris">
+        <div class="card transparent z-depth-0">
+            <div class="valign-wrapper" style="margin-left: 10%;">
+                <div class="row" style="margin: 0;">
+                    <img src="/images/MPCP Logo.png" alt="" width="30%" style="margin-top: 20%;">
+                    <br>
+                    <p style="font-size: 56px; color:#f0f1f1;font-weight: 700;margin: 0; ">
+                        Harness the Power
+                        <br> of Ayurveda, <br> MPCP Care.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="parallax-container screen-height valign-wrapper show-on-medium-and-up hide-on-small-only">
         <div class="container">
             <div class="logores">
                 <img src="images/MPCP Logo.png" alt="" class="HomeLogo">
@@ -92,12 +109,12 @@
         </div>
         <div class="parallax">
             <div class="banner">
-                <img src="images/finalbanner.png" class="pic1" alt="">
+                <img src="images/wall.jpg" class="pic1" alt="">
 
             </div>
         </div>
 
-    </div>
+    </div> -->
 
     <div class="center show-on-small hide-on-med-and-up">
         <img src="images/finalbannercropped.png" class="pic1" alt="" width="100%">
@@ -106,14 +123,15 @@
 
     <section style="background-color: white ;margin: 0;padding: 0;">
         <div class="row">
-            
+
             <div class="center">
                 <div class="col s12 m6">
                     <div class="card-panel z-depth-5" style="border-radius:25px">
                         <div class="center">
-                            <h3 class="fontBold strong" style="letter-spacing:20px;margin-bottom:42px;color:#3051BC;text-transform: uppercase;">
+                            <h3 class="fontBold strong"
+                                style="letter-spacing:20px;margin-bottom:42px;color:#3051BC;text-transform: uppercase;">
                                 Tips</h3>
-                            
+
                             <div class="row">
                                 <div class="col s12"
                                     style="height:300px;overflow-y:scroll;border:5px solid #557DD0;border-radius:25px">
@@ -206,6 +224,11 @@
 
     <script>
         AOS.init();
+        window.onscroll = () => {
+            const nav = document.querySelector('nav');
+            if (this.scrollY <= 10) nav.className = 'defines';
+            else nav.className = 'scroll';
+        };
         $(document).ready(function () {
             $('.slider').slider();
             $('.parallax').parallax();
