@@ -116,7 +116,7 @@
   height: 100vh;
 }
 
-.products h3{
+.products h3 {
   padding: 30px 50px;
   font-size: 60px;
   font-family: "ITC Avant Garde Gothic Std Book";
@@ -306,12 +306,87 @@ section {
   padding: 0;
 }
 
-.row{
+.row {
   margin: 0;
   padding: 0;
 }
 
-h3{
-  margin:0;
-  padding:30px
+h3 {
+  margin: 0;
+  padding: 30px;
+}
+
+/* .tilt {
+	box-shadow: 0 20px 27px rgba(0, 0, 0, 0.05);
+	transform-style: preserve-3d;
+	margin: 50px auto;
+}
+
+.tilt-logo-inner {
+	transform: translateZ(50px) translateY(-50%) translateX(-50%);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	color: white;
+	font-size: 1.9rem;
+} */
+
+flex-container,
+.c-logo {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  align-content: center;
+  flex-wrap: nowrap;
+  -webkit-box-pack: center;
+  justify-content: center;
+  align-content: stretch;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.aamla-bottle {
+  background-image: linear-gradient(
+    150deg,
+    #CBDD44 0%,
+    #1B4840 100%
+  );
+}
+
+.jasmine-bottle{
+  background-image: linear-gradient(
+    150deg,
+    #CFE8F8 0%,
+    #3795D1 100%
+  );
+}
+
+.c-logo {
+  width: 200px;
+  height: 200px;
+  margin-left: 25%;
+  background-color: #7e56ff;
+  box-shadow: 0 20px 27px rgba(0, 0, 0, 0.05);
+  color: white;
+  text-decoration: none;
+  font-size: 4em;
+  font-weight: 300;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: perspective(500px);
+  transform: perspective(500px);
+  box-shadow: 0 20px 70px -10px rgba(0, 0, 0, 0.7),
+    0 50px 100px 0 rgba(0, 0, 0, 0.2);
+}
+.c-logo > span {
+  display: block;
+  -webkit-transform: translateZ(50px) scale(0.6);
+  transform: translateZ(50px) scale(0.6);
+  text-shadow: -2px -1px 2px #969696;
+}
+.c-logo:hover:after {
+  -webkit-transform: translateZ(-100px);
+  transform: translateZ(-100px);
 }

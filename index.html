@@ -10,6 +10,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/MPCP Logo.png">
     <link rel="stylesheet" href="css/materialize.css">
     <link rel="stylesheet" href="css/materialize.min.css">
     <link rel="stylesheet" href="js/materialize.js">
@@ -18,11 +19,13 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="css/aos.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="https://unpkg.com/tilt.js@1.2.1/dest/tilt.jquery.min.js"></script> -->
     <script src="js/aos.js"></script>
     <title>Layout File</title>
 </head>
 
-<body>
+<body style="background-color: #f0f1f1;">
     <header style="margin-bottom: 0px;padding-bottom: 0px">
         <div class="navbar-fixed">
             <nav class="defines">
@@ -89,7 +92,7 @@
         <div class="card transparent z-depth-0">
             <div class="valign-wrapper" style="margin-left: 10%;">
                 <div class="row" style="margin: 0;">
-                    <img src="/images/MPCP Logo.png" alt="" width="30%" style="margin-top: 20%;">
+                    <img src="/images/MPCP Logo.png" alt="" width="30%" style="margin-top: 20%;" id="intro-head">
                     <br>
                     <p style="font-size: 56px; color:#f0f1f1;font-weight: 700;margin: 0; ">
                         Harness the Power
@@ -99,6 +102,7 @@
             </div>
         </div>
     </div>
+
 
     <!-- <div class="parallax-container screen-height valign-wrapper show-on-medium-and-up hide-on-small-only">
         <div class="container">
@@ -156,7 +160,7 @@
                         </p>
 
                         <div class="left">
-                            <a class="btn-large aboutUsButton" href="/aboutus.html" >Learn More</a>
+                            <a class="btn-large aboutUsButton" href="/aboutus.html">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -169,10 +173,53 @@
 
 
 
-    <section class="products">
+    <section class="products" style="margin-top: 10%;
+    margin-bottom: 10%">
         <h3>
             From the House of MPCP
         </h3>
+
+
+        <div class="row" style="margin-top: 20vh;">
+            <div class="col s12 m3">
+                <div class="center">
+                    <div class="flex-container">
+                        <a data-tilt data-tilt-glare="true" data-tilt-transition="true" data-tilt-scale="1.1"
+                            class="c-logo aamla-bottle" href=" " title="Tilt.js demo ">
+                            <!--   <span>Test Tilt.js</span> -->
+                            <span> <img src="images/Amla.png" alt="" width="100%" style="margin-left: 30px;"></span>
+                        </a>
+
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="col s12 m3">
+                <div class="center">
+                    <div class="flex-container">
+                        <a data-tilt data-tilt-glare="true" data-tilt-transition="true" data-tilt-scale="1.1"
+                            class="c-logo jasmine-bottle" href=" " title="Tilt.js demo ">
+                            <!--   <span>Test Tilt.js</span> -->
+                            <span> <img src="images/jaasmine.png" alt="" width="150%" ></span>
+                        </a>
+
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="col s12 m3">
+                <div class="center">
+                    <img src="images/aamla_bottle.png" alt="" width="55%">
+                </div>
+            </div>
+            <div class="col s12 m3">
+                <div class="center">
+                    <img src="images/jasmine_bottle.png" alt="" width="55%">
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer>
@@ -233,12 +280,21 @@
         $(document).ready(function () {
             $('.slider').slider();
             $('.parallax').parallax();
+            var tiltIntroHead = $('#intro-head').tilt({
+                glare: true,
+                maxTilt: 10
+                //disableAxis: "y"
+            });
 
         });
     </script>
-    <script src="js/universal.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- https://github.com/gijsroge/tilt.js -->
+    <script src="https://unpkg.com/tilt.js@1.1.21/dest/tilt.jquery.min.js"></script>
+
+    <script src="js/universal.js"></script>
 </body>
 
 </html>
