@@ -15,6 +15,22 @@
 }
 
 @font-face {
+  font-family: "ITC Avant Garde Gothic Std Extra Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("ITC Avant Garde Gothic Std Extra Light"),
+    url("/fonts/ITCAvantGardeStdXLt.woff") format("woff");
+}
+
+@font-face {
+  font-family: "ITC Avant Garde Gothic Std Book";
+  font-style: normal;
+  font-weight: normal;
+  src: local("ITC Avant Garde Gothic Std Book"),
+    url("/fonts/ITCAvantGardeStdBk.woff") format("woff");
+}
+
+@font-face {
   font-family: "fontLight";
   src: url("/fonts/gilroy-light-webfont.woff2") format("woff2"),
     url("/fonts/gilroy-light-webfont.woff") format("woff");
@@ -44,7 +60,7 @@
 :root {
   --primary: #4681cd;
 }
-
+/* 
 #nav-mobile li a,
 #nav-links li a {
   font-family: "fontLight";
@@ -52,6 +68,10 @@
   text-align: center;
   text-transform: uppercase;
   font-weight: 700;
+} */
+
+#nav-mobile li a {
+  color: black;
 }
 
 .parallax-container .parallax img {
@@ -218,12 +238,35 @@ button:focus {
 }
 
 nav.scroll {
-  background-color: #B7B9CB;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #000000;
+}
+nav.scroll ul a{
+  color: #000000;
+  font-family: "ITC Avant Garde Gothic Std Book";
+  /* color: white; */
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
-nav.defines{
+nav.defines {
   background-color: transparent;
+  color: red;
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
+}
+
+nav.defines ul a {
+  color: white;
+  font-family: "ITC Avant Garde Gothic Std Book";
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.collapsible li {
+  font-weight: 400;
+  font-size: 22px;
+  font-family: "ITC Avant Garde Gothic Std Book";
 }
