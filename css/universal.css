@@ -280,12 +280,20 @@ nav.defines ul a {
 }
 
 #sec2head h3 {
-  font-size: 80px;
+  font-size: 60px;
   font-family: "ITC Avant Garde Gothic Std Book";
 }
 
 #sec2head p {
   text-align: justify;
-  font-size: 20px;
+  font-size: 18px;
   font-family: "Open Sans", sans-serif;
+}
+
+.aboutUsButton{
+  background-color: transparent;
+  color: #2d2d2d;
+  font-family: "ITC Avant Garde Gothic Std Book";
+  border-radius: 4px;
+  border: 2px solid #2d2d2d;
 }
