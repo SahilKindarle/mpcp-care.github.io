@@ -41,11 +41,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 
 .mont {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", "sans-serif";
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Gotu&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+/* font-family: 'Open Sans', sans-serif; */
 .gotu {
   font-family: "Gotu", sans-serif;
   font-style: italic;
@@ -241,7 +244,7 @@ nav.scroll {
   background-color: #ffffff;
   color: #000000;
 }
-nav.scroll ul a{
+nav.scroll ul a {
   color: #000000;
   font-family: "ITC Avant Garde Gothic Std Book";
   /* color: white; */
@@ -269,4 +272,20 @@ nav.defines ul a {
   font-weight: 400;
   font-size: 22px;
   font-family: "ITC Avant Garde Gothic Std Book";
+}
+
+#sec2head {
+  margin-top: 30%;
+  color: #2d2d2d;
+}
+
+#sec2head h3 {
+  font-size: 80px;
+  font-family: "ITC Avant Garde Gothic Std Book";
+}
+
+#sec2head p {
+  text-align: justify;
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
 }
