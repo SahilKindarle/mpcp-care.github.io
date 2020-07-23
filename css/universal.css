@@ -117,7 +117,7 @@
 }
 
 .products h3 {
-  padding: 30px 50px;
+  padding: 30px 50px 0 50px;
   font-size: 60px;
   font-family: "ITC Avant Garde Gothic Std Book";
   /* font-weight: 600; */
@@ -206,6 +206,10 @@ button:focus,
   .banner {
     margin-left: -90%;
     width: min-content;
+  }
+
+  .products .row .s12{
+    margin-bottom: 50%;
   }
 }
 
@@ -360,6 +364,14 @@ flex-container,
     150deg,
     #CFE8F8 0%,
     #3795D1 100%
+  );
+}
+
+.silk-bottle{
+  background-image: linear-gradient(
+    150deg,
+    #1160C0 0%,
+    #AED0F6 100%
   );
 }
 
