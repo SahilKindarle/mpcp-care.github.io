@@ -241,7 +241,7 @@ button:focus,
 
 .navbar-fixed {
   position: absolute;
-  z-index: 999999999;
+  /* z-index: 999999999; */
 }
 
 nav.scroll {
