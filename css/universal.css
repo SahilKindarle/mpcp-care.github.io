@@ -415,3 +415,12 @@ flex-container,
 .card-panel{
 /* margin: 20px; */
 }
+
+.connectus p {
+  font-size: 32px;
+  font-weight: 700;
+  font-family: "ITC Avant Garde Gothic Std Book";
+  text-align: center;
+margin-top: 30%;
+margin-bottom: 20%;
+}
