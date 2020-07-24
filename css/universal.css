@@ -77,9 +77,10 @@
   color: black;
 }
 
-.parallax-container .parallax img {
+.parallax-container .parallax .banner img {
   opacity: 1;
 }
+
 #nav-links li {
   width: 150px;
 }
