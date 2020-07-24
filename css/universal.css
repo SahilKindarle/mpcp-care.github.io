@@ -403,3 +403,15 @@ flex-container,
   -webkit-transform: translateZ(-100px);
   transform: translateZ(-100px);
 }
+
+.card-panel span{
+  text-align: justify;
+  font-size: 18px;
+  font-weight: 300;
+  /* font-family: "Open Sans", sans-serif; */
+  font-family: "Montserrat", "sans-serif";
+}
+
+.card-panel{
+/* margin: 20px; */
+}
