@@ -1,0 +1,49 @@
+#firstDiv {
+  background: url("../images/rose-bg.jpg");
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+#firstDiv:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-image: url("../images/wave-bottom.svg");
+  height: 275px;
+}
+
+#firstDiv h1 {
+  /* padding: 30px 50px 0 50px; */
+
+  font-size: 60px;
+  font-family: "ITC Avant Garde Gothic Std Book";
+  font-weight: 600;
+  color: #342f36;
+  margin-top: 30%;
+}
+
+#abname {
+  background-image: linear-gradient(120deg, #dca59b 0%, #dca59b 100%);
+  background-repeat: no-repeat;
+  background-size: 30% 0.4em;
+  background-position: 0 88%;
+  transition: background-size 0.25s ease-in;
+}
+
+#abname:after {
+  background-size: 100% 0.4em;
+}
+
+.quote {
+  text-align: center;
+  font-size: 30px;
+  /* color: #F39B8F; */
+  color: #2d2d2d;
+  /* font-weight: 900; */
+  /* font-family: "Open Sans", sans-serif; */
+  font-family: "Montserrat", "sans-serif";
+  /* font-family: "ITC Avant Garde Gothic Std Book", "sans-serif"; */
+}
