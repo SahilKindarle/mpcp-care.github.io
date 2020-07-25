@@ -15,13 +15,20 @@
     <link rel="stylesheet" href="css/materialize.min.css">
     <link rel="stylesheet" href="js/materialize.js">
     <script src="js/materialize.min.js"></script>
+    <!-- <script src="jquery.waypoints.min.js"></script> -->
+    <!-- <script src="jquery.counterup.min.js"></script> -->
     <link rel="stylesheet" href="css/universal.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    
     <link rel="stylesheet" href="css/aos.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
     <!-- <script src="https://unpkg.com/tilt.js@1.2.1/dest/tilt.jquery.min.js"></script> -->
     <script src="js/aos.js"></script>
+    
     <title>Layout File</title>
 </head>
 
@@ -239,42 +246,52 @@
     <section>
 
         <div class="parallax-container valign-wrapper" style="height: auto;">
-            <div class="container products" style="z-index: 1;margin-top:60px; margin-bottom: 60px;">
-                <h3 class="white-text">
-                    Be a part of MPCP
-                </h3>
+            <div class="container products" style="z-index: 1;margin-top:60px; margin-bottom: 100px;">
+                <h2 class="white-text">
+                    Be a part of MPCP <br>
+                    
+                </h2>
+                
+                <!-- <span style="color: white;">-----</span> -->
                 <div class="row">
-                    <div class="col s12 m4">
+                    <div class="col s12 m3">
                         <div class="center">
-                            <div class="card-panel white">
-                                <span class="black-text">
-                                    I am a very simple card. I am good at containing small bits of information.
-                                    I am convenient because I require little markup to use effectively. I am similar to
-                                    what is called a panel in other frameworks.
-                                </span>
-                            </div>
+                            
+                                <div class="num" >
+                                    1000
+                                </div>
+                                <span>CUSTOMERS</span>
+                            
                         </div>
                     </div>
-                    <div class="col s12 m4">
+                    <div class="col s12 m3">
                         <div class="center">
-                            <div class="card-panel white">
-                                <span class="black-text">
-                                    I am a very simple card. I am good at containing small bits of information.
-                                    I am convenient because I require little markup to use effectively. I am similar to
-                                    what is called a panel in other frameworks.
-                                </span>
-                            </div>
+                            
+                                <div class="num" >
+                                    5
+                                </div>
+                                <span>STATES</span>
+                            
                         </div>
                     </div>
-                    <div class="col s12 m4">
+                    <div class="col s12 m3">
                         <div class="center">
-                            <div class="card-panel white">
-                                <span class="black-text">
-                                    I am a very simple card. I am good at containing small bits of information.
-                                    I am convenient because I require little markup to use effectively. I am similar to
-                                    what is called a panel in other frameworks.
-                                </span>
-                            </div>
+                           
+                                <div class="num" >
+                                    200
+                                </div>
+                                <span>EMPLOYEES</span>
+                            
+                        </div>
+                    </div>
+                    <div class="col s12 m3">
+                        <div class="center">
+                           
+                                <div class="num" >
+                                    20
+                                </div>
+                                <span>DEALERS</span>
+                            
                         </div>
                     </div>
                 </div>
@@ -376,6 +393,34 @@
 
         });
     </script>
+    <script>
+        $('.num').counterUp({delay: 10 , time:1000});
+    </script>
+
+    <!-- <script type="text/javascript">
+        const counters = document.querySelectorAll('.num');
+        const speed = 200;
+
+        counters.forEach(counter =>{
+            const updateCount = () => {
+                const target = +counter.getAttribute('data-target');
+                const count = +counter.innerText;
+
+                var inc = (target / speed) ;
+                
+                if(count< target){
+                    counter.innerText = (count + inc);
+                    
+                    
+                    setTimeout(updateCount, 1);
+                } else {
+                    count.innerText = target;
+                }
+            }
+            updateCount();
+        })
+    </script> -->
+    
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
