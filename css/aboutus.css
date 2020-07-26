@@ -47,3 +47,10 @@
   font-family: "Montserrat", "sans-serif";
   /* font-family: "ITC Avant Garde Gothic Std Book", "sans-serif"; */
 }
+
+#abtusDiv {
+  background: url("../images/leaf.png");
+background-position: right;
+  background-size: cover;
+  background-color: #dca59b;
+}
