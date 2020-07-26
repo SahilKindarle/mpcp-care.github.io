@@ -243,7 +243,7 @@ button:focus,
 
 .navbar-fixed {
   position: absolute;
-  /* z-index: 999999999; */
+  z-index: 999999999;
 }
 
 nav.scroll {
@@ -301,7 +301,7 @@ nav.defines ul a {
 .aboutUsButton {
   background-color: transparent;
   color: #2d2d2d;
-  margin-top: 20%;
+  margin-top: 10%;
   font-family: "ITC Avant Garde Gothic Std Book";
   border-radius: 4px;
   border: 2px solid #2d2d2d;
@@ -447,7 +447,7 @@ margin-bottom: 20%;
   margin-bottom: 30px;
 }
 
-.white-text{
+/* .white-text{
   margin-bottom: 90px;
-}
+} */
 
