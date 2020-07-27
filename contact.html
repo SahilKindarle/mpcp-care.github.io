@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/MPCP Logo.png">
     <link rel="stylesheet" href="css/materialize.css">
     <link rel="stylesheet" href="css/materialize.min.css">
     <link rel="stylesheet" href="js/materialize.js">
@@ -12,22 +13,23 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="css/aos.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
-    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="/css/aboutus.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="https://unpkg.com/tilt.js@1.2.1/dest/tilt.jquery.min.js"></script> -->
     <script src="js/aos.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-    <script src="jquery.counterup.min.js"></script> 
-    
-
-    <title>Layout File</title>
+    <title>About Us | MPCP Care </title>
 </head>
+
+
+
+
+
+
 
 <body>
     <header style="margin-bottom: 0px;padding-bottom: 0px">
         <div class="navbar-fixed">
-            <nav class="white">
+            <nav class="defines">
                 <div class="nav-wrapper">
                     <div class="container">
                         <a class="black-text sidenav-trigger hide-on-large-only" href="#" data-target="nav-mobile">
@@ -41,12 +43,11 @@
                         </a>
                         <ul id="nav-links" class="right hide-on-med-and-down">
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="products.html">Products</a></li>
+                            <li><a href="esc/slider.html">Products</a></li>
                             <li><a href="aboutus.html">About Us</a></li>
                             <li><a href="contact.html">Contacts</a></li>
                         </ul>
                     </div>
-
 
                 </div>
             </nav>
@@ -56,14 +57,130 @@
                 <img src="/images/logofinal.png" alt="" style="max-width: 70vw">
             </li>
             <li><a href="index.html">Home</a></li>
-            <li><a href="products.html">Products</a></li>
+            <li><a href="esc/slider.html">Products</a></li>
             <li><a href="aboutus.html">About Us</a></li>
             <li><a href="contact.html">Contacts</a></li>
         </ul>
 
     </header>
-    
-    
+
+    <!--  -->
+    <div class="contactHeader">
+        <div>
+            <div class="row">
+                <div class="col s12 m5 offset-m6">
+                    <div class="card-panel" style="margin-top: 20%;border-radius: 30px;">
+                        <h4 class="center">
+                            Get in Touch
+                        </h4>
+                        <div class="container">
+                            <form
+                            class="gform"
+                            action="https://script.google.com/macros/s/AKfycbzcCrtkt-H5JuE1yFFgQL5C340K7uS3KQRPRuI/exec"
+                                method="POST" data-email="sahilkindarle212@gmail.com" >
+                                <div class="input-field">
+                                    <input placeholder="Name" name="name" id="name" type="text" class="validate">
+                                </div>
+                                <div class="input-field">
+                                    <input placeholder="Email" id="email" type="text" name="email" class="validate">
+                                </div>
+                                <div class="input-field">
+                                    <input placeholder="Comments" name="comments" id="comments" type="text"
+                                        class="validate">
+                                </div>
+                                <button class="btn waves-effect waves-light" type="submit" name="action"
+                                    id="contactSubmit">Submit
+                                    <i class="material-icons right">send</i>
+                                </button>
+                                <div style="display:none" class="thankyou_message">
+                                    <!-- You can customize the thankyou message by editing the code below -->
+                                    <h2><em>Thanks</em> for contacting us! We will get back to you soon!
+                                    </h2>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <footer>
+        <div class="footer">
+            <div class="info">
+                <img src="images/MPCP Logo.png" alt="" class="logofooter">
+                <p> <i class="fas fa-map-marker-alt"> </i> 3396, Vasant Vihar, Lawa, Wadi, Nagpur-440 023 (M.S.)</p>
+                <p><i class="fas fa-phone-alt"></i> 071-042-4616</p>
+                <p><i class="fas fa-phone-alt"></i> 913-000-0225</p>
+                <p><i class="fas fa-envelope"></i> mpcp@ymail.com</p>
+            </div>
+            <div class="navigate">
+                <p><b>NAVIGATE</b></p>
+                <p>HOME</p>
+                <p>PRODUCTS</p>
+                <p>ABOUT US</p>
+                <p>CONTACTS</p>
+
+            </div>
+            <div class="social" style="display: flex;
+             flex-direction: column; ">
+                <p><B>CONNECT US</B></p>
+                <br>
+                <div style="display: flex;
+                 flex-direction: row; ">
+                    <div class="icons" style="margin: 10px; margin-left: 0; font-size: x-large;"><a href=""><i
+                                class="fab fa-instagram"></i></a></div>
+                    <div class="icons" style="margin: 10px; margin-left: 0; font-size: x-large;"><a><i
+                                class="fab fa-facebook-f"></i></a></div>
+                    <div class="icons" style="margin: 10px; margin-left: 0; font-size: x-large;"><a><i
+                                class="fab fa-linkedin-in"></i></a></div>
+                    <div class="icons" style="margin: 10px; margin-left: 0; font-size: x-large;"><a><i
+                                class="fab fa-twitter"></i></a></div>
+                </div>
+            </div>
+            <div class="company" style="margin-top: 35px;">
+                <div></div>
+                <p>PRIVACY POLICY</p>
+                <p>TERMS OF USE</p>
+
+
+            </div>
+        </div>
+        <div class="copyright"
+            style="height: 50px; background-color: #3f3c3c; text-align: center;  padding-top: 2px; color: white;">
+            <p>Designed and Developed with ❤️ by <a href="mailto:sahilkindarle212@gmail.com" class="white-text"
+                    style="font-size: 20px;">Lilac Designers</a></p>
+        </div>
+
+    </footer>
+
+
+
+    <script>
+        AOS.init();
+        window.onscroll = () => {
+            const nav = document.querySelector('nav');
+            if (this.scrollY <= 10) nav.className = 'defines';
+            else nav.className = 'scroll';
+            // document.getElementById("contactSubmit").onclick = function () {
+            //     location.href = "www.google.com";
+            // };
+
+        };
+    </script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+    <script src="js/universal.js"></script>
+
+
+    <script data-cfasync="false" type="text/javascript"
+  src="js/form-submission-handler.js"></script>
 
 </body>
 

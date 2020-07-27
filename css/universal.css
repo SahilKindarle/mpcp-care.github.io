@@ -215,6 +215,14 @@ button:focus,
   }
 }
 
+.contactHeader{
+  background-image: url("../images/bg.jpg");
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+
+}
+
 .iris {
   background-image: url("../images/bg.jpg");
   background-repeat: no-repeat;
