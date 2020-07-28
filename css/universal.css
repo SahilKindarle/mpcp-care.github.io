@@ -77,6 +77,17 @@
   color: black;
 }
 
+/* #loader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  overflow: visible;
+  background: #fff url('loader.gif') no-repeat center center;
+} */
+
+
+
 .parallax-container .parallax .banner img {
   opacity: 1;
 }
@@ -260,7 +271,7 @@ nav.scroll {
 }
 nav.scroll ul a {
   color: #000000;
-  font-family: "ITC Avant Garde Gothic Std Book";
+  /* font-family: "ITC Avant Garde Gothic Std Book"; */
   /* color: white; */
   text-align: center;
   text-transform: uppercase;
