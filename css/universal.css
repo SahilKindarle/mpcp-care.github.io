@@ -155,6 +155,18 @@ button:focus,
   color: #2d2d2d;
 }
 
+#particles-js{
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(26, 185, 108);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.particles-js-canvas-el{
+  position: absolute;
+}
+
 @media only screen and (max-width: 600px) {
   .footer {
     display: flex;
