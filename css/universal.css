@@ -206,9 +206,9 @@ button:focus,
 }
 
 .contactHeader{
-  background-image: url("../images/all_with_sachets_with_bg.jpeg");
+  background-image: url("../images/conback.jpg");
   background-repeat: no-repeat;
-  /* height: 100vh; */
+  height: 100vh;
   background-size: cover;
 
 }
@@ -455,3 +455,19 @@ margin-bottom: 20%;
   margin-bottom: 90px;
 } */
 
+
+
+.getCon{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 100;
+}
+
+
+.submitCon {
+  background-color: #2d2d2d;
+  /* font-family: "ITC Avant Garde Gothic Std Book"; */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-weight: 100;
+  border-radius: 4px;
+  border: 2px solid #2d2d2d;
+}
