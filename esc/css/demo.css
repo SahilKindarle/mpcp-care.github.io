@@ -6,6 +6,19 @@
 	src: url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'), url('../fonts/codropsicons/codropsicons.woff') format('woff'), url('../fonts/codropsicons/codropsicons.ttf') format('truetype'), url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
 }
 
+
+
+#loader {
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	z-index: 99999999;
+	overflow: visible;
+	background: #fff url('../img/loading.gif') no-repeat center center;
+  }
+
+
+
 *,
 *:after,
 *:before {
