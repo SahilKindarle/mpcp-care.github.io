@@ -271,11 +271,13 @@ nav.scroll {
 }
 nav.scroll ul a {
   color: #000000;
+  font-family: "glacial_indifferencebold";
+
   /* font-family: "ITC Avant Garde Gothic Std Book"; */
   /* color: white; */
   text-align: center;
   text-transform: uppercase;
-  font-weight: 700;
+  /* font-weight: 700; */
 }
 
 nav.defines {
@@ -290,7 +292,7 @@ nav.defines ul a {
   /* font-family: "ITC Avant Garde Gothic Std Book"; */
   text-align: center;
   text-transform: uppercase;
-  font-weight: 700;
+  /* font-weight: 700; */
 }
 
 .collapsible li {
