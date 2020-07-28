@@ -1,6 +1,6 @@
 M.AutoInit();
-
 document.addEventListener('DOMContentLoaded', function () {
+    // loader = document.getElementById('loader');
     // loadNow(1);
 
     var elems = document.querySelectorAll('.sidenav');
@@ -14,21 +14,22 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-var loader;
+// var loader;
 
-function loadNow(opacity) {
-    loader = document.getElementById('loader');
-    if (opacity <= 0) {
-        displayContent();
-    } else {
-        loader.style.opacity = opacity;
-        window.setTimeout(function () {
-            loadNow(opacity - 0.8);
-        }, 5000);
-    }
-}
+// function loadNow(opacity) {
+//     if (opacity <= 0) {
+//         displayContent();
+//     } else {
+//         loader.style.opacity = opacity;
+//         window.setTimeout(function () {
+//             loadNow(opacity - 0.8);
+//         }, 5000);
+//     }
+// }
 
-function displayContent() {
-    loader.style.display = 'none';
-    document.getElementById('content').style.display = 'block';
-}
+// function displayContent() {
+//     loader.style.display = 'none';
+//     document.getElementById('content').style.display = 'block';
+// }
+
+
