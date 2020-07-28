@@ -77,14 +77,14 @@
   color: black;
 }
 
-/* #loader {
+#loader {
   position: fixed;
   width: 100%;
   height: 100vh;
   z-index: 1;
   overflow: visible;
-  background: #fff url('loader.gif') no-repeat center center;
-} */
+  background: #fff url('../images/loading.gif') no-repeat center center;
+}
 
 
 
