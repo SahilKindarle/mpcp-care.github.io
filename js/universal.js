@@ -22,8 +22,8 @@ function loadNow(opacity) {
     } else {
         loader.style.opacity = opacity;
         window.setTimeout(function () {
-            loadNow(opacity - 0.05);
-        }, 50);
+            loadNow(opacity - 0.5);
+        }, 500);
     }
 }
 
