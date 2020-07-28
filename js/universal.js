@@ -1,4 +1,5 @@
 M.AutoInit();
+
 document.addEventListener('DOMContentLoaded', function () {
     // loadNow(1);
 

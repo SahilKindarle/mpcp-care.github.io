@@ -207,6 +207,10 @@
 
     <script>
         AOS.init();
+        $(window).load(function () {
+            // Animate loader off screen
+            $("#loader").fadeOut("slow");;
+        });
         window.onscroll = () => {
             const nav = document.querySelector('nav');
             if (this.scrollY <= 10) nav.className = 'defines';
