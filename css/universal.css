@@ -287,7 +287,7 @@ nav.defines {
 
 nav.defines ul a {
   color: white;
-  font-family: "ITC Avant Garde Gothic Std Book";
+  /* font-family: "ITC Avant Garde Gothic Std Book"; */
   text-align: center;
   text-transform: uppercase;
   font-weight: 700;
