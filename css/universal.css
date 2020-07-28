@@ -433,8 +433,9 @@ flex-container,
   font-family: "Montserrat", "sans-serif";
 }
 
-.card-panel{
-/* margin: 20px; */
+.ingredSpan{
+  color: rgb(41, 39, 39);
+  font-size: medium;
 }
 
 .connectus p {
