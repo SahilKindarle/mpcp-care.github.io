@@ -241,7 +241,7 @@ button:focus,
 
 .navbar-fixed {
   position: absolute;
-  z-index: 1;
+  z-index: 100;
 }
 
 nav.scroll {
@@ -470,4 +470,23 @@ margin-bottom: 20%;
 font-weight: 100;
   border-radius: 4px;
   border: 2px solid #2d2d2d;
+}
+
+
+.slider .slides,
+.ssrow{
+  height: 80vh !important;
+}
+
+#connectAs h3{
+  font-size: 60px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding-left: 0;
+  font-weight: 100;
+
+}
+
+.assocat{
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
 }
