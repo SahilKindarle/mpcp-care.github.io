@@ -1,7 +1,6 @@
 M.AutoInit();
 document.addEventListener('DOMContentLoaded', function () {
-    loader = document.getElementById('loader');
-    loadNow(1);
+    // loadNow(1);
 
     var elems = document.querySelectorAll('.sidenav');
     var elems2 = document.querySelectorAll('.slider');
@@ -17,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
 var loader;
 
 function loadNow(opacity) {
+    loader = document.getElementById('loader');
     if (opacity <= 0) {
         displayContent();
     } else {

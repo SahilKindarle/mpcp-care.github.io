@@ -393,6 +393,10 @@
             if (this.scrollY <= 10) nav.className = 'defines';
             else nav.className = 'scroll';
         };
+        $(window).load(function () {
+            // Animate loader off screen
+            $("#loader").fadeOut("slow");;
+        });
         $(document).ready(function () {
             $('.slider').slider();
             $('.parallax').parallax();
