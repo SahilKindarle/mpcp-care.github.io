@@ -216,9 +216,9 @@ button:focus,
 }
 
 .contactHeader{
-  background-image: url("../images/bg.jpg");
+  background-image: url("../images/all_with_sachets_with_bg.jpeg");
   background-repeat: no-repeat;
-  height: 100vh;
+  /* height: 100vh; */
   background-size: cover;
 
 }
