@@ -29,7 +29,7 @@
     <!-- <script src="https://unpkg.com/tilt.js@1.2.1/dest/tilt.jquery.min.js"></script> -->
     <script src="js/aos.js"></script>
 
-    <title>Layout File</title>
+    <title>Home | MPCP Care</title>
 </head>
 
 <body style="background-color: #f0f1f1;">
@@ -38,9 +38,8 @@
     <div id="loader"></div>
 
 
+    <div id="content">
 
-
-    <div id="">
         <header style="margin-bottom: 0px;padding-bottom: 0px">
             <div class="navbar-fixed">
                 <nav class="defines">
@@ -68,7 +67,7 @@
             </div>
             <ul id="nav-mobile" class="sidenav">
                 <li style="margin-top: 40px">
-                    <img src="/images/logofinal.png" alt="" style="max-width: 70vw">
+                    <img src="images/logofinal.png" alt="" style="max-width: 70vw">
                 </li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="esc/slider.html">Products</a></li>
@@ -176,7 +175,7 @@
                             </p>
 
                             <div class="left">
-                                <a class="btn-large aboutUsButton" href="/aboutus.html">Learn More</a>
+                                <a class="btn-large aboutUsButton" href="aboutus.html">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -248,7 +247,7 @@
 
             </div>
             <div class="center">
-                <a class="btn-large aboutUsButton" href="/esc/slider.html">Explore Products</a>
+                <a class="btn-large aboutUsButton" href="esc/slider.html">Explore Products</a>
             </div>
         </section>
 
@@ -386,6 +385,7 @@
         </footer>
 
     </div>
+    </div>
     <script>
         AOS.init();
         window.onscroll = () => {
@@ -393,6 +393,10 @@
             if (this.scrollY <= 10) nav.className = 'defines';
             else nav.className = 'scroll';
         };
+        $(window).load(function () {
+            // Animate loader off screen
+            $("#loader").fadeOut("slow");;
+        });
         $(document).ready(function () {
             $('.slider').slider();
             $('.parallax').parallax();

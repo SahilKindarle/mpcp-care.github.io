@@ -6,11 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Elastic Circle Slideshow | Codrops</title>
-    <meta name="description"
-        content="A simple content slideshow with circular elements and a bouncy navigation effect." />
-    <meta name="keywords" content="slideshow, dynamic.js, elastic, circle, template, web design" />
-    <meta name="author" content="Codrops" />
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="./images/MPCP_Logo.png">
     <link rel="stylesheet" href="css/materialize.css">
     <link rel="stylesheet" href="css/materialize.min.css">
     <link rel="stylesheet" href="js/materialize.js">
@@ -29,7 +25,9 @@
 </head>
 
 <body>
-    <div>
+    <div id="loader"></div>
+
+    <div id="content">
         <header style="margin-bottom: 0px;padding-bottom: 0px;z-index: -1;">
             <div class="navbar-fixed" style="z-index: 999999;">
                 <nav class="white">
@@ -238,6 +236,7 @@
         </div>
 
     </div><!-- /container -->
+    <script src="js/universal.js"></script>
     <script src="js/classie.js"></script>
     <script src="js/dynamics.min.js"></script>
     <script src="js/main.js"></script>
