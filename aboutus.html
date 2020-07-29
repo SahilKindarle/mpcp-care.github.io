@@ -17,6 +17,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- <script src="https://unpkg.com/tilt.js@1.2.1/dest/tilt.jquery.min.js"></script> -->
     <script src="js/aos.js"></script>
+
     <title>About Us | MPCP Care </title>
 </head>
 
@@ -150,6 +151,14 @@
                 <img src="images/coil5.png" width="10%" alt="Natural" />
             </marquee>
     </div> -->
+
+    <div style="height: auto;overflow: hidden;">
+        <div class="instagram_profile" id="instagram-feed1">
+
+        </div>
+    </div>
+
+    </div>
     <footer>
         <div class="footer">
             <div class="info">
@@ -174,30 +183,59 @@
                 <br>
                 <div style="display: flex;
                  flex-direction: row; ">
-                 <div class="icons" style="margin: 10px; margin-left: 0; font-size: x-large;" ><a href="https://instagram.com/mpcpcare?igshid=znu3zwyldqqx" ><i class="fab fa-instagram"></i></a></div>
-                 <div class="icons" style="margin: 10px; margin-left: 0; font-size: x-large;"><a href="https://www.facebook.com/105361527879322/posts/148711883544286/" ><i class="fab fa-facebook-f"></i></a></div>
-                 <div class="icons" style="margin: 10px; margin-left: 0; font-size: x-large;"><a href="https://www.linkedin.com/company/mpcp-care-pvt-ltd" ><i class="fab fa-linkedin-in"></i></a></div>
-                 <div class="icons"style="margin: 10px; margin-left: 0; font-size: x-large;"><a href="https://twitter.com/CareMpcp?s=09"><i class="fab fa-twitter"></i></a></div>
-                </div >
-             </div>
-             <div class="company" style="margin-top: 0px;">     
-                 <p class="title"><b>LEGAL</b></p>
-                 <p>PRIVACY POLICY</p>
-                 <p>TERMS OF USE</p>
+                    <div class="icons" style="margin: 10px; margin-left: 0; font-size: x-large;"><a
+                            href="https://instagram.com/mpcpcare?igshid=znu3zwyldqqx"><i
+                                class="fab fa-instagram"></i></a></div>
+                    <div class="icons" style="margin: 10px; margin-left: 0; font-size: x-large;"><a
+                            href="https://www.facebook.com/105361527879322/posts/148711883544286/"><i
+                                class="fab fa-facebook-f"></i></a></div>
+                    <div class="icons" style="margin: 10px; margin-left: 0; font-size: x-large;"><a
+                            href="https://www.linkedin.com/company/mpcp-care-pvt-ltd"><i
+                                class="fab fa-linkedin-in"></i></a></div>
+                    <div class="icons" style="margin: 10px; margin-left: 0; font-size: x-large;"><a
+                            href="https://twitter.com/CareMpcp?s=09"><i class="fab fa-twitter"></i></a></div>
+                </div>
+            </div>
+            <div class="company" style="margin-top: 0px;">
+                <p class="title"><b>LEGAL</b></p>
+                <p>PRIVACY POLICY</p>
+                <p>TERMS OF USE</p>
 
 
             </div>
         </div>
         <div class="copyright"
-                style="height: 60px; background-color: #3f3c3c; text-align: center;  padding-top: 2px; color: white;">
-                <p class="truncate">Designed and Developed with ❤️ by <a href="mailto:lilac.designers@gmail.com"
-                        class="white-text" style="font-size: 20px;">Lilac Designers</a></p>
-            </div>
+            style="height: 60px; background-color: #3f3c3c; text-align: center;  padding-top: 2px; color: white;">
+            <p class="truncate">Designed and Developed with ❤️ by <a href="mailto:lilac.designers@gmail.com"
+                    class="white-text" style="font-size: 20px;">Lilac Designers</a></p>
+        </div>
 
     </footer>
+    <script src="js/jquery.instagramFeed.min.js"></script>
 
     <script>
         AOS.init();
+
+        (function ($) {
+            $(window).on('load', function () {
+                $("#loader").fadeOut("slow");
+
+                $.instagramFeed({
+                    'username': 'instagram',
+                    'container': "#instagram-feed1",
+                    'display_profile': true,
+                    'display_biography': true,
+                    'display_gallery': true,
+                    'callback': null,
+                    'styling': true,
+                    'items': 8,
+                    'items_per_row': 4,
+                    'margin': 1,
+                    'lazy_load': true,
+                    'on_error': console.error
+                });
+            });
+        })(jQuery);
 
 
 
@@ -207,12 +245,12 @@
             else nav.className = 'scroll';
         };
 
-        $(window).on('load',function () {
-            // Animate loader off screen
-            $("#loader").fadeOut("slow");
-            // document.querySelector('#loader').classList.append('hide')
+        // $(window).on('load', function () {
+        // Animate loader off screen
+        // $("#loader").fadeOut("slow");
+        // document.querySelector('#loader').classList.append('hide')
 
-        });
+        // });
     </script>
 
 
