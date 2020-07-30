@@ -40,12 +40,8 @@
 .quote {
   text-align: center;
   font-size: 30px;
-  /* color: #F39B8F; */
   color: #2d2d2d;
-  /* font-weight: 900; */
-  /* font-family: "Open Sans", sans-serif; */
   font-family: "Montserrat", "sans-serif";
-  /* font-family: "ITC Avant Garde Gothic Std Book", "sans-serif"; */
 }
 
 #abtusDiv {
@@ -53,4 +49,11 @@
 background-position: right;
   background-size: cover;
   background-color: #dca59b;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .quote{
+    font-size: 20px;
+  }
 }
