@@ -20,22 +20,13 @@
     <script src="js/aos.js"></script>
     <title>Contact | MPCP Care </title>
 </head>
-
-
-
-
-
-
-
 <body>
-
     <div id="loader"></div>
-
     <header style="margin-bottom: 0px;padding-bottom: 0px">
         <div class="navbar-fixed">
             <nav class="defines">
                 <div class="nav-wrapper">
-                    <div class="container">
+                    <div>
                         <a class="black-text sidenav-trigger hide-on-large-only" href="#" data-target="nav-mobile">
                             <i class="material-icons button-collapse">dehaze</i>
                         </a>
@@ -46,38 +37,47 @@
                             </div>
                         </a>
                         <ul id="nav-links" class="right hide-on-med-and-down">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="esc/slider.html">Products</a></li>
-                            <li><a href="ingredients.html">HEALTH TIPS</a></li>
-                            <li><a href="aboutus.html">About Us</a></li>
-                            <li><a href="contact.html">Contacts</a></li>
+                            <li><a href="index.html" id="homen">Home</a></li>
+                            <li><a id="productsn" href="esc/slider.html">Products</a></li>
+                            <li><a href="ingredients.html" id="healthn">health tips</a></li>
+                            <li><a id="aboutn" href="aboutus.html">About Us</a></li>
+                            <li><a href="contact.html" id="contactn">Contacts</a></li>
+                            <li>
+                                <a class="waves-effect waves-light btn-large" id="hindiButton"
+                                    onclick="applyHindi()">Hindi</a>
+                            </li>
+                            <li>
+                                <a class="waves-effect waves-light btn-large" id="englishButton"
+                                    onclick="applyEnglish()">English</a>
+                            </li>
                         </ul>
                     </div>
-
                 </div>
             </nav>
         </div>
         <ul id="nav-mobile" class="sidenav">
             <li style="margin-top: 40px">
-                <img src="/images/logofinal.png" alt="" style="max-width: 70vw">
+                <img src="images/logofinal.png" alt="" style="max-width: 70vw">
             </li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="esc/slider.html">Products</a></li>
-            <li><a href="ingredients.html">INGREDIENTS</a></li>
-            <li><a href="aboutus.html">About Us</a></li>
-            <li><a href="contact.html">Contacts</a></li>
+            <li><a id="homen1" href="index.html">Home</a></li>
+            <li><a id="productsn1" href="esc/slider.html">Products</a></li>
+            <li><a href="ingredients.html" id="healthn1">health tips</a></li>
+            <li><a href="aboutus.html" id="aboutn1">About Us</a></li>
+            <li><a href="contact.html" id="contactn1">Contacts</a></li>
+            <li>
+                <a class="waves-effect waves-light btn-large" id="hindiButton" onclick="applyHindi()">Hindi</a>
+            </li>
+            <li>
+                <a class="waves-effect waves-light btn-large" id="englishButton" onclick="applyEnglish()">English</a>
+            </li>
         </ul>
-
     </header>
-
-    <!-- action="https://script.google.com/macros/s/AKfycbzcCrtkt-H5JuE1yFFgQL5C340K7uS3KQRPRuI/exec" -->
-    <!--  -->
     <div class="contactHeader">
         <div>
             <div class="row">
                 <div class="col s12 m5 offset-m6">
                     <div class="card-panel" style="margin-top: 20%;border-radius: 30px">
-                        <h4 class="center getCon">
+                        <h4 class="center getCon" id="getConn">
                             Get Connected
                         </h4>
                         <div class="container">
@@ -100,106 +100,61 @@
                                         name="action">Submit
                                         <i class="material-icons right">send</i>
                                     </button>
-
                                 </div>
-
                             </form>
                         </div>
-                        <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScBhvyPFTAOi7JkARGJtVNBBG3QaBd33Khn2_Ck1OU6MHZslA/viewform?embedded=true" width="100%" height="603" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
     <div class="row show-on-small-only hide-on-med-and-up">
         <div class="col s12 m4">
             <img src="images/asso1.png" alt="" width="100%">
-            <p class="center assocat">
+            <p class="center assocat" id="agent"> 
                 Agent
             </p>
         </div>
         <div class="col s12 m4">
             <img src="images/asso2.png" alt="" width="100%">
-            <p class="center assocat">
+            <p class="center assocat" id="dealer">
                 Dealer/Distributor
             </p>
         </div>
         <div class="col s12 m4">
             <img src="images/asso3.png" alt="" width="100%">
-            <p class="center assocat">
+            <p class="center assocat" id="rws">
                 Raw Material Supplier
             </p>
         </div>
     </div>
-
-
     <div class="row ssrow hide-on-small-only">
         <div class="col s12 m6">
             <div class="" id="connectAs">
-                <h3 class="center" style="margin-top: 10%;">
+                <h3 class="center" style="margin-top: 10%;" id="gaa">
                     Get Associated as</h3>
 
                 <div class="row">
                     <div class="col s12 m4">
                         <img src="images/asso1.png" alt="" width="95%">
-                        <p class="center assocat">
+                        <p class="center assocat" id="agent1">
                             Agent
                         </p>
                     </div>
                     <div class="col s12 m4">
                         <img src="images/asso2.png" alt="" width="100%">
-                        <p class="center assocat">
-                            <br> 
+                        <p class="center assocat" id="dealer1">
+                            <br>
                             Dealer/Distributor
                         </p>
                     </div>
                     <div class="col s12 m4">
                         <img src="images/asso3.png" alt="" width="103%">
-                        <p class="center assocat">
+                        <p class="center assocat" id="rws1">
                             Raw Material Supplier
                         </p>
                     </div>
                 </div>
-                <!-- <div>
-                        <ul class="collapsible">
-                            <li>
-                                <div class="collapsible-header">
-                                    <div class="center" style="width: 100%;">
-                                        Agent
-                                    </div>
-                                </div>
-                                <div class="collapsible-body white"><span>Lorem ipsum dolor sit amet.</span></div>
-                            </li>
-                        </ul>
-
-                    </div>
-                    <div>
-                        <ul class="collapsible">
-                            <li>
-                                <div class="collapsible-header">
-                                    <div class="center" style="width: 100%;">
-                                        Distributor
-                                    </div>
-                                </div>
-                                <div class="collapsible-body white"><span>Lorem ipsum dolor sit amet.</span></div>
-                            </li>
-                        </ul>
-
-                    </div>
-                    <div>
-                        <ul class="collapsible">
-                            <li>
-                                <div class="collapsible-header">
-                                    <div class="center" style="width: 100%;">
-                                        Raw Material Supplier
-                                    </div>
-                                </div>
-                                <div class="collapsible-body white"><span>Lorem ipsum dolor sit amet.</span></div>
-                            </li>
-                        </ul>
-
-                    </div> -->
             </div>
         </div>
         <div class="col s12 m6 " style="padding: 0;">
@@ -216,10 +171,7 @@
             </div>
         </div>
     </div>
-
-
     <div class="row" style="margin:10%">
-
         <div class="container hide-on-small-only">
             <div class="center">
                 <iframe
@@ -228,9 +180,6 @@
                     tabindex="0"></iframe>
             </div>
         </div>
-
-
-
         <div class="container show-on-small-only hide-on-med-and-up">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.8405504619104!2d78.99465101493482!3d21.158742885928145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4eb849ae32bdf%3A0x85a65933c1f3ba00!2sMPCP%20Care%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1595956232639!5m2!1sen!2sin"
@@ -238,28 +187,27 @@
                 tabindex="0"></iframe>
         </div>
     </div>
-
     <footer>
         <div class="footer">
             <div class="info">
                 <img src="images/MPCP_Logo.png" alt="" class="logofooter">
-                <p> <i class="fas fa-map-marker-alt"> </i> 3396, Vasant Vihar, Lawa, Wadi, Nagpur-440 023 (M.S.)</p>
+                <p id="address"> <i class="fas fa-map-marker-alt"> </i> 3396, Vasant Vihar, Lawa, Wadi, Nagpur-440
+                    023 (M.S.)</p>
                 <p><i class="fas fa-phone-alt"></i> 071-042-4616</p>
                 <p><i class="fas fa-phone-alt"></i> 913-000-0225</p>
                 <p><i class="fas fa-envelope"></i> mpcp@ymail.com</p>
             </div>
             <div class="navigate">
-                <p class="title"><b>NAVIGATE</b></p>
-                <p> <a href="index.html">HOME</a> </p>
-                <p><a href="esc/slider.html"> PRODUCTS</a></p>
-                <p><a href="ingredients.html">INGREDIENTS</a></p>
-                <p><a href="aboutus.html"> ABOUT US</a></p>
-                <p> <a href="contact.html"> CONTACT US</a></p>
-
+                <p class="title" id="navigate"><b>NAVIGATE</b></p>
+                <p id="homefn"> <a href="index.html">HOME</a> </p>
+                <p id="productsfn"><a href="esc/slider.html"> PRODUCTS</a></p>
+                <p id="healthfn"><a href="ingredients.html">INGREDIENTS</a></p>
+                <p id="aboutfn"><a href="aboutus.html"> ABOUT US</a></p>
+                <p id="contactfn"> <a href="contact.html"> CONTACT US</a></p>
             </div>
             <div class="social" style="display: flex;
              flex-direction: column; ">
-                <p class="title"><B>CONNECT US</B></p>
+                <p class="title" id="connect"><B>CONNECT US</B></p>
                 <br>
                 <div style="display: flex;
                  flex-direction: row; ">
@@ -277,11 +225,9 @@
                 </div>
             </div>
             <div class="company" style="margin-top: 0px;">
-                <p class="title"><b>LEGAL</b></p>
-                <p>PRIVACY POLICY</p>
-                <p>TERMS OF USE</p>
-
-
+                <p id="legal" class="title"><b>LEGAL</b></p>
+                <p id="pp">PRIVACY POLICY</p>
+                <p id="tou">TERMS OF USE</p>
             </div>
         </div>
         <div class="copyright"
@@ -289,7 +235,6 @@
             <p class="truncate">Designed and Developed with ❤️ by <a href="mailto:lilac.designers@gmail.com"
                     class="white-text" style="font-size: 20px;">Lilac Designers</a></p>
         </div>
-
     </footer>
 
 
@@ -298,6 +243,7 @@
         AOS.init();
         $(window).on('load', function () {
             // Animate loader off screen
+            document.getElementById("englishButton").style.display = "none"
             $("#loader").fadeOut("slow");;
         });
 
@@ -307,6 +253,92 @@
             else nav.className = 'scroll';
 
         };
+
+        function applyHindi() {
+            document.getElementById("hindiButton").style.display = "none"
+            document.getElementById("englishButton").style.display = "block"
+
+            // Navbar Conversions
+            document.getElementById("homen").innerHTML = "मुख पृष्ठ"
+            document.getElementById("productsn").innerHTML = "उत्पाद"
+            document.getElementById("healthn").innerHTML = "स्वास्थ्य सुझाव"
+            document.getElementById("aboutn").innerHTML = "हमारे बारे में"
+            document.getElementById("contactn").innerHTML = "संपर्क करें"
+
+            document.getElementById("homen1").innerHTML = "मुख पृष्ठ"
+            document.getElementById("productsn1").innerHTML = "उत्पाद"
+            document.getElementById("healthn1").innerHTML = "स्वास्थ्य सुझाव"
+            document.getElementById("aboutn1").innerHTML = "हमारे बारे में"
+            document.getElementById("contactn1").innerHTML = "संपर्क करें"
+
+            // Footer Conversions
+            document.getElementById("address").innerHTML = "3396, वसंत विहार, लवा, वाडी, नागपुर-440 023 (M.S.)"
+
+            document.getElementById("navigate").innerHTML = "नेविगेट"
+            document.getElementById("homefn").innerHTML = "मुख पृष्ठ"
+            document.getElementById("productsfn").innerHTML = "उत्पाद"
+            document.getElementById("healthfn").innerHTML = "स्वास्थ्य सुझाव"
+            document.getElementById("aboutfn").innerHTML = "हमारे बारे में"
+            document.getElementById("contactfn").innerHTML = "संपर्क करें"
+            document.getElementById("connect").innerHTML = "जुडिये"
+            document.getElementById("legal").innerHTML = "कानूनी"
+            document.getElementById("pp").innerHTML = "गोपनीयता नीति"
+            document.getElementById("tou").innerHTML = "उपयोग की शर्तें"
+
+            document.getElementById("getConn").innerHTML = "हमसे जुड़े"
+            document.getElementById("agent").innerHTML = "एजेंट"
+            document.getElementById("dealer").innerHTML = "<br/>विक्रेता"
+            document.getElementById("rws").innerHTML = "कच्चा माल आपूर्तिकर्ता"
+
+            document.getElementById("agent1").innerHTML = "एजेंट"
+            document.getElementById("dealer1").innerHTML = "<br/>विक्रेता"
+            document.getElementById("rws1").innerHTML = "कच्चा माल आपूर्तिकर्ता"
+            document.getElementById("gaa").innerHTML = "हमसे जुड़े रहें"
+        }
+
+
+        function applyEnglish() {
+            document.getElementById("getConn").innerHTML = "Get Connected"
+            document.getElementById("agent").innerHTML = "Agent"
+            document.getElementById("dealer").innerHTML = "<br/>Dealer"
+            document.getElementById("rws").innerHTML = "Raw Material Supplier"
+            document.getElementById("agent1").innerHTML = "Agent"
+            document.getElementById("dealer1").innerHTML = "<br/>Dealer"
+            document.getElementById("rws1").innerHTML = "Raw Material Supplier"
+            document.getElementById("gaa").innerHTML = "Get Associated as"
+
+            document.getElementById("englishButton").style.display = "none"
+            document.getElementById("hindiButton").style.display = "block"
+            // Navbar Conversions
+            document.getElementById("homen").innerHTML = "Home"
+            document.getElementById("productsn").innerHTML = "Products"
+            document.getElementById("healthn").innerHTML = "Health Tips"
+            document.getElementById("aboutn").innerHTML = "About"
+            document.getElementById("contactn").innerHTML = "Contact"
+
+            document.getElementById("homen1").innerHTML = "Home"
+            document.getElementById("productsn1").innerHTML = "Products"
+            document.getElementById("healthn1").innerHTML = "Health Tips"
+            document.getElementById("aboutn1").innerHTML = "About"
+            document.getElementById("contactn1").innerHTML = "Contact"
+
+
+            // Footer Conversions
+            document.getElementById("address").innerHTML = "3396, Vasant Vihar, Lawa, Wadi, Nagpur-440023 (M.S.)"
+
+            document.getElementById("navigate").innerHTML = "Navigate"
+            document.getElementById("homefn").innerHTML = "HOME"
+            document.getElementById("productsfn").innerHTML = "PRODUCTS"
+            document.getElementById("healthfn").innerHTML = "HEALTH TIPS"
+            document.getElementById("aboutfn").innerHTML = "ABOUT"
+            document.getElementById("contactfn").innerHTML = "CONTACT US"
+            document.getElementById("connect").innerHTML = "CONNECT US"
+            document.getElementById("legal").innerHTML = "LEGAL"
+            document.getElementById("pp").innerHTML = "PRIVACY POLICY"
+            document.getElementById("tou").innerHTML = "TERMS OF USE"
+
+
+        }
     </script>
 
 

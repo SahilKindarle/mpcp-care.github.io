@@ -1,7 +1,7 @@
 .deco {
 	pointer-events: none;
 }
-
+/* 
 .deco--title {
 	position: absolute;
 	top: 0px;
@@ -10,7 +10,7 @@
 	height: 100vh;
 	background: url(../img/deco.svg) no-repeat center top;
 	background-size: 100%;
-}
+} */
 
 .slideshow {
 	position: relative;
