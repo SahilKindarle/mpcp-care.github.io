@@ -44,7 +44,7 @@
             <div class="navbar-fixed">
                 <nav class="defines">
                     <div class="nav-wrapper">
-                        <div class="container">
+                        <div>
                             <a class="black-text sidenav-trigger hide-on-large-only" href="#" data-target="nav-mobile">
                                 <i class="material-icons button-collapse">dehaze</i>
                             </a>
@@ -55,11 +55,19 @@
                                 </div>
                             </a>
                             <ul id="nav-links" class="right hide-on-med-and-down">
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="esc/slider.html">Products</a></li>
-                                <li><a href="ingredients.html">health tips</a></li>
-                                <li><a href="aboutus.html">About Us</a></li>
-                                <li><a href="contact.html">Contacts</a></li>
+                                <li><a href="index.html" id="homen">Home</a></li>
+                                <li><a id="productsn" href="esc/slider.html">Products</a></li>
+                                <li><a href="ingredients.html" id="healthn">health tips</a></li>
+                                <li><a id="aboutn" href="aboutus.html">About Us</a></li>
+                                <li><a href="contact.html" id="contactn">Contacts</a></li>
+                                <li>
+                                    <a class="waves-effect waves-light btn-large" id="hindiButton"
+                                        onclick="applyHindi()">Hindi</a>
+                                </li>
+                                <li>
+                                    <a class="waves-effect waves-light btn-large" id="englishButton"
+                                        onclick="applyEnglish()">English</a>
+                                </li>
                             </ul>
                         </div>
 
@@ -70,11 +78,18 @@
                 <li style="margin-top: 40px">
                     <img src="images/logofinal.png" alt="" style="max-width: 70vw">
                 </li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="esc/slider.html">Products</a></li>
-                <li><a href="ingredients.html">health tips</a></li>
-                <li><a href="aboutus.html">About Us</a></li>
-                <li><a href="contact.html">Contacts</a></li>
+                <li><a id="homen1" href="index.html">Home</a></li>
+                <li><a id="productsn1" href="esc/slider.html">Products</a></li>
+                <li><a href="ingredients.html" id="healthn1">health tips</a></li>
+                <li><a href="aboutus.html" id="aboutn1">About Us</a></li>
+                <li><a href="contact.html" id="contactn1">Contacts</a></li>
+                <li>
+                    <a class="waves-effect waves-light btn-large" id="hindiButton" onclick="applyHindi()">Hindi</a>
+                </li>
+                <li>
+                    <a class="waves-effect waves-light btn-large" id="englishButton"
+                        onclick="applyEnglish()">English</a>
+                </li>
             </ul>
 
         </header>
@@ -109,12 +124,12 @@
                 <div class="valign-wrapper" style="margin-left: 10%;">
                     <div class="row" style="margin: 0;" data-aos="fade-up" data-aos-easing="linear"
                         data-aos-duration="1500">
-                        <img src="images/MPCP_Logo.png" alt="" width="30%" style="margin-top: 20%;" id="intro-head">
+                        <img src="images/MPCP_Logo.png" alt="" width="50%" style="margin-top: 20%;" id="intro-head">
                         <br>
-                        <p style="font-size: 56px; color:#2d2d2d;font-weight: 700;margin: 0; ">
+                        <!-- <p style="font-size: 56px; color:#2d2d2d;font-weight: 700;margin: 0; ">
                             Harness the Power
                             <br> of Ayurveda, <br> MPCP Care.
-                        </p>
+                        </p> -->
                     </div>
                 </div>
             </div>
@@ -148,16 +163,17 @@
                 <div class="center" data-aos-easing="linear" data-aos="fade-up" data-aos-duration="1500">
                     <div class="col s12 m6">
                         <div class="container" id="sec2head">
-                            <h3 class="left-align">
+                            <h3 class="left-align" id="sec2headh3">
                                 MPCP Care </h3>
-                            <p>Building on an experience since 1999, MPCP Care Pvt. Ltd. is one of the most trusted
+                            <p id="sec2headp">Building on an experience since 1999, MPCP Care Pvt. Ltd. is one of the
+                                most trusted
                                 names in
                                 the cosmetic as well as food industry. We are engaged in manufacturing, distribution and
                                 sales of variety of hair care products and food grade coconut oil.
                             </p>
 
                             <div class="left">
-                                <a class="btn-large aboutUsButton" href="aboutus.html">Learn More</a>
+                                <a class="btn-large aboutUsButton" href="aboutus.html" id="sec2headB">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -173,7 +189,7 @@
         <section class="products" style="margin-top: 10%;
         margin-bottom: 10%">
             <div>
-                <h3>
+                <h3 id="mpcpPro">
                     MPCP Products
                 </h3>
                 <hr style="width: 100px; margin: 0px 50px 50px 50px; height: 5px ; background: #3C3E96;">
@@ -251,7 +267,7 @@
 
             </div>
             <div class="center">
-                <a class="btn-large aboutUsButton" href="esc/slider.html">Explore Products</a>
+                <a class="btn-large aboutUsButton" href="esc/slider.html" id="exploreProducts">Explore Products</a>
             </div>
         </section>
 
@@ -260,7 +276,7 @@
 
             <div class="parallax-container valign-wrapper" style="height: auto;">
                 <div class="container products" style="z-index: 1;margin-top:60px; margin-bottom: 100px;">
-                    <h2 class="white-text">
+                    <h2 class="white-text" id="partMPCP">
                         Be a part of MPCP <br>
 
                     </h2>
@@ -275,7 +291,7 @@
                                     <span id="numberr">k+</span>
                                 </div>
 
-                                <span>CUSTOMERS</span>
+                                <span id="customer">CUSTOMERS</span>
 
                             </div>
                         </div>
@@ -286,7 +302,7 @@
                                     <span class="num" id="numberr">3 </span>
                                     <span id="numberr">+</span>
                                 </div>
-                                <span>STATES</span>
+                                <span id="state">STATES</span>
 
                             </div>
                         </div>
@@ -297,7 +313,7 @@
                                     <span class="num" id="numberr">500 </span>
                                     <span id="numberr">+</span>
                                 </div>
-                                <span>EMPLOYEES</span>
+                                <span id="employees">EMPLOYEES</span>
 
                             </div>
                         </div>
@@ -308,7 +324,7 @@
                                     <span class="num" id="numberr">200 </span>
                                     <span id="numberr">+</span>
                                 </div>
-                                <span>DEALERS</span>
+                                <span id="dealers">DEALERS</span>
 
                             </div>
                         </div>
@@ -329,7 +345,7 @@
             <div class="connectus">
                 <div class="row">
                     <div class="col s12 m4 push-m4">
-                        <p>
+                        <p id="resources">
                             Resources for Agents,
                             <br>
                             Distributor, and Shopkeepers.
@@ -340,7 +356,7 @@
                 </div>
             </div>
             <div class="center" style="margin-bottom:10%">
-                <a class="btn-large workButton" href="contact.html">Work Together</a>
+                <a class="btn-large workButton" href="contact.html" id="resourcesbtn">Let's Work Together</a>
             </div>
         </section>
 
@@ -348,23 +364,24 @@
             <div class="footer">
                 <div class="info">
                     <img src="images/MPCP_Logo.png" alt="" class="logofooter">
-                    <p> <i class="fas fa-map-marker-alt"> </i> 3396, Vasant Vihar, Lawa, Wadi, Nagpur-440 023 (M.S.)</p>
+                    <p id="address"> <i class="fas fa-map-marker-alt"> </i> 3396, Vasant Vihar, Lawa, Wadi, Nagpur-440
+                        023 (M.S.)</p>
                     <p><i class="fas fa-phone-alt"></i> 071-042-4616</p>
                     <p><i class="fas fa-phone-alt"></i> 913-000-0225</p>
                     <p><i class="fas fa-envelope"></i> mpcp@ymail.com</p>
                 </div>
                 <div class="navigate">
-                    <p class="title"><b>NAVIGATE</b></p>
-                    <p> <a href="index.html">HOME</a> </p>
-                    <p><a href="esc/slider.html"> PRODUCTS</a></p>
-                    <p><a href="ingredients.html">INGREDIENTS</a></p>
-                    <p><a href="aboutus.html"> ABOUT US</a></p>
-                    <p> <a href="contact.html"> CONTACTS</a></p>
+                    <p class="title" id="navigate"><b>NAVIGATE</b></p>
+                    <p id="homefn"> <a href="index.html">HOME</a> </p>
+                    <p id="productsfn"><a href="esc/slider.html"> PRODUCTS</a></p>
+                    <p id="healthfn"><a href="ingredients.html">INGREDIENTS</a></p>
+                    <p id="aboutfn"><a href="aboutus.html"> ABOUT US</a></p>
+                    <p id="contactfn"> <a href="contact.html"> CONTACT US</a></p>
 
                 </div>
                 <div class="social" style="display: flex;
                  flex-direction: column; ">
-                    <p class="title"><B>CONNECT US</B></p>
+                    <p class="title" id="connect"><B>CONNECT US</B></p>
                     <br>
                     <div style="display: flex;
                      flex-direction: row; ">
@@ -382,9 +399,9 @@
                     </div>
                 </div>
                 <div class="company" style="margin-top: 0px;">
-                    <p class="title"><b>LEGAL</b></p>
-                    <p>PRIVACY POLICY</p>
-                    <p>TERMS OF USE</p>
+                    <p id="legal" class="title"><b>LEGAL</b></p>
+                    <p id="pp">PRIVACY POLICY</p>
+                    <p id="tou">TERMS OF USE</p>
 
 
                 </div>
@@ -401,16 +418,18 @@
     </div>
     <script>
         AOS.init();
+        document.getElementById("englishButton").style.display = "none"
         window.onscroll = () => {
             const nav = document.querySelector('nav');
             if (this.scrollY <= 10) nav.className = 'defines';
             else nav.className = 'scroll';
         };
-        $(window).load(function () {
-            // Animate loader off screen
-            $("#loader").fadeOut("slow");;
-        });
+        // $(window).load(function () {
+        //     // Animate loader off screen
+        //     $("#loader").fadeOut("slow");;
+        // });
         $(document).ready(function () {
+            $("#loader").hide();
             $('.slider').slider();
             $('.parallax').parallax();
             var tiltIntroHead = $('#intro-head').tilt({
@@ -420,6 +439,142 @@
             });
 
         });
+
+        function applyEnglish() {
+            document.getElementById("englishButton").style.display = "none"
+            document.getElementById("hindiButton").style.display = "block"
+
+
+            var sec2headp = document.getElementById("sec2headp")
+            sec2headp.innerHTML =
+                "Building on an experience since 1999, MPCP Care Pvt. Ltd. is one of the most trusted names in the cosmetic as well as food industry. We are engaged in manufacturing, distribution and sales of variety of hair care products and food grade coconut oil."
+
+            var sec2headh3 = document.getElementById("sec2headh3")
+            sec2headh3.innerHTML = "MPCP Care"
+
+            var sec2headB = document.getElementById("sec2headB")
+            sec2headB.innerHTML = "Learn More"
+
+            var exploreProducts = document.getElementById("exploreProducts")
+            exploreProducts.innerHTML = "Explore Products"
+
+            var mpcpPro = document.getElementById("mpcpPro")
+            mpcpPro.innerHTML = "MPCP Products"
+
+            var partMPCP = document.getElementById("partMPCP")
+            partMPCP.innerHTML = "Be a part of MPCP"
+
+            document.getElementById("customer").innerHTML = "Customers"
+
+            document.getElementById("employees").innerHTML = "Employees"
+
+            document.getElementById("dealers").innerHTML = "Dealers"
+
+            document.getElementById("state").innerHTML = "States"
+
+            document.getElementById("resources").innerHTML =
+                "Resources for Agents,<br/> Distributor, and Shopkeepers. <br/> Let’s Work. Together."
+
+            document.getElementById("resourcesbtn").innerHTML = "Let's Work Together"
+
+
+            // Navbar Conversions
+            document.getElementById("homen").innerHTML = "Home"
+            document.getElementById("productsn").innerHTML = "Products"
+            document.getElementById("healthn").innerHTML = "Health Tips"
+            document.getElementById("aboutn").innerHTML = "About"
+            document.getElementById("contactn").innerHTML = "Contact"
+
+            document.getElementById("homen1").innerHTML = "Home"
+            document.getElementById("productsn1").innerHTML = "Products"
+            document.getElementById("healthn1").innerHTML = "Health Tips"
+            document.getElementById("aboutn1").innerHTML = "About"
+            document.getElementById("contactn1").innerHTML = "Contact"
+
+
+            // Footer Conversions
+            document.getElementById("address").innerHTML = "3396, Vasant Vihar, Lawa, Wadi, Nagpur-440023 (M.S.)"
+
+            document.getElementById("navigate").innerHTML = "Navigate"
+            document.getElementById("homefn").innerHTML = "HOME"
+            document.getElementById("productsfn").innerHTML = "PRODUCTS"
+            document.getElementById("healthfn").innerHTML = "HEALTH TIPS"
+            document.getElementById("aboutfn").innerHTML = "ABOUT"
+            document.getElementById("contactfn").innerHTML = "CONTACT US"
+            document.getElementById("connect").innerHTML = "CONNECT US"
+            document.getElementById("legal").innerHTML = "LEGAL"
+            document.getElementById("pp").innerHTML = "PRIVACY POLICY"
+            document.getElementById("tou").innerHTML = "TERMS OF USE"
+
+
+
+        }
+
+        function applyHindi() {
+            document.getElementById("hindiButton").style.display = "none"
+            document.getElementById("englishButton").style.display = "block"
+
+            var sec2headp = document.getElementById("sec2headp")
+            sec2headp.innerHTML =
+                "1999 से अनुभव प्राप्त करना, एमपीसीपी केयर प्रा। लिमिटेड कॉस्मेटिक और खाद्य उद्योग में सबसे भरोसेमंद नामों में से एक है। हम बाल देखभाल उत्पादों और खाद्य ग्रेड नारियल तेल के निर्माण, वितरण और बिक्री में लगे हुए हैं।"
+
+            var sec2headh3 = document.getElementById("sec2headh3")
+            sec2headh3.innerHTML = "एमपीसीपी केयर"
+
+            var sec2headB = document.getElementById("sec2headB")
+            sec2headB.innerHTML = "और अधिक जानें"
+
+            var exploreProducts = document.getElementById("exploreProducts")
+            exploreProducts.innerHTML = "उत्पादों का अन्वेषण करें"
+
+            var mpcpPro = document.getElementById("mpcpPro")
+            mpcpPro.innerHTML = "एमपीसीपी उत्पाद"
+
+            var partMPCP = document.getElementById("partMPCP")
+            partMPCP.innerHTML = "एमपीसीपी का हिस्सा बनें"
+
+            document.getElementById("customer").innerHTML = "ग्राहक"
+
+            document.getElementById("employees").innerHTML = "कर्मचारी"
+
+            document.getElementById("dealers").innerHTML = "विक्रेता"
+
+            document.getElementById("state").innerHTML = "राज्य"
+
+            document.getElementById("resources").innerHTML =
+                "एजेंटों, वितरक और दुकानदारों <br/> के लिए संसाधन। <br/> चलो काम करते हैं। साथ में।"
+
+            document.getElementById("resourcesbtn").innerHTML = "चलो साथ मिलकर काम करें"
+
+
+            // Navbar Conversions
+            document.getElementById("homen").innerHTML = "मुख पृष्ठ"
+            document.getElementById("productsn").innerHTML = "उत्पाद"
+            document.getElementById("healthn").innerHTML = "स्वास्थ्य सुझाव"
+            document.getElementById("aboutn").innerHTML = "हमारे बारे में"
+            document.getElementById("contactn").innerHTML = "संपर्क करें"
+
+            document.getElementById("homen1").innerHTML = "मुख पृष्ठ"
+            document.getElementById("productsn1").innerHTML = "उत्पाद"
+            document.getElementById("healthn1").innerHTML = "स्वास्थ्य सुझाव"
+            document.getElementById("aboutn1").innerHTML = "हमारे बारे में"
+            document.getElementById("contactn1").innerHTML = "संपर्क करें"
+
+
+            // Footer Conversions
+            document.getElementById("address").innerHTML = "3396, वसंत विहार, लवा, वाडी, नागपुर-440 023 (M.S.)"
+
+            document.getElementById("navigate").innerHTML = "नेविगेट"
+            document.getElementById("homefn").innerHTML = "मुख पृष्ठ"
+            document.getElementById("productsfn").innerHTML = "उत्पाद"
+            document.getElementById("healthfn").innerHTML = "स्वास्थ्य सुझाव"
+            document.getElementById("aboutfn").innerHTML = "हमारे बारे में"
+            document.getElementById("contactfn").innerHTML = "संपर्क करें"
+            document.getElementById("connect").innerHTML = "जुडिये"
+            document.getElementById("legal").innerHTML = "कानूनी"
+            document.getElementById("pp").innerHTML = "गोपनीयता नीति"
+            document.getElementById("tou").innerHTML = "उपयोग की शर्तें"
+        }
     </script>
     <script>
         $('.num').counterUp({
@@ -428,29 +583,8 @@
         });
     </script>
 
-    <!-- <script type="text/javascript">
-        const counters = document.querySelectorAll('.num');
-        const speed = 200;
 
-        counters.forEach(counter =>{
-            const updateCount = () => {
-                const target = +counter.getAttribute('data-target');
-                const count = +counter.innerText;
 
-                var inc = (target / speed) ;
-                
-                if(count< target){
-                    counter.innerText = (count + inc);
-                    
-                    
-                    setTimeout(updateCount, 1);
-                } else {
-                    count.innerText = target;
-                }
-            }
-            updateCount();
-        })
-    </script> -->
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -459,6 +593,18 @@
     <script src="https://unpkg.com/tilt.js@1.1.21/dest/tilt.jquery.min.js"></script>
 
     <script src="js/universal.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 
 </html>

@@ -5,9 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="images/MPCP_Logo.png">
-    <link rel="stylesheet" href="css/materialize.css">
     <link rel="stylesheet" href="css/materialize.min.css">
-    <link rel="stylesheet" href="js/materialize.js">
     <script src="js/materialize.min.js"></script>
     <link rel="stylesheet" href="css/universal.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -35,7 +33,7 @@
         <div class="navbar-fixed">
             <nav class="defines">
                 <div class="nav-wrapper">
-                    <div class="container">
+                    <div>
                         <a class="black-text sidenav-trigger hide-on-large-only" href="#" data-target="nav-mobile">
                             <i class="material-icons button-collapse">dehaze</i>
                         </a>
@@ -46,11 +44,19 @@
                             </div>
                         </a>
                         <ul id="nav-links" class="right hide-on-med-and-down">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="esc/slider.html">Products</a></li>
-                            <li><a href="ingredients.html">HEALTH TIPS</a></li>
-                            <li><a href="aboutus.html">About Us</a></li>
-                            <li><a href="contact.html">Contacts</a></li>
+                            <li><a href="index.html" id="homen">Home</a></li>
+                            <li><a id="productsn" href="esc/slider.html">Products</a></li>
+                            <li><a href="ingredients.html" id="healthn">health tips</a></li>
+                            <li><a id="aboutn" href="aboutus.html">About Us</a></li>
+                            <li><a href="contact.html" id="contactn">Contacts</a></li>
+                            <li>
+                                <a class="waves-effect waves-light btn-large" id="hindiButton"
+                                    onclick="applyHindi()">Hindi</a>
+                            </li>
+                            <li>
+                                <a class="waves-effect waves-light btn-large" id="englishButton"
+                                    onclick="applyEnglish()">English</a>
+                            </li>
                         </ul>
                     </div>
 
@@ -59,21 +65,26 @@
         </div>
         <ul id="nav-mobile" class="sidenav">
             <li style="margin-top: 40px">
-                <img src="/images/logofinal.png" alt="" style="max-width: 70vw">
+                <img src="images/logofinal.png" alt="" style="max-width: 70vw">
             </li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="esc/slider.html">Products</a></li>
-            <li><a href="ingredients.html">HEALTH TIPS</a></li>
-            <li><a href="aboutus.html">About Us</a></li>
-            <li><a href="contact.html">Contacts</a></li>
+            <li><a id="homen1" href="index.html">Home</a></li>
+            <li><a id="productsn1" href="esc/slider.html">Products</a></li>
+            <li><a href="ingredients.html" id="healthn1">health tips</a></li>
+            <li><a href="aboutus.html" id="aboutn1">About Us</a></li>
+            <li><a href="contact.html" id="contactn1">Contacts</a></li>
+            <li>
+                <a class="waves-effect waves-light btn-large" id="hindiButton" onclick="applyHindi()">Hindi</a>
+            </li>
+            <li>
+                <a class="waves-effect waves-light btn-large" id="englishButton" onclick="applyEnglish()">English</a>
+            </li>
         </ul>
 
     </header>
-
     <div class="row" id="firstDiv">
         <div class="col s12 m6">
             <!-- <span id="abname">MPCP'S</span> Story</h1> -->
-            <p style="font-size: 56px; color:gray;font-weight: 700;margin-top: 40%; ">
+            <p style="font-size: 56px; color:gray;font-weight: 700;margin-top: 40%; " id="abhead">
                 Essence of Purity
                 <br> By MPCP Care.
             </p>
@@ -86,7 +97,7 @@
 
     <div class="row">
         <div class="container">
-            <p class="quote">
+            <p class="quote" id="teamQuote">
                 "Coming together is a beginning, staying together is progress, and working together is success." – Henry
                 Ford
             </p>
@@ -97,23 +108,23 @@
         <div class="container">
             <div class="col s12 m3 center">
                 <img src="images/oil1.png" alt="" width="100%">
-                <p class="center" style="font-size: 20px;font-family: 'fontLight';">
+                <p id="esOils" class="center" style="font-size: 20px;font-family: 'fontLight';">
                     Essential Oils </p>
             </div>
             <div class="col s12 m3 center">
                 <img src="images/oil2.png" alt="" width="100%">
-                <p class="center" style="font-size: 20px;font-family: 'fontLight';">
+                <p id="handing" class="center" style="font-size: 20px;font-family: 'fontLight';">
                     Handpicked Ingredients </p>
             </div>
             <div class="col s12 m3 center">
                 <img src="images/oil3.png" alt="" width="100%">
-                <p class="center" style="font-size: 20px;font-family: 'fontLight';">
+                <p id="chems" class="center" style="font-size: 20px;font-family: 'fontLight';">
                     No Nasty
                     Chemicals </p>
             </div>
             <div class="col s12 m3 center">
                 <img src="images/oil4.png" alt="" width="100%">
-                <p class="center" style="font-size: 20px;font-family: 'fontLight';">
+                <p id="natpur" class="center" style="font-size: 20px;font-family: 'fontLight';">
                     Nature & Purity </p>
             </div>
         </div>
@@ -125,16 +136,16 @@
             <img src="images/leaf.png" alt="" width="50%">
         </div> -->
         <div class="container" style="padding: 30px;">
-            <h3 class="center">
+            <h3 class="center" id="togpe">
                 Together with people
             </h3>
-            <div class="quote white-text" style="text-align: justify;">
+            <div id="togpep" class="quote white-text" style="text-align: justify;">
                 To maintain our growth in the fast evolving environment, we focus on strengthening 'Our Team'. We
                 believe that a company's growth is directly connected with the happiness and growth of it's team. We are
                 continuously working on improving the quality of our employee's experience which in turn inspires them
                 to deliver their best.
                 Our R&D department focuses on well-being of people and how we can help them by developing the products
-                the need.
+                they need.
             </div>
         </div>
     </div>
@@ -146,9 +157,9 @@
         <div class="center" data-aos-easing="linear" data-aos="fade-up" data-aos-duration="1500">
             <div class="col s12 m6">
                 <div class="container" id="sec2head">
-                    <h3 class="left-align">
+                    <h3 class="left-align" id="mgoals">
                         MPCP'S Goals </h3>
-                    <p>Our goal is to provide a full range of hair oils, cosmetic and hygiene products to people who are
+                    <p id="mgoalsp">Our goal is to provide a full range of hair oils, cosmetic and hygiene products to people who are
                         in a fix due to the skyrocketing prices and low availability of various products in market.
                         Our main aim as a brand is to provide everyone high quality products with a pricing affordable
                         by all.
@@ -200,23 +211,24 @@
         <div class="footer">
             <div class="info">
                 <img src="images/MPCP_Logo.png" alt="" class="logofooter">
-                <p> <i class="fas fa-map-marker-alt"> </i> 3396, Vasant Vihar, Lawa, Wadi, Nagpur-440 023 (M.S.)</p>
+                <p id="address"> <i class="fas fa-map-marker-alt"> </i> 3396, Vasant Vihar, Lawa, Wadi, Nagpur-440
+                    023 (M.S.)</p>
                 <p><i class="fas fa-phone-alt"></i> 071-042-4616</p>
                 <p><i class="fas fa-phone-alt"></i> 913-000-0225</p>
                 <p><i class="fas fa-envelope"></i> mpcp@ymail.com</p>
             </div>
             <div class="navigate">
-                <p class="title"><b>NAVIGATE</b></p>
-                <p> <a href="index.html">HOME</a> </p>
-                <p><a href="esc/slider.html"> PRODUCTS</a></p>
-                <p><a href="ingredients.html">HEALTH TIPS</a></p>
-                <p><a href="aboutus.html"> ABOUT US</a></p>
-                <p> <a href="contact.html"> CONTACTS</a></p>
+                <p class="title" id="navigate"><b>NAVIGATE</b></p>
+                <p id="homefn"> <a href="index.html">HOME</a> </p>
+                <p id="productsfn"><a href="esc/slider.html"> PRODUCTS</a></p>
+                <p id="healthfn"><a href="ingredients.html">INGREDIENTS</a></p>
+                <p id="aboutfn"><a href="aboutus.html"> ABOUT US</a></p>
+                <p id="contactfn"> <a href="contact.html"> CONTACT US</a></p>
 
             </div>
             <div class="social" style="display: flex;
              flex-direction: column; ">
-                <p class="title"><B>CONNECT US</B></p>
+                <p class="title" id="connect"><B>CONNECT US</B></p>
                 <br>
                 <div style="display: flex;
                  flex-direction: row; ">
@@ -234,9 +246,9 @@
                 </div>
             </div>
             <div class="company" style="margin-top: 0px;">
-                <p class="title"><b>LEGAL</b></p>
-                <p>PRIVACY POLICY</p>
-                <p>TERMS OF USE</p>
+                <p id="legal" class="title"><b>LEGAL</b></p>
+                <p id="pp">PRIVACY POLICY</p>
+                <p id="tou">TERMS OF USE</p>
 
 
             </div>
@@ -252,9 +264,11 @@
 
     <script>
         AOS.init();
+        // document.getElementById("englishButton").style.display = "none"
 
         (function ($) {
             $(window).on('load', function () {
+                document.getElementById("englishButton").style.display = "none"
                 $("#loader").fadeOut("slow");
 
                 $.instagramFeed({
@@ -282,12 +296,102 @@
             else nav.className = 'scroll';
         };
 
-        // $(window).on('load', function () {
-        // Animate loader off screen
-        // $("#loader").fadeOut("slow");
-        // document.querySelector('#loader').classList.append('hide')
 
-        // });
+        function applyHindi() {
+            document.getElementById("hindiButton").style.display = "none"
+            document.getElementById("englishButton").style.display = "block"
+
+            // Navbar Conversions
+            document.getElementById("homen").innerHTML = "मुख पृष्ठ"
+            document.getElementById("productsn").innerHTML = "उत्पाद"
+            document.getElementById("healthn").innerHTML = "स्वास्थ्य सुझाव"
+            document.getElementById("aboutn").innerHTML = "हमारे बारे में"
+            document.getElementById("contactn").innerHTML = "संपर्क करें"
+
+            document.getElementById("homen1").innerHTML = "मुख पृष्ठ"
+            document.getElementById("productsn1").innerHTML = "उत्पाद"
+            document.getElementById("healthn1").innerHTML = "स्वास्थ्य सुझाव"
+            document.getElementById("aboutn1").innerHTML = "हमारे बारे में"
+            document.getElementById("contactn1").innerHTML = "संपर्क करें"
+
+
+            // Footer Conversions
+            document.getElementById("address").innerHTML = "3396, वसंत विहार, लवा, वाडी, नागपुर-440 023 (M.S.)"
+
+            document.getElementById("navigate").innerHTML = "नेविगेट"
+            document.getElementById("homefn").innerHTML = "मुख पृष्ठ"
+            document.getElementById("productsfn").innerHTML = "उत्पाद"
+            document.getElementById("healthfn").innerHTML = "स्वास्थ्य सुझाव"
+            document.getElementById("aboutfn").innerHTML = "हमारे बारे में"
+            document.getElementById("contactfn").innerHTML = "संपर्क करें"
+            document.getElementById("connect").innerHTML = "जुडिये"
+            document.getElementById("legal").innerHTML = "कानूनी"
+            document.getElementById("pp").innerHTML = "गोपनीयता नीति"
+            document.getElementById("tou").innerHTML = "उपयोग की शर्तें"
+
+            document.getElementById("teamQuote").innerHTML =
+                "'एक साथ आना एक शुरुआत है, साथ रहना प्रगति है, और एक साथ काम करना सफलता है।' - हेनरी फोर्ड"
+            document.getElementById("esOils").innerHTML = "आवश्यक तेल"
+            document.getElementById("handing").innerHTML = "हस्तनिर्मित सामग्री"
+            document.getElementById("chems").innerHTML = "कोई गंदा रसायन नहीं"
+            document.getElementById("natpur").innerHTML = "प्रकृति और पवित्रता"
+            document.getElementById("togpe").innerHTML = "लोगों के साथ मिलकर"
+            document.getElementById("togpep").innerHTML = "तेजी से विकसित हो रहे वातावरण में अपनी वृद्धि बनाए रखने के लिए, हम 'हमारी टीम' को मजबूत करने पर ध्यान केंद्रित करते हैं। हमारा मानना है कि किसी कंपनी का विकास सीधे टीम की खुशी और वृद्धि के साथ जुड़ा हुआ है। हम अपने कर्मचारी के अनुभव की गुणवत्ता में सुधार पर लगातार काम कर रहे हैं जो बदले में उन्हें अपना सर्वश्रेष्ठ देने के लिए प्रेरित करता है। हमारा अनुसंधान एवं विकास विभाग लोगों की भलाई पर ध्यान केंद्रित करता है और हम उनकी ज़रूरत के उत्पादों को विकसित करके उनकी मदद कैसे कर सकते हैं।"
+            document.getElementById("mgoals").innerHTML = "MPCP'S लक्ष्य"
+            document.getElementById("mgoalsp").innerHTML = "हमारा लक्ष्य उन लोगों को हेयर ऑयल, कॉस्मेटिक और स्वच्छता उत्पादों की पूरी श्रृंखला प्रदान करना है, जो आसमान छूती कीमतों और बाजार में विभिन्न उत्पादों की कम उपलब्धता के कारण ठीक हैं। एक ब्रांड के रूप में हमारा मुख्य उद्देश्य सभी को सस्ती कीमत के साथ उच्च गुणवत्ता वाले उत्पाद उपलब्ध कराना है।"
+            document.getElementById("social").innerHTML = "हमारी सोशल मीडिया उपस्थिति"
+            document.getElementById("abhead").innerHTML = "पवित्रता का सार <br/> एमपीसीपी केयर द्वारा।"
+        }
+
+
+        function applyEnglish() {
+            document.getElementById("englishButton").style.display = "none"
+            document.getElementById("hindiButton").style.display = "block"
+            document.getElementById("abhead").innerHTML = "Essence of Purity <br> By MPCP Care."
+            document.getElementById("mgoalsp").innerHTML = "Our goal is to provide a full range of hair oils, cosmetic and hygiene products to people who are in a fix due to the skyrocketing prices and low availability of various products in market. Our main aim as a brand is to provide everyone high quality products with a pricing affordable by all."
+            document.getElementById("social").innerHTML = "Our Social Media Presence"
+            document.getElementById("togpe").innerHTML = "Together with people"
+            document.getElementById("togpep").innerHTML = "To maintain our growth in the fast evolving environment, we focus on strengthening 'Our Team'. We believe that a company's growth is directly connected with the happiness and growth of it's team. We are continuously working on improving the quality of our employee's experience which in turn inspires them to deliver their best. Our R&D department focuses on well-being of people and how we can help them by developing the products they need."
+
+            document.getElementById("teamQuote").innerHTML =
+                '"Coming together is a beginning, staying together is progress, and working together is success." – Henry Ford'
+
+            document.getElementById("esOils").innerHTML = "Essential Oils"
+            document.getElementById("handing").innerHTML = "Handpicked Ingredients"
+            document.getElementById("chems").innerHTML = "No Nasty Chemicals"
+            document.getElementById("natpur").innerHTML = "Nature & Purity"
+            document.getElementById("mgoals").innerHTML = "MPCP'S Goals"
+
+            // Navbar Conversions
+            document.getElementById("homen").innerHTML = "Home"
+            document.getElementById("productsn").innerHTML = "Products"
+            document.getElementById("healthn").innerHTML = "Health Tips"
+            document.getElementById("aboutn").innerHTML = "About"
+            document.getElementById("contactn").innerHTML = "Contact"
+
+            document.getElementById("homen1").innerHTML = "Home"
+            document.getElementById("productsn1").innerHTML = "Products"
+            document.getElementById("healthn1").innerHTML = "Health Tips"
+            document.getElementById("aboutn1").innerHTML = "About"
+            document.getElementById("contactn1").innerHTML = "Contact"
+
+
+            // Footer Conversions
+            document.getElementById("address").innerHTML = "3396, Vasant Vihar, Lawa, Wadi, Nagpur-440023 (M.S.)"
+
+            document.getElementById("navigate").innerHTML = "Navigate"
+            document.getElementById("homefn").innerHTML = "HOME"
+            document.getElementById("productsfn").innerHTML = "PRODUCTS"
+            document.getElementById("healthfn").innerHTML = "HEALTH TIPS"
+            document.getElementById("aboutfn").innerHTML = "ABOUT"
+            document.getElementById("contactfn").innerHTML = "CONTACT US"
+            document.getElementById("connect").innerHTML = "CONNECT US"
+            document.getElementById("legal").innerHTML = "LEGAL"
+            document.getElementById("pp").innerHTML = "PRIVACY POLICY"
+            document.getElementById("tou").innerHTML = "TERMS OF USE"
+
+
+        }
     </script>
 
 
