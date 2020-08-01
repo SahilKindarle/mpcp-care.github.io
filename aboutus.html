@@ -35,7 +35,7 @@
         <div class="navbar-fixed">
             <nav class="defines">
                 <div class="nav-wrapper">
-                    <div class="container">
+                    <div>
                         <a class="black-text sidenav-trigger hide-on-large-only" href="#" data-target="nav-mobile">
                             <i class="material-icons button-collapse">dehaze</i>
                         </a>
@@ -51,6 +51,14 @@
                             <li><a href="ingredients.html">HEALTH TIPS</a></li>
                             <li><a href="aboutus.html">About Us</a></li>
                             <li><a href="contact.html">Contacts</a></li>
+                            <li>
+                                <a class="waves-effect waves-light btn-large" id="hindiButton"
+                                    onclick="applyHindi()">Hindi</a>
+                            </li>
+                            <li>
+                                <a class="waves-effect waves-light btn-large" id="englishButton"
+                                    onclick="applyEnglish()">English</a>
+                            </li>
                         </ul>
                     </div>
 
@@ -252,9 +260,11 @@
 
     <script>
         AOS.init();
+        // document.getElementById("englishButton").style.display = "none"
 
         (function ($) {
             $(window).on('load', function () {
+                document.getElementById("englishButton").style.display = "none"
                 $("#loader").fadeOut("slow");
 
                 $.instagramFeed({
