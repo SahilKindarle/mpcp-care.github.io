@@ -433,6 +433,7 @@ flex-container,
 .ingredSpan {
   color: rgb(41, 39, 39);
   font-size: medium;
+  text-align: center;
 }
 
 .connectus p {
