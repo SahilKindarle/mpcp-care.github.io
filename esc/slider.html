@@ -20,6 +20,16 @@
   		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 </head>
+<style>
+	#lol{
+		background-image: url('../images/22.png');
+	}
+	.productdisplay{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+</style>
 
 <body>
 
@@ -33,7 +43,7 @@
 			<div class="codrops-links">
 				<a class="codrops-icon codrops-icon--prev" href="../index.html" title="Previous Demo"><span>Previous
 						Demo</span></a>
-				<a class="codrops-icon codrops-icon--drop" href="../index.html" title="Back to the article"><span>Back
+				<a class="codrops-icon  " id="lol" style="background-image: url('../images/1.png');" href="../index.html" title="Back to the article"><span>Back
 						to the Codrops article</span></a>
 			</div>
 			<h1>PRODUCTS</h1>
@@ -41,7 +51,7 @@
 		<div class="deco deco--title"></div>
 		<div id="slideshow" class="slideshow">
 			<div class="slide">
-				<h2 class="slide__title slide__title--preview"> <span class="slide__price">Jasmine hair Oil</span></h2>
+				<h2 class="slide__title slide__title--preview"> <span class="slide__price"> Silk Jasmine hair Oil</span></h2>
 				<div class="slide__item">
 					<div class="slide__inner">
 						<img class="slide__img slide__img--small" src="../images/jasmine.png" alt="Some image" />
@@ -53,11 +63,27 @@
 					<div class="slide__content-scroller">
 						<img class="slide__img slide__img--large" src="../images/jasmine.png" alt="Some image" />
 						<div class="slide__details">
-							<h2 class="slide__title slide__title--main">Jasmine hair Oil</h2>
+							<h2 class="slide__title slide__title--main">Silk Jasmine hair Oil</h2>
 							<p class="slide__description">The wonderful fragrance of Jasmine oil helps <br> us relax by
 								soothing and calming down the nerves.</p>
-							<div>
-								<span class="slide__price slide__price--large"></span>
+
+								<div class=" slide__details productdisplay">
+									<div class="col s12 m4">
+										<img src="../images/1.png" alt="" width="400">
+									</div>
+									<div class="col s12 m4">
+										<img src="../images/1.png" alt="" width="400">
+									</div>
+									<div class="col s12 m4">
+										<img src="../images/1.png" alt="" width="400">
+									</div>
+									<div class="col s12 m4">
+										<img src="../images/1.png" alt="" width="400">
+									</div>
+								</div>
+
+								<div>
+									<span class="slide__price slide__price--large"></span>
 								<button class="button button--buy" style="background-color: white;"></button>
 							</div>
 						</div><!-- /slide__details -->
