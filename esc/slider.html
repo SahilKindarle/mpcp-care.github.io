@@ -40,7 +40,7 @@
 		</header>
 		<div class="deco deco--title"></div>
 		<div id="slideshow" class="slideshow">
-			<div class="slide">
+			<div class="slide" id="onel">
 				<h2 class="slide__title slide__title--preview"> <span class="slide__price">Jasmine hair Oil</span></h2>
 				<div class="slide__item">
 					<div class="slide__inner">
@@ -51,20 +51,47 @@
 				</div>
 				<div class="slide__content">
 					<div class="slide__content-scroller">
-						<img class="slide__img slide__img--large" src="../images/jasmine.png" alt="Some image" />
+						<img class="slide__img slide__img--large" src="../images/jasmine.png" alt="Jasmine Oil" />
 						<div class="slide__details">
 							<h2 class="slide__title slide__title--main">Jasmine hair Oil</h2>
-							<p class="slide__description">The wonderful fragrance of Jasmine oil helps <br> us relax by
-								soothing and calming down the nerves.</p>
+							<p class="slide__description">
+								<!-- <div class="grid-container">
+									<div class="item1">
+										<div>
+											<img src="../images/jasmine.png" alt="" width="10%">
+											50ml
+										</div>
+									</div>
+									<div class="item2">
+										<div>
+											<img src="../images/jasmine.png" alt="" width="10%">
+											50ml
+										</div>
+									</div>
+									<div class="item3">
+										<div>
+											<img src="../images/jasmine.png" alt="" width="10%">
+											50ml
+										</div>
+									</div>
+								</div> -->
+							</p>
+
 							<div>
-								<span class="slide__price slide__price--large"></span>
+								<span class="slide__price slide__price--large">
+									<div class="grid-container">
+										<img src="../images/jaasmine.png" alt="" ><img
+											src="../images/jaasmine.png" alt="" ><img
+											src="../images/jaasmine.png" alt="" >
+									</div>
+								</span>
 								<button class="button button--buy" style="background-color: white;"></button>
 							</div>
 						</div><!-- /slide__details -->
 					</div><!-- slide__content-scroller -->
 				</div><!-- slide__content -->
 			</div>
-			<div class="slide">
+			<div class="slide" id="twol">
 				<h2 class="slide__title slide__title--preview"> <span class="slide__price">Amla Hair Oil</span></h2>
 				<div class="slide__item">
 					<div class="slide__inner">
@@ -166,20 +193,7 @@
 			<button class="action action--close" aria-label="Close"><i class="fa fa-close"></i></button>
 		</div>
 		<!-- Related demos -->
-		<!-- <section class="content content--related">
-				<p>Inspired by <a href="https://dribbble.com/shots/2197260-Mobile-Commerce-Interface">Mobile Commerce Interface</a> by <a href="https://dribbble.com/bmechairia">Bilal Mechairia</a></p>
-				<p>Bottle mockups by <a href="http://forgraphictm.com/">forgraphic</a></p>
-				<br />
-				<p>If you enjoyed this demo you might also like:</p>
-				<a class="media-item" href="http://tympanus.net/Development/RoomDisplay/">
-					<img class="media-item__img" src="img/related/RoomDisplay.jpg">
-					<h3 class="media-item__title">Room Display</h3>
-				</a>
-				<a class="media-item" href="http://tympanus.net/Development/DraggableDualViewSlideshow/">
-					<img class="media-item__img" src="img/related/DualView.jpg">
-					<h3 class="media-item__title">Dual View Slideshow</h3>
-				</a>
-			</section> -->
+
 
 	</div><!-- /container -->
 
@@ -190,7 +204,7 @@
 	<script src="../js/app.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script>
-		$(window).on('load',function () {
+		$(window).on('load', function () {
 			// Animate loader off screen
 			$("#loader").fadeOut("slow");;
 		});
