@@ -2,7 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
 #firstDiv {
-  background: url("../images/rose-bg.jpg");
+  /* background: url("../images/rose-bg.jpg"); */
+  background: url("../images/all_with_sachets_with_bg.jpeg");
   background-size: cover;
   height: 100vh;
   position: relative;
