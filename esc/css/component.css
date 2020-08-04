@@ -146,11 +146,16 @@
 }
 
 .slide__img--small {
-	max-height: 80%;
+	/* max-height: 80%; */
 }
 
+.grid-container img{
+	height: 30vh;
+	margin-right: 30%;
+	width: auto;
+}
 .slide__img--large {
-	height: 50vh;
+	height: 40vh;
 	max-height: 400px;
 	margin: 0 auto 3em;
 }
