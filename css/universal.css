@@ -232,7 +232,8 @@ color: white !important;
 .contactHeader {
   background-image: url("../images/conback.jpg");
   background-repeat: no-repeat;
-  height: 100vh;
+  /* height: 100vh; */
+  width: 100%;
   background-size: cover;
 }
 
@@ -395,7 +396,7 @@ flex-container,
 .c-logo {
   width: 200px;
   height: 200px;
-  /* margin-left: 25%; */
+  /* margin-left: 20%; */
   background-color: transparent;
   /* box-shadow: 0 20px 27px rgba(0, 0, 0, 0.05); */
   color: white;

@@ -1,5 +1,9 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
 #firstDiv {
-  background: url("../images/rose-bg.jpg");
+  /* background: url("../images/rose-bg.jpg"); */
+  background: url("../images/all_with_sachets_with_bg.jpeg");
   background-size: cover;
   height: 100vh;
   position: relative;
@@ -45,15 +49,29 @@
 }
 
 #abtusDiv {
-  background: url("../images/leaf.png");
-background-position: right;
+  background: url("../images/cocoleaf.jpg");
+
+  background-position: right;
   background-size: cover;
   background-color: #dca59b;
 }
 
-
 @media only screen and (max-width: 600px) {
-  .quote{
+  .quote {
     font-size: 20px;
   }
+}
+
+#togpe {
+  font-size: 60px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+margin-bottom: 5%;
+  color: white;
+  font-weight: 400;
+}
+
+
+#esOils, #handing, #chems, #natpur{
+  font-family: "Montserrat", sans-serif;
+
 }
