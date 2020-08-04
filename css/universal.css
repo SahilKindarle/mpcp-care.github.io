@@ -232,7 +232,8 @@ color: white !important;
 .contactHeader {
   background-image: url("../images/conback.jpg");
   background-repeat: no-repeat;
-  height: 100vh;
+  /* height: 100vh; */
+  width: 100%;
   background-size: cover;
 }
 
