@@ -134,7 +134,8 @@ a:focus {
 }
 
 .codrops-icon--drop:before {
-  content: "\e001";
+  /* content: "\e001"; */
+  content: url(../img/MPCP_Logo.png);
 }
 
 .codrops-icon--prev:before {
