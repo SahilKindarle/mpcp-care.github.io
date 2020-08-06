@@ -369,21 +369,23 @@
 
     <div id="olive" class="modal">
         <div class="modal-content">
-            <h4>OLIVE OIL BENEFITS</h4>
+            <h4 id="olih">OLIVE OIL BENEFITS</h4>
             <div id="content">
                 <h5 class="healbef">HEALTHY BENEFITS :-</h5>
                 <p>
-                    <li>Pre-shampoo Hair Treatment.
-                    </li>
-                    <li>Combine coarse sugar with a teaspoon of olive oil for a chapped-lip fix.
-                    </li>
-                    <li>Shine Serum.
-                    </li>
-                    <li>Antibacterial Balm.
-                    </li>
+                    <ol id="olip" style="list-style-type: circle;">
+                        <li>Pre-shampoo Hair Treatment.
+                        </li>
+                        <li>Combine coarse sugar with a teaspoon of olive oil for a chapped-lip fix.
+                        </li>
+                        <li>Shine Serum.
+                        </li>
+                        <li>Antibacterial Balm.
+                        </li>
+                    </ol>
                 </p>
                 <h5 class="tips">TIPS-</h5>
-                <p>
+                <p id="olip1">
                     1. Warm the olive oil in the microwave or in hot water. <br>
                     2. Then apply it generously to the ends of hair and scalp. <br>
                     3. Leave it for 10 to 20 minutes, and then shampoo it out. <br>
@@ -2144,7 +2146,13 @@
                 '<li> हेयर कंडीशनर। </li> <li> फेस क्लींजर। </li> <li> मुँहासे और Blemishes से छुटकारा पाना। </li> <li> सनबर्न का इलाज करना। </li>'
             document.getElementById("honp1").innerHTML =
                 'अपने बालों को शैम्पू करने के बाद, गुनगुने पानी से रिंस करने से पहले, जड़ से लेकर सिरे तक शहद लगाएं और तीन-चार मिनट तक लगा रहने दें। आप तुरंत परिणाम देखेंगे। आप इसे थोड़ा <b> <u> रेशम नारियल तेल </u> </b> के साथ भी मिला सकते हैं और तम फ्रिज़ी बालों को शैम्पू करने से पहले अपने बालों पर लगा सकते हैं।'
+            
 
+            // OliveOil
+            document.getElementById("olih").innerHTML = 'जैतून के तेल के लाभ'
+            document.getElementById("olip").innerHTML =
+                '<li> बालों का उपचार करने से पहले शैम्पू करें। </li> <li> एक फटे-होंठ को ठीक करने के लिए जैतून के तेल के एक चम्मच के साथ मोटे चीनी को मिलाएं। </li> <li> शाइन सीरम। </li> <li> जीवाणुरोधी बाम। </li>'
+                document.getElementById('olip1').innerHTML = '1. माइक्रोवेव या गर्म पानी में जैतून का तेल गर्म करें। <br> 2. फिर इसे उदारतापूर्वक बालों और खोपड़ी के सिरों पर लागू करें। <br> 3. इसे 10 से 20 मिनट के लिए छोड़ दें, और फिर इसे शैम्पू कर लें। <br> 4. इससे बालों को चमक और स्मूथनेस मिलेगी। <br>'
 
             //  All titles
 
@@ -2247,6 +2255,15 @@
                 '<li>Hair Conditioner.</li><li>Face Cleanser.</li><li>Getting Rid of Acne And Blemishes.</li><li>Treating Sunburn.</li>'
             document.getElementById("honp1").innerHTML =
                 'After you shampoo your hair, apply honey from the root to tip and let it sit for three-four minutes,before rinsing with lukewarm water. You will immediately see the results. You can also mix it with a little <b> <u> Silk coconut oil </u></b> and apply on your hair before shampooing tame frizzy hair.'
+
+
+            // OliveOil
+            document.getElementById("olih").innerHTML = 'OLIVE OIL BENEFITS'
+            document.getElementById("olip").innerHTML =
+                '<li>Pre-shampoo Hair Treatment. </li><li>Combine coarse sugar with a teaspoon of olive oil for a chapped-lip fix.</li><li>Shine Serum. </li><li>Antibacterial Balm.</li>'
+                document.getElementById('olip1').innerHTML = '1. Warm the olive oil in the microwave or in hot water. <br>2. Then apply it generously to the ends of hair and scalp. <br>3. Leave it for 10 to 20 minutes, and then shampoo it out. <br>4. This will give shine and smoothening to hair.<br>'
+
+
 
 
             document.getElementById("englishButton").style.display = "none"
