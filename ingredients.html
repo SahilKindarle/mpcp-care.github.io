@@ -546,21 +546,19 @@
 
     <div id="turmeric" class="modal">
         <div class="modal-content">
-            <h4 style="text-align: center;">TURMERIC BENEFITS</h4>
+            <h4 style="text-align: center;" id="turh">TURMERIC BENEFITS</h4>
             <div id="content">
                 <h5 class="healbef">HEALTHY BENEFITS :-</h5>
                 <p>
-                    <li>Evens and brightens your skin tone.
-                    </li>
-                    <li>Stimulate hair growth and thicken hair.
-                    </li>
-                    <li>Treats and relieves arthritis symptoms and joint pain.
-                    </li>
-                    <li>Fights free radicals and boosts anti-oxidants.
-                    </li>
+                    <ol style="list-style-type: circle;" id="turol">
+                        <li>Evens and brightens your skin tone.</li>
+                        <li>Stimulate hair growth and thicken hair.</li>
+                        <li>Treats and relieves arthritis symptoms and joint pain.</li>
+                        <li>Fights free radicals and boosts anti-oxidants.</li>
+                    </ol>
                 </p>
                 <h5 class="tips">TIPS-</h5>
-                <p>
+                <p id="turp">
                     Add a few drops of turmeric essential oil to a cream or oil-based moisturiser such as <b> <u> Silk
                             Coconut oil </u></b> and use it as you would your regular moisturiser.
                 </p>
@@ -2187,6 +2185,15 @@
                 'स्वस्थ बालों के विकास के लिए संतरे भी आवश्यक हैं। यह विटामिन बी 12 और विटामिन ई से समृद्ध है जो लंबे, घने और सुंदर बालों के लिए बहुत महत्वपूर्ण है। सर्वोत्तम परिणाम प्राप्त करने के लिए, आप बस हमारे बालों के तेल के साथ अपने बालों को पहले तेल लगा सकते हैं। उसके बाद, अपने बालों पर संतरे और शहद का एक ताजा पेस्ट लागू करें और इसे आधे घंटे तक रहने दें। पानी से कुल्ला और एक हल्के शैम्पू के साथ धोएं। यह आपको बालों के पतले होने और बालों के गंजापन से लड़ने में मदद करेगा।'
 
 
+            // Turmeric
+            document.getElementById('turh').innerHTML = 'हल्दी के लाभ'
+            document.getElementById('turol').innerHTML =
+                '<li> आपकी त्वचा की टोन को स्पष्ट और उज्ज्वल करता है। </li> <li> बालों के विकास को बढ़ाता है और बालों को घना करता है। </li> <li> गठिया के लक्षणों और जोड़ों के दर्द का इलाज करता है। </li> <li> लड़ते हुए मूल कणों से लड़ता है। और एंटी-ऑक्सीडेंट को बढ़ाता है। </li>'
+            document.getElementById('turp').innerHTML =
+                'एक क्रीम या तेल आधारित मॉइस्चराइज़र जैसे हल्दी आवश्यक तेल की कुछ बूँदें जोड़ें जैसे <b> <u> रेशम नारियल तेल </u> </b> और इसे अपने नियमित मॉइस्चराइज़र के रूप में उपयोग करें।'
+
+
+
             //  All titles
 
 
@@ -2307,6 +2314,16 @@
             document.getElementById('sanp1').innerHTML =
                 '1. It possesses a unique, gentle, warm, velvety and milky prized wood-scent which renders a long-lasting base to several perfumes.<br> 2. Chandana or Indra’s Sandalwood tree named after Lord Indra as it spreads the fragrance to the whole of paradise <br>3. Sandalwood oil soap owns natural antimicrobial and hydrating properties and works as a cleanser for all types of skin<br>4. Sandalwood powder is blended with water into a fine paste which exerts a cooling effect when applied topically and eases Pitta heat and heals several other conditions like sunburn, acne, rashes, fever, herpes, sores and ulcers.<br>'
 
+
+            // Turmeric
+            document.getElementById('turh').innerHTML = 'TURMERIC BENEFITS'
+            document.getElementById('turol').innerHTML =
+                '<li>Evens and brightens your skin tone.</li><li>Stimulate hair growth and thicken hair.</li> <li>Treats and relieves arthritis symptoms and joint pain.</li><li>Fights free radicals and boosts anti-oxidants.</li>'
+            document.getElementById('turp').innerHTML =
+                'Add a few drops of turmeric essential oil to a cream or oil-based moisturiser such as <b> <u> Silk Coconut oil </u></b> and use it as you would your regular moisturiser.'
+
+
+
             document.getElementById("englishButton").style.display = "none"
             document.getElementById("hindiButton").style.display = "block"
 
@@ -2332,6 +2349,7 @@
                 '<li>Natural oils in Oranges help to moisturise skin, providing softer healthier looking skin for longer.</li><li>Vitamin C helps the body to form collagen and elastin which will keep your skin looking younger and more supple.</li><li>Oranges could also prevent skin sagging, and may improve firmness.</li>'
             document.getElementById('orgp').innerHTML =
                 'Oranges are also essential for healthy hair growth. It is rich in Vitamin B12 and Vitamin E which is very important for long, thick and beautiful hair. In order to get the best results, you may simply oil your hair first with Our hair oils. After that, apply a fresh paste of oranges and honey all over your hair and let it stay for half n hour. Rinse with water and wash with a mild shampoo. This will help you fight hair thinning and hair balding.'
+
 
             //  All titles
             // Navbar Conversions
