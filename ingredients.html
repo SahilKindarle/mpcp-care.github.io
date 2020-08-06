@@ -166,22 +166,25 @@
 
     <div id="vanilla" class="modal">
         <div class="modal-content">
-            <h4>VANILLA BENEFITS</h4>
+            <h4 id="vanh">VANILLA BENEFITS</h4>
 
             <div id="content">
                 <h5 class="healbef">HEALTHY BENEFITS :-</h5>
                 <p>
-                    <li>Promotes relaxation.
-                    </li>
-                    <li>Improves sleep quality.
-                    </li>
-                    <li>Defends against disease.
-                    </li>
-                    <li>Boosts skin and hair health.
-                    </li>
+                    <ol id="vanp" style="list-style-type:circle">
+                        <li>Promotes relaxation.
+                        </li>
+                        <li>Improves sleep quality.
+                        </li>
+                        <li>Defends against disease.
+                        </li>
+                        <li>Boosts skin and hair health.
+                        </li>
+                    </ol>
+
                 </p>
                 <h5 class="tips">TIPS-</h5>
-                <p>
+                <p id="vanp1">
                     To use vanilla oil as a DIY perfume, add 10–20 drops to a spray
                     bottle and mix it with equal parts carrier oil (like <b> <u> Silk Coconut oil</u></b> or almond oil)
                     and water. You can spray this vanilla oil mixture on your sheets, furniture,
@@ -2092,6 +2095,19 @@
                 "<b><u>Silk Advance Amla oil</u><b> भी गहरी कंडीशनिंग के लिए रात भर खोपड़ी पर छोड़ा जा सकता है। यदि इस तरह से उपयोग किया जाता है, तो शावर कैप पहनें और धुंधला होने से बचाने के लिए अपने तकिए को तौलिए से ढकें। आंवले के तेल में एक मजबूत, मांसल गंध हो सकती है, इसलिए यदि आप इसे रात भर के लिए इस्तेमाल कर सकते हैं।"
 
 
+            // Vanilla
+            document.getElementById("vanh").innerHTML = "वानीला के लाभ"
+
+            document.getElementById('vanp').innerHTML = '<ol id="vanp" style="list-style-type:circle"><li>प्रतिरक्षा को बढ़ावा और संक्रमण से लड़ने। त्वचा और बालों के स्वास्थ्य को बढ़ावा देना।</li><li> आरामदायक नींद को बढ़ावा देता है। </li><li>दर्द और दर्द को कम करता है।</li></ol>'
+                
+            document.getElementById("vanp1").innerHTML = 'यहाँ रेशम जैस्मीन तेल का उपयोग करने के तरीके दिए गए हैं| एक विसारक में बोतल से सीधे श्वास लें सुगंधित भाप बनाने के लिए गर्म पानी की एक कटोरी में जोड़ें एक वाहक तेल (रेशम नारियल तेल) में पतला और एक गर्म स्नान में जोड़ें एक वाहक तेल के साथ मिलाएं, जैसे कि रेशम नारियल तेल, बादाम का तेल, और ऊपर से लागू करें या मालिश तेल के रूप में उपयोग करें।'
+
+
+
+
+            //  All titles
+
+
             // Navbar Conversions
             document.getElementById("homen").innerHTML = "मुख पृष्ठ"
             document.getElementById("productsn").innerHTML = "उत्पाद"
@@ -2143,13 +2159,24 @@
                 '<b><u> Silk Advance Amla oil</u></b> is often used in place of a conditioner after shampooing. It is gently massaged into the scalp so that it lightly coats the hair. People with an oily scalp should apply it to the hair shafts only. After 15 minutes or so, thoroughly rinse the hair with warm water. If amla oil gets into the eyes, rinse thoroughly with cool water.'
 
             document.getElementById("amlap2").innerHTML =
-               ' <b><u> Silk Advance Amla oil</u></b> can also be left on the scalp overnight for deep conditioning. If used in this way, wear a shower cap and cover your pillows with towels to prevent staining. Amla oil can have a strong, musky odor, so you may want to use it sparingly if applied overnight.'
+                ' <b><u> Silk Advance Amla oil</u></b> can also be left on the scalp overnight for deep conditioning. If used in this way, wear a shower cap and cover your pillows with towels to prevent staining. Amla oil can have a strong, musky odor, so you may want to use it sparingly if applied overnight.'
+
+
+
+            // Vanilla
+            document.getElementById("vanh").innerHTML = "VANILLA BENEFITS"
+
+            document.getElementById('vanp').innerHTML = '<ol id="vanp" style="list-style-type:circle"><li>Promotes relaxation.</li><li>Improves sleep quality.</li><li>Defends against disease.</li><li>Boosts skin and hair health.</li></ol>'
+                
+            document.getElementById("vanp1").innerHTML = ' To use vanilla oil as a DIY perfume, add 10–20 drops to a spray bottle and mix it with equal parts carrier oil (like <b> <u> Silk Coconut oil</u></b> or almond oil) and water. You can spray this vanilla oil mixture on your sheets, furniture, body and hair.'
+
 
 
 
             document.getElementById("englishButton").style.display = "none"
             document.getElementById("hindiButton").style.display = "block"
 
+            //  All titles
             // Navbar Conversions
             document.getElementById("homen").innerHTML = "Home"
             document.getElementById("productsn").innerHTML = "Products"
