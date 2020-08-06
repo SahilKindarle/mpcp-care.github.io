@@ -115,7 +115,7 @@
     <div id="amla" class="modal ">
         <div class="modal-content" style="left: 20px;">
             <div>
-                <h4 style="text-align: center; ">AMLA BENEFITS</h4>
+                <h4 style="text-align: center; " id="amlah">AMLA BENEFITS</h4>
                 <div id="content">
                     <h5 class="healbef">HEALTHY BENEFITS :-</h5>
                     <p>
@@ -132,14 +132,14 @@
 
                     <h5 class="tips">TIPS-</h5>
 
-                    <p>
-                        <b><u> Silk advance Amla oil</u></b> is often used in place of a conditioner after shampooing.
+                    <p id="amlap1">
+                        <b><u> Silk Advance Amla oil</u></b> is often used in place of a conditioner after shampooing.
                         It is gently massaged into the scalp so that it lightly coats the hair. People with an oily
                         scalp should apply it to the hair shafts only. After 15 minutes or so, thoroughly rinse the hair
                         with warm water. If amla oil gets into the eyes, rinse thoroughly with cool water.
                     </p>
-                    <p>
-                        <b><u> Silk advance Amla oil</u></b> can also be left on the scalp overnight for deep
+                    <p id="amlap2">
+                        <b><u> Silk Advance Amla oil</u></b> can also be left on the scalp overnight for deep
                         conditioning. If used in this way, wear a shower cap and cover your pillows with towels to
                         prevent staining. Amla oil can have a strong, musky odor, so you may want to use it sparingly if
                         applied overnight.
@@ -2068,8 +2068,26 @@
         function applyHindi() {
             document.getElementById("hindiButton").style.display = "none"
             document.getElementById("englishButton").style.display = "block"
+            for (i = 0; i < 36; i++) {
+                document.getElementsByClassName("healbef")[i].innerHTML = "सस्वास्थ्य सुविधाएं"
 
+                document.getElementsByClassName("agreebtn")[i].innerHTML = "इस बात से सहमत"
+            }
+
+            for (j = 0; j < 33; j++) {
+                document.getElementsByClassName("tips")[j].innerHTML = "युक्तियाँ"
+            }
+            
+            
+            // Amla
             document.getElementById('amlap').innerHTML = "<ol id='amlap' style='list-style-type:circle'><li>शुष्क त्वचा को कम करें।</li><li>मस्तिष्क स्वास्थ्य और कार्य में सुधार।</li><li>बालों से समय से पहले पिगमेंट कम हो जाना, या ग्रे होना।</li><li>निशान, blemishes, उम्र के धब्बे, और झुर्रियों की उपस्थिति को कम करें।</li></ol>";
+
+            document.getElementById('amlah').innerHTML = "आंवला"
+
+            document.getElementById("amlap1").innerHTML = "<b><u>Silk Advance Amla oil</u><b> अक्सर शैम्पू करने के बाद एक कंडीशनर के स्थान पर उपयोग किया जाता है। इसे धीरे से खोपड़ी में मालिश किया जाता है ताकि यह हल्के ढंग से बालों को कोट करे। ऑयली स्कैल्प वाले लोगों को इसे बालों में लगाने के बाद ही लगाना चाहिए। 15 मिनट या इसके बाद, गर्म पानी से बालों को अच्छी तरह से रगड़ें। अगर आंवले का तेल आँखों में चला जाता है, तो ठंडे पानी से अच्छी तरह कुल्ला करें।"
+
+            document.getElementById("amlap2").innerHTML = "<b><u>Silk Advance Amla oil</u><b> भी गहरी कंडीशनिंग के लिए रात भर खोपड़ी पर छोड़ा जा सकता है। यदि इस तरह से उपयोग किया जाता है, तो शावर कैप पहनें और धुंधला होने से बचाने के लिए अपने तकिए को तौलिए से ढकें। आंवले के तेल में एक मजबूत, मांसल गंध हो सकती है, इसलिए यदि आप इसे रात भर के लिए इस्तेमाल कर सकते हैं।"
+
 
             // Navbar Conversions
             document.getElementById("homen").innerHTML = "मुख पृष्ठ"
@@ -2098,20 +2116,6 @@
             document.getElementById("legal").innerHTML = "कानूनी"
             document.getElementById("pp").innerHTML = "गोपनीयता नीति"
             document.getElementById("tou").innerHTML = "उपयोग की शर्तें"
-
-            for (i = 0; i < 36; i++) {
-                document.getElementsByClassName("healbef")[i].innerHTML = "सस्वास्थ्य सुविधाएं"
-
-                document.getElementsByClassName("agreebtn")[i].innerHTML = "इस बात से सहमत"
-            }
-
-            for (j = 0; j < 33; j++) {
-                document.getElementsByClassName("tips")[j].innerHTML = "युक्तियाँ"
-            }
-
-            // Amla
-            // document.getElementById("amlap").innerHTML = "<li>शुष्क त्वचा को कम करें।</li><li>मस्तिष्क स्वास्थ्य और कार्य में सुधार।</li><li>बालों से समय से पहले पिगमेंट कम हो जाना, या ग्रे होना।</li><li>निशान, blemishes, उम्र के धब्बे, और झुर्रियों की उपस्थिति को कम करें।</li>"
-
         }
 
         function applyEnglish() {
