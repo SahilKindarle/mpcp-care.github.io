@@ -480,23 +480,22 @@
 
     <div id="almond" class="modal">
         <div class="modal-content">
-            <h4 style="text-align: center;">ALMOND BENEFITS</h4>
+            <h4 style="text-align: center;" id="almh">ALMOND BENEFITS</h4>
             <div id="content">
                 <h5 class="healbef">HEALTHY BENEFITS :-</h5>
                 <p>
-                    <li>High in Antioxidants.
-                    </li>
-                    <li>Beneficial for Blood Sugar Control.
-                    </li>
-                    <li>Almond oil is packed with vitamin E, which may help protect the skin from sun damage and
-                        premature ageing.
-                    </li>
-                    <li>The moisturising effects of almond oil may be especially helpful for people who have dry or
-                        sensitive skin.
-                    </li>
+                    <ol style="list-style-type: circle;" id="almol">
+                        <li>High in Antioxidants.</li>
+                        <li>Beneficial for Blood Sugar Control.</li>
+                        <li>Almond oil is packed with vitamin E, which may help protect the skin from sun damage and
+                            premature ageing.</li>
+                        <li>The moisturising effects of almond oil may be especially helpful for people who have dry or
+                            sensitive skin.</li>
+                    </ol>
+
                 </p>
                 <h5 class="tips">TIPS-</h5>
-                <p>
+                <p id="almp">
                     <b>Below are some ways to add almond oil to your skin or hair care routine.
                     </b> <br>
                     1. As a moisturiser: Almond oil is a perfect moisturiser for sensitive skin. <br>
@@ -2164,8 +2163,24 @@
 
             // Apricot
             document.getElementById('aprh').innerHTML = 'खुबानी के लाभ'
-            document.getElementById('aprol').innerHTML = '<li> एंटीऑक्सिडेंट्स में उच्च। </li> <li> नेत्र स्वास्थ्य को बढ़ावा दें। </li> <li> त्वचा स्वास्थ्य को बढ़ावा दें। </li> <li> बहुत हाइड्रेटिंग। </li>'
-            document.getElementById('aprp').innerHTML = 'खुबानी को साफ और धो लें, इसकी त्वचा को हटा दें, और इसे आधा में काट लें। फल के बीज को त्यागें और अपने हाथ का उपयोग करके इसे चिकनी गूदे में मैश करें। आप खुबानी के छोटे-छोटे डाइस भी बना सकते हैं और उन्हें ब्लेंडर में क्रश कर सकते हैं। अब, शहद और <b> <u> रेशम नारियल का तेल </u> </b> जोड़ें और खूबानी के गूदे को मिलाएं और अच्छी तरह से मिलकर गाढ़ा गाढ़ा पेस्ट बनाएं। अपने चेहरे को सादे पानी से साफ़ करें और पोछें और उस पर मास्क लगाएँ। इसे 10 से 15 मिनट तक बैठने दें। एक बार जब यह सूखने लगे तो गुनगुने पानी से धीरे-धीरे रगड़ें। अधिकतम परिणाम के लिए हर हफ्ते कम से कम एक बार इस मास्क का उपयोग करें। एक अमीर पेस्ट के लिए शहद को इसके गाढ़े रूप में उपयोग करने की कोशिश करें।'
+            document.getElementById('aprol').innerHTML =
+                '<li> एंटीऑक्सिडेंट्स में उच्च। </li> <li> नेत्र स्वास्थ्य को बढ़ावा दें। </li> <li> त्वचा स्वास्थ्य को बढ़ावा दें। </li> <li> बहुत हाइड्रेटिंग। </li>'
+            document.getElementById('aprp').innerHTML =
+                'खुबानी को साफ और धो लें, इसकी त्वचा को हटा दें, और इसे आधा में काट लें। फल के बीज को त्यागें और अपने हाथ का उपयोग करके इसे चिकनी गूदे में मैश करें। आप खुबानी के छोटे-छोटे डाइस भी बना सकते हैं और उन्हें ब्लेंडर में क्रश कर सकते हैं। अब, शहद और <b> <u> रेशम नारियल का तेल </u> </b> जोड़ें और खूबानी के गूदे को मिलाएं और अच्छी तरह से मिलकर गाढ़ा गाढ़ा पेस्ट बनाएं। अपने चेहरे को सादे पानी से साफ़ करें और पोछें और उस पर मास्क लगाएँ। इसे 10 से 15 मिनट तक बैठने दें। एक बार जब यह सूखने लगे तो गुनगुने पानी से धीरे-धीरे रगड़ें। अधिकतम परिणाम के लिए हर हफ्ते कम से कम एक बार इस मास्क का उपयोग करें। एक अमीर पेस्ट के लिए शहद को इसके गाढ़े रूप में उपयोग करने की कोशिश करें।'
+
+
+            // Almonds
+            document.getElementById('almh').innerHTML = 'बादाम के लाभ'
+            document.getElementById('almol').innerHTML =
+                '<li> एंटीऑक्सिडेंट्स में उच्च। </li> <li> रक्त शर्करा नियंत्रण के लिए फायदेमंद। </li> <li> बादाम का तेल विटामिन ई के साथ पैक किया जाता है, जो त्वचा को सूरज की क्षति और समय से पहले बूढ़ा होने से बचाने में मदद कर सकता है। </li> <li> सूखी या संवेदनशील त्वचा वाले लोगों के लिए बादाम के तेल का मॉइस्चराइजिंग प्रभाव विशेष रूप से सहायक हो सकता है। </li>'
+            document.getElementById('almp').innerHTML =
+                '<b> नीचे आपकी त्वचा या बालों की देखभाल दिनचर्या में बादाम का तेल जोड़ने के कुछ तरीके दिए गए हैं। </b> <br> 1 मॉइस्चराइज़र के रूप में: संवेदनशील त्वचा के लिए बादाम का तेल एक आदर्श मॉइस्चराइज़र है। <br> 2 इसे अतिरिक्त सूखे स्थानों पर लगाएं: बादाम के तेल को कोहनियों, पैरों और अन्य क्षेत्रों पर रगड़ें, जो सूख जाते हैं। <br> 3 होममेड हेयर मास्क बनाने के लिए: बादाम के तेल को मैश किए हुए एवोकैडो के साथ मिला कर हाइड्रेटिंग हेयर मास्क बनाएं और फिर इसे नम बालों पर लगाएं। <br> 4 इसे आवश्यक तेलों के साथ मिलाएं: रेशम नारियल के तेल को पतला करने के लिए वाहक तेल के रूप में बादाम के तेल का उपयोग करें जब आप उन्हें त्वचा पर लगा रहे हों। <br>'
+
+
+
+
+
+
             //  All titles
 
 
@@ -2292,8 +2307,17 @@
 
             // Apricot
             document.getElementById('aprh').innerHTML = 'APRICOT BENEFITS'
-            document.getElementById('aprol').innerHTML = '<li>High in antioxidants.</li><li>Promote eye health.</li><li>Boost skin health.</li><li>Very hydrating.</li>'
-            document.getElementById('aprp').innerHTML = 'Clean and wash the apricot, remove its skin, and cut it into halves. Discard the seed of the fruit and mash it into smooth pulp by using your hand. You can also make small dices of the apricot and crush them in a blender. Now, add honey and <b> <u> Silk coconut oil </u> </b> to the apricot pulp and combine well to form a rich paste of thick consistency. Cleanse and dampen your face with plain water and apply the mask all over it. Let it sit for 10 to 15 minutes. Once it starts drying, rinse gently with lukewarm water. Use this mask at least once every week for maximum results. Try to use honey in its thicker form for a richer paste.'
+            document.getElementById('aprol').innerHTML =
+                '<li>High in antioxidants.</li><li>Promote eye health.</li><li>Boost skin health.</li><li>Very hydrating.</li>'
+            document.getElementById('aprp').innerHTML =
+                'Clean and wash the apricot, remove its skin, and cut it into halves. Discard the seed of the fruit and mash it into smooth pulp by using your hand. You can also make small dices of the apricot and crush them in a blender. Now, add honey and <b> <u> Silk coconut oil </u> </b> to the apricot pulp and combine well to form a rich paste of thick consistency. Cleanse and dampen your face with plain water and apply the mask all over it. Let it sit for 10 to 15 minutes. Once it starts drying, rinse gently with lukewarm water. Use this mask at least once every week for maximum results. Try to use honey in its thicker form for a richer paste.'
+
+            // Almonds
+            document.getElementById('almh').innerHTML = 'ALMOND BENEFITS'
+            document.getElementById('almol').innerHTML =
+                '<li>High in Antioxidants.</li><li>Beneficial for Blood Sugar Control.</li><li>Almond oil is packed with vitamin E, which may help protect the skin from sun damage and premature ageing.</li><li>The moisturising effects of almond oil may be especially helpful for people who have dry or sensitive skin.</li>'
+            document.getElementById('almp').innerHTML =
+                '<b>Below are some ways to add almond oil to your skin or hair care routine.</b> <br>1. As a moisturiser: Almond oil is a perfect moisturiser for sensitive skin. <br>2. Apply it to extra-dry spots: Rub almond oil on the elbows, feet and any other areas that tend to get dry.<br>3. To make a homemade hair mask: Make a hydrating hair mask by mixing almond oil with mashed avocado and then smoothing it on damp hair.<br>4. Combine it with essential oils: Use almond oil as a carrier oil to dilute Silk coconut oil when you’re applying them to the skin. <br>'
 
             //  All titles
             // Navbar Conversions
