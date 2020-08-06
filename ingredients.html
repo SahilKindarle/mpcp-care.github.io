@@ -517,20 +517,22 @@
 
     <div id="orange" class="modal">
         <div class="modal-content">
-            <h4 style="text-align: center;">ORANGE BENEFITS</h4>
+            <h4 style="text-align: center;" id="orgh">ORANGE BENEFITS</h4>
             <div id="content">
                 <h5 class="healbef">HEALTHY BENEFITS :-</h5>
                 <p>
-                    <li>Natural oils in Oranges help to moisturise skin, providing softer healthier looking skin for
-                        longer.
-                    </li>
-                    <li>Vitamin C helps the body to form collagen and elastin which will keep your skin looking younger
-                        and more supple.</li>
-                    <li>Oranges could also prevent skin sagging, and may improve firmness.
-                    </li>
+                    <ol style="list-style-type: circle;" id="orgol">
+                        <li>Natural oils in Oranges help to moisturise skin, providing softer healthier looking skin for
+                            longer.</li>
+                        <li>Vitamin C helps the body to form collagen and elastin which will keep your skin looking
+                            younger and more supple.</li>
+                        <li>Oranges could also prevent skin sagging, and may improve firmness.</li>
+                    </ol>
+
                 </p>
                 <h5 class="tips">TIPS-</h5>
-                <p>Oranges are also essential for healthy hair growth. It is rich in Vitamin B12 and Vitamin E which is
+                <p id="orgp">Oranges are also essential for healthy hair growth. It is rich in Vitamin B12 and Vitamin E
+                    which is
                     very important for long, thick and beautiful hair. In order to get the best results, you may simply
                     oil your hair first with Our hair oils. After that, apply a fresh paste of oranges and honey all
                     over your hair and let it stay for half n hour. Rinse with water and wash with a mild shampoo. This
@@ -2177,8 +2179,12 @@
                 '<b> नीचे आपकी त्वचा या बालों की देखभाल दिनचर्या में बादाम का तेल जोड़ने के कुछ तरीके दिए गए हैं। </b> <br> 1 मॉइस्चराइज़र के रूप में: संवेदनशील त्वचा के लिए बादाम का तेल एक आदर्श मॉइस्चराइज़र है। <br> 2 इसे अतिरिक्त सूखे स्थानों पर लगाएं: बादाम के तेल को कोहनियों, पैरों और अन्य क्षेत्रों पर रगड़ें, जो सूख जाते हैं। <br> 3 होममेड हेयर मास्क बनाने के लिए: बादाम के तेल को मैश किए हुए एवोकैडो के साथ मिला कर हाइड्रेटिंग हेयर मास्क बनाएं और फिर इसे नम बालों पर लगाएं। <br> 4 इसे आवश्यक तेलों के साथ मिलाएं: रेशम नारियल के तेल को पतला करने के लिए वाहक तेल के रूप में बादाम के तेल का उपयोग करें जब आप उन्हें त्वचा पर लगा रहे हों। <br>'
 
 
-
-
+            // Orange
+            document.getElementById('orgh').innerHTML = 'संतरे के लाभ'
+            document.getElementById('orgol').innerHTML =
+                '<li> संतरे में मौजूद प्राकृतिक तेल त्वचा को मॉइस्चराइज करने में मदद करते हैं, जिससे त्वचा स्वस्थ दिखती है और अधिक समय तक जवां रहती है। </li> <li> विटामिन सी शरीर को कोलेजन और इलास्टिन बनाने में मदद करता है जो आपकी त्वचा को जवां और अधिक कोमल बनाए रखेगा। </li> <li> संतरे भी त्वचा की शिथिलता को रोक सकते हैं, और दृढ़ता में सुधार कर सकते हैं। </li>'
+            document.getElementById('orgp').innerHTML =
+                'स्वस्थ बालों के विकास के लिए संतरे भी आवश्यक हैं। यह विटामिन बी 12 और विटामिन ई से समृद्ध है जो लंबे, घने और सुंदर बालों के लिए बहुत महत्वपूर्ण है। सर्वोत्तम परिणाम प्राप्त करने के लिए, आप बस हमारे बालों के तेल के साथ अपने बालों को पहले तेल लगा सकते हैं। उसके बाद, अपने बालों पर संतरे और शहद का एक ताजा पेस्ट लागू करें और इसे आधे घंटे तक रहने दें। पानी से कुल्ला और एक हल्के शैम्पू के साथ धोएं। यह आपको बालों के पतले होने और बालों के गंजापन से लड़ने में मदद करेगा।'
 
 
             //  All titles
@@ -2318,6 +2324,14 @@
                 '<li>High in Antioxidants.</li><li>Beneficial for Blood Sugar Control.</li><li>Almond oil is packed with vitamin E, which may help protect the skin from sun damage and premature ageing.</li><li>The moisturising effects of almond oil may be especially helpful for people who have dry or sensitive skin.</li>'
             document.getElementById('almp').innerHTML =
                 '<b>Below are some ways to add almond oil to your skin or hair care routine.</b> <br>1. As a moisturiser: Almond oil is a perfect moisturiser for sensitive skin. <br>2. Apply it to extra-dry spots: Rub almond oil on the elbows, feet and any other areas that tend to get dry.<br>3. To make a homemade hair mask: Make a hydrating hair mask by mixing almond oil with mashed avocado and then smoothing it on damp hair.<br>4. Combine it with essential oils: Use almond oil as a carrier oil to dilute Silk coconut oil when you’re applying them to the skin. <br>'
+
+
+            // Orange
+            document.getElementById('orgh').innerHTML = 'ORANGE BENEFITS'
+            document.getElementById('orgol').innerHTML =
+                '<li>Natural oils in Oranges help to moisturise skin, providing softer healthier looking skin for longer.</li><li>Vitamin C helps the body to form collagen and elastin which will keep your skin looking younger and more supple.</li><li>Oranges could also prevent skin sagging, and may improve firmness.</li>'
+            document.getElementById('orgp').innerHTML =
+                'Oranges are also essential for healthy hair growth. It is rich in Vitamin B12 and Vitamin E which is very important for long, thick and beautiful hair. In order to get the best results, you may simply oil your hair first with Our hair oils. After that, apply a fresh paste of oranges and honey all over your hair and let it stay for half n hour. Rinse with water and wash with a mild shampoo. This will help you fight hair thinning and hair balding.'
 
             //  All titles
             // Navbar Conversions
