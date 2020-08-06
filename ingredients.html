@@ -226,16 +226,16 @@
                 <p id="jasin">
                     <b>Here are ways to use <u> Silk Jasmine Oil:</u> </b>
                 </p>
-                    <ol id="jasp1" style="list-style-type:circle">
-                        <li> In a diffuser</li>
-                        <li> Inhale directly from the bottle</li>
-                        <li> Add to a bowl of hot water to create aromatic steam</li>
-                        <li> Dilute in a carrier oil ( <b> <u> silk coconut oil </u> </b>) and add to a warm bath</li>
-                        <li> Mix with a carrier oil, such as <b><u> silk coconut oil</u></b> , almond oil, and apply
-                            topically or use as a massage oil.</li>
-                    </ol>
+                <ol id="jasp1" style="list-style-type:circle">
+                    <li> In a diffuser</li>
+                    <li> Inhale directly from the bottle</li>
+                    <li> Add to a bowl of hot water to create aromatic steam</li>
+                    <li> Dilute in a carrier oil ( <b> <u> silk coconut oil </u> </b>) and add to a warm bath</li>
+                    <li> Mix with a carrier oil, such as <b><u> silk coconut oil</u></b> , almond oil, and apply
+                        topically or use as a massage oil.</li>
+                </ol>
 
-                
+
                 <div class="row">
                     <div class="col s12 m6">
                         <div class="center">
@@ -258,21 +258,23 @@
 
     <div id="coconut" class="modal">
         <div class="modal-content">
-            <h4>COCONUT BENEFITS</h4>
+            <h4 id="cocoh">COCONUT BENEFITS</h4>
             <div id="content">
                 <h5 class="healbef">HEALTHY BENEFITS :-</h5>
                 <p>
-                    <li>Boost hair and skin health.
-                    </li>
-                    <li>Boost heart health.
-                    </li>
-                    <li>Encourage fat burning.
-                    </li>
-                    <li>Raise HDL (good) cholesterol.
-                    </li>
+                    <ol id="cocop" style="list-style-type:circle">
+                        <li>Boost hair and skin health.
+                        </li>
+                        <li>Boost heart health.
+                        </li>
+                        <li>Encourage fat burning.
+                        </li>
+                        <li>Raise HDL (good) cholesterol.
+                        </li>
+                    </ol>
                 </p>
                 <h5 class="tips">TIPS-</h5>
-                <p>
+                <p id="cocop1">
                     Mix one cup of hot water and two tablespoons of <b> <u> Silk coconut oil</u></b>
                     (use more if your hair is longer). Once the <b> <u> Silk coconut oil</u></b>
                     settles, massage it onto your scalp and hair, comb it through with a wide-toothed comb,
@@ -2113,11 +2115,20 @@
             document.getElementById("jasp").innerHTML =
                 '<ol id="jasp" style="list-style-type:circle"><li>प्रतिरक्षा को बढ़ाता है और संक्रमण से लड़ता है।</li><li>त्वचा और बालों को स्वास्थ्य देता है।</li><li>आरामदायक नींद को बढ़ावा देता है।</li><li>दर्द को कम करता है।</li</ol>';
 
-            document.getElementById("jasin").innerHTML = "<b>यहाँ <u>रेशम जैस्मीन तेल</u> का उपयोग करने के तरीके दिए गए हैं |<b>";
+            document.getElementById("jasin").innerHTML =
+                "<b>यहाँ <u>रेशम जैस्मीन तेल</u> का उपयोग करने के तरीके दिए गए हैं |<b>";
             // console.log("cleaered")
             document.getElementById("jasp1").innerHTML =
                 '<li>एक विसारक में</li><li>बोतल से सीधे श्वास लें</li><li>सुगंधित भाप बनाने के लिए गर्म पानी की एक कटोरी में जोड़ें</li><li>एक वाहक तेल (<b> <u> रेशम नारियल तेल </ u> </ b>) में पतला और एक गर्म स्नान में जोड़ें</li><li>एक वाहक तेल के साथ मिलाएं, जैसे कि <b> <u> रेशम नारियल तेल </ u> </ b>, बादाम का तेल, और शीर्ष पर लागू करें या मालिश तेल के रूप में उपयोग करें।</li>'
 
+
+
+            // Coconut
+            document.getElementById("cocoh").innerHTML = "नारियल के लाभ"
+            document.getElementById("cocop").innerHTML =
+                '<li> बालों और त्वचा के स्वास्थ्य को बढ़ावा दें। </ li> <li> हृदय स्वास्थ्य को बढ़ावा दें। </ li> <li> वसा जलने को प्रोत्साहित करें। </ li> <li> एचडीएल (अच्छा) कोलेस्ट्रॉल बढ़ाएँ। </ li>'
+            document.getElementById("cocop1").innerHTML =
+                'एक कप गर्म पानी और दो बड़े चम्मच <b> <u> रेशम नारियल का तेल </u> </b> मिलाएं (अधिक उपयोग करें यदि आपके बाल लंबे हैं)। एक बार <b> <u> सिल्क नारियल का तेल </u> </b> बसने के बाद, इसे अपने स्कैल्प और बालों पर मालिश करें, चौड़े दांतों वाली कंघी से कंघी करें, इसे बन्स में लपेटें, और शावर कैप लगाएं इस पर। इसे एक घंटे के लिए बैठने दें, फिर चमकदार, सुंदर बालों के लिए गर्म पानी से अच्छी तरह से कुल्ला!'
 
             //  All titles
 
@@ -2197,6 +2208,14 @@
 
             document.getElementById("jasp1").innerHTML =
                 '<b>Here are ways to use <u> Silk Jasmine Oil:</u></b> <ol style="list-style-type:circle"><li> In a diffuser</li><li> Inhale directly from the bottle</li><li> Add to a bowl of hot water to create aromatic steam</li><li> Dilute in a carrier oil ( <b> <u> silk coconut oil </u> </b>) and add to a warm bath</li><li> Mix with a carrier oil, such as <b><u> silk coconut oil</u></b> , almond oil, and apply topically or use as a massage oil.</li></ol>'
+
+
+            // Coconut
+            document.getElementById("cocoh").innerHTML = "COCONUT BENEFITS"
+            document.getElementById("cocop").innerHTML =
+                '<li>Boost hair and skin health.</li><li>Boost heart health.</li><li>Encourage fat burning.</li><li>Raise HDL (good) cholesterol.</li>'
+            document.getElementById("cocop1").innerHTML =
+                ' Mix one cup of hot water and two tablespoons of <b> <u> Silk coconut oil</u></b>(use more if your hair is longer). Once the <b> <u> Silk coconut oil</u></b>settles, massage it onto your scalp and hair, comb it through with a wide-toothed comb,wrap it into a bun, and put a shower cap over it. Let it sit for an hour,then rinse thoroughly with warm water for shiny, beautiful hair!'
 
 
             document.getElementById("englishButton").style.display = "none"
