@@ -662,24 +662,21 @@
 
     <div id="aloevera" class="modal">
         <div class="modal-content">
-            <h4 style="text-align: center;">ALOEVERA BENEFITS</h4>
+            <h4 style="text-align: center;" id="aloh">ALOEVERA BENEFITS</h4>
             <div id="content">
                 <h5 class="healbef">HEALTHY BENEFITS :-</h5>
                 <p>
-                    <li>Heartburn relief.
-                    </li>
-                    <li>An alternative to mouthwash.
-                    </li>
-                    <li>
-                        Lowering your blood sugar.
-                    </li>
-                    <li>You can use aloe vera to keep your skin clear and hydrated.
-                    </li>
+                    <ol style="list-style-type: circle;" id="alool">
+                        <li>Heartburn relief.</li>
+                        <li>An alternative to mouthwash.</li>
+                        <li>Lowering your blood sugar.</li>
+                        <li>You can use aloe vera to keep your skin clear and hydrated.</li>
+                    </ol>
                 </p>
                 <h5 class="tips">TIPS-</h5>
-                <p>Mix two teaspoons of fresh aloe vera gel with one teaspoon of honey and three teaspoons of <b><u>Silk
-                            coconut oil.</u></b> Massage well into the hair ,let it rest for half an hour and then wash
-                    with shampoo. This mask will deep condition your dry and dull hair adding moisture and bounce.
+                <p id="alop">Mix two teaspoons of fresh aloe vera gel with one teaspoon of honey and three teaspoons of
+                    <b><u>Silk coconut oil.</u></b> Massage well into the hair ,let it rest for half an hour and then
+                    wash with shampoo. This mask will deep condition your dry and dull hair adding moisture and bounce.
                 </p>
                 <div class="row">
                     <div class="col s12 m12">
@@ -2212,6 +2209,15 @@
 
 
 
+            // Aloevera
+            document.getElementById('aloh').innerHTML = 'मुसब्बर वेरा के लाभ'
+            document.getElementById('alool').innerHTML =
+                '<li> नाराज़गी से राहत। </li> <li> माउथवॉश का एक विकल्प। </li> <li> अपनी रक्त शर्करा को कम करें। </li> <li> आप अपनी त्वचा को साफ और हाइड्रेटेड रखने के लिए एलोवेरा का उपयोग कर सकते हैं। </li>'
+            document.getElementById('alop').innerHTML =
+                'दो चम्मच ताजा एलोवेरा जेल को एक चम्मच शहद और तीन चम्मच <b> <u> रेशम के नारियल के तेल के साथ मिलाएं। </u> </b> बालों में अच्छी तरह से मालिश करें, आधे घंटे तक आराम करें। शैम्पू से धो लें। यह मास्क आपके सूखे और सुस्त बालों को नमी और उछाल को जोड़ देगा।'
+
+
+
             //  All titles
 
 
@@ -2390,6 +2396,12 @@
 
 
 
+            // Aloevera
+            document.getElementById('aloh').innerHTML = 'ALOEVERA BENEFITS'
+            document.getElementById('alool').innerHTML =
+                '<li>Heartburn relief.</li><li>An alternative to mouthwash.</li><li>Lowering your blood sugar.</li><li>You can use aloe vera to keep your skin clear and hydrated.</li>'
+            document.getElementById('alop').innerHTML =
+                'Mix two teaspoons of fresh aloe vera gel with one teaspoon of honey and three teaspoons of <b><u>Silk coconut oil.</u></b> Massage well into the hair ,let it rest for half an hour and then wash with shampoo. This mask will deep condition your dry and dull hair adding moisture and bounce.'
 
 
             //  All titles
