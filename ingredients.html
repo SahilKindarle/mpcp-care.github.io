@@ -699,14 +699,19 @@
                 <h5 class="healbef">HEALTHY BENEFITS :-</h5>
                 <p>
                     <ol style="list-style-type: circle;" id="lavol">
-                        <li>Lavender oil is believed to have antiseptic and anti-inflammatory properties, which can help to heal minor burns and bug bites.</li>
-                        <li>Research suggests that it may be useful for treating anxiety, insomnia, depression, and restlessness.</li>
-                        <li>The study showed that Lavandula oil is potent and demonstrates anti-fungal activity on a wide spectrum.</li>
+                        <li>Lavender oil is believed to have antiseptic and anti-inflammatory properties, which can help
+                            to heal minor burns and bug bites.</li>
+                        <li>Research suggests that it may be useful for treating anxiety, insomnia, depression, and
+                            restlessness.</li>
+                        <li>The study showed that Lavandula oil is potent and demonstrates anti-fungal activity on a
+                            wide spectrum.</li>
                     </ol>
 
                 </p>
                 <h5 class="tips">TIPS-</h5>
-                <p id="lavp">Cold sores can be both painful and nagging. A mixture of a drop of lavender essential oil diluted with 10-15 drops of fractionated <b><u> Silk coconut oil </u></b>can be applied directly to the cold sore to speed up the healing process.</p>
+                <p id="lavp">Cold sores can be both painful and nagging. A mixture of a drop of lavender essential oil
+                    diluted with 10-15 drops of fractionated <b><u> Silk coconut oil </u></b>can be applied directly to
+                    the cold sore to speed up the healing process.</p>
                 <div class="row">
                     <div class="col s12 m12">
                         <div class="center">
@@ -723,22 +728,21 @@
 
     <div id="rose" class="modal">
         <div class="modal-content">
-            <h4 style="text-align: center;">ROSE BENEFITS</h4>
+            <h4 style="text-align: center;" id="rosh">ROSE BENEFITS</h4>
             <div id="content">
                 <h5 class="healbef">HEALTHY BENEFITS :-</h5>
                 <p>
-                    <li>Effectively increases skin tone.
-                    </li>
-                    <li>Relaxes and cleanses.
-                    </li>
-                    <li>Nourishes and regenerates.
-                    </li>
-                    <li>Roses relieve irritation, rejuvenate and moisturize skin in conjunction with oil, help stop time
-                        and brighten the face.</li>
+                    <ol id="rosol" style="list-style-type: circle;">
+                        <li>Effectively increases skin tone.</li>
+                        <li>Relaxes and cleanses.</li>
+                        <li>Nourishes and regenerates.</li>
+                        <li>Roses relieve irritation, rejuvenate and moisturize skin in conjunction with oil, help stop
+                            time and brighten the face.</li>
+                    </ol>
                 </p>
                 <h5 class="tips">TIPS-</h5>
                 <b>How to make Rose Oil-</b> <br>
-                <p>
+                <p id="rosp">
                     1. Fill the jar with herbs and a <b><u> Silk coconut oil</u></b>
                     <br>
                     2. Place it a double boiler and bring to a slow simmer
@@ -2213,10 +2217,21 @@
 
             // Lavender
             document.getElementById('lavh').innerHTML = 'लैवेंडर के लाभ'
-            document.getElementById('lavol').innerHTML = '<li>माना जाता है कि लैवेंडर के तेल में एंटीसेप्टिक और एंटी-इंफ्लेमेटरी गुण होते हैं, जो मामूली जलन और बग के काटने को ठीक करने में मदद कर सकते हैं। </li> <li> शोध से पता चलता है कि यह चिंता, अनिद्रा, अवसाद, और उपचार के लिए उपयोगी हो सकता है। बेचैनी। </li> <li> अध्ययन से पता चला कि लवंडुला तेल शक्तिशाली है और एक व्यापक स्पेक्ट्रम पर एंटी-फंगल गतिविधि को दर्शाता है। </li>'
-            document.getElementById('lavp').innerHTML = 'ठंड घावों दर्दनाक और सता दोनों हो सकते हैं। लैवेंडर आवश्यक तेल की एक बूंद का मिश्रण, आंशिक रूप से <b> <u> रेशम नारियल तेल </u> </b> की 10-15 बूंदों के साथ पतला होता है, जो घाव भरने की प्रक्रिया को तेज करने के लिए सीधे ठंड में लागू किया जा सकता है।'
+            document.getElementById('lavol').innerHTML =
+                '<li>माना जाता है कि लैवेंडर के तेल में एंटीसेप्टिक और एंटी-इंफ्लेमेटरी गुण होते हैं, जो मामूली जलन और बग के काटने को ठीक करने में मदद कर सकते हैं। </li> <li> शोध से पता चलता है कि यह चिंता, अनिद्रा, अवसाद, और उपचार के लिए उपयोगी हो सकता है। बेचैनी। </li> <li> अध्ययन से पता चला कि लवंडुला तेल शक्तिशाली है और एक व्यापक स्पेक्ट्रम पर एंटी-फंगल गतिविधि को दर्शाता है। </li>'
+            document.getElementById('lavp').innerHTML =
+                'ठंड घावों दर्दनाक और सता दोनों हो सकते हैं। लैवेंडर आवश्यक तेल की एक बूंद का मिश्रण, आंशिक रूप से <b> <u> रेशम नारियल तेल </u> </b> की 10-15 बूंदों के साथ पतला होता है, जो घाव भरने की प्रक्रिया को तेज करने के लिए सीधे ठंड में लागू किया जा सकता है।'
 
-                
+
+            // Rose
+            document.getElementById('rosh').innerHTML = 'गुलाब के लाभ'
+            document.getElementById('rosol').innerHTML =
+                '<li> प्रभावी रूप से त्वचा की टोन बढ़ाता है। </li> <li> आराम करता है और साफ करता है। </li> <li> पोषण और पुनर्जीवित करता है। </li> <li> गुलाब जलन, कायाकल्प और तेल के साथ त्वचा को मॉइस्चराइज़ करता है। समय रोकने में मदद करें और चेहरे को रोशन करें। </li>'
+            document.getElementById('rosp').innerHTML =
+                '1. जड़ी बूटियों के साथ जार भरें और एक <b> <u> रेशम नारियल तेल </u> </b> <br> 2। इसे एक डबल बायलर रखें और धीमी गति से उबाल लें। मिश्रण को 50-60 डिग्री सेल्सियस के तापमान पर गर्म करें और इसे उबालने के लिए अच्छा और कम रखें और अधिक समय तक (5-6 घंटे) औषधीय गुणों को छोड़ने में मदद करें। । <br> 3। मिश्रण को 50-60 डिग्री सेल्सियस के तापमान पर गर्म करें और औषधीय गुणों को छोड़ने में मदद करने के लिए इसे अधिक लंबे समय तक (5-6 घंटे) तक गर्म और कम रखें। <br> 4। फिर तेल को पंखुड़ियों के दूसरे बैच के साथ भरें और प्रक्रिया को कई बार दोहराएं जब तक रेशम नारियल का तेल रंग और गंध पर न हो जाए। <br> 5। तेल में गुलाब की पंखुड़ियों के क्रमिक मैक्रेशन द्वारा, आप एक उच्च गुणवत्ता और जैविक रूप से प्रभावी संक्रमित तेल प्राप्त करने में सक्षम होंगे। <br/>'
+
+
+
 
             //  All titles
 
@@ -2407,11 +2422,20 @@
 
             // Lavender
             document.getElementById('lavh').innerHTML = 'LAVENDER BENEFITS'
-            document.getElementById('lavol').innerHTML = '<li>Lavender oil is believed to have antiseptic and anti-inflammatory properties, which can help to heal minor burns and bug bites.</li> <li>Research suggests that it may be useful for treating anxiety, insomnia, depression, and restlessness.</li><li>The study showed that Lavandula oil is potent and demonstrates anti-fungal activity on a wide spectrum.</li>'
+            document.getElementById('lavol').innerHTML =
+                '<li>Lavender oil is believed to have antiseptic and anti-inflammatory properties, which can help to heal minor burns and bug bites.</li> <li>Research suggests that it may be useful for treating anxiety, insomnia, depression, and restlessness.</li><li>The study showed that Lavandula oil is potent and demonstrates anti-fungal activity on a wide spectrum.</li>'
 
-            document.getElementById('lavp').innerHTML = 'Cold sores can be both painful and nagging. A mixture of a drop of lavender essential oil diluted with 10-15 drops of fractionated <b><u> Silk coconut oil </u></b>can be applied directly to the cold sore to speed up the healing process.'
+            document.getElementById('lavp').innerHTML =
+                'Cold sores can be both painful and nagging. A mixture of a drop of lavender essential oil diluted with 10-15 drops of fractionated <b><u> Silk coconut oil </u></b>can be applied directly to the cold sore to speed up the healing process.'
 
 
+            // Rose
+            document.getElementById('rosh').innerHTML = 'ROSE BENEFITS'
+            document.getElementById('rosol').innerHTML =
+                '<li>Effectively increases skin tone.</li><li>Relaxes and cleanses.</li><li>Nourishes and regenerates.</li><li>Roses relieve irritation, rejuvenate and moisturize skin in conjunction with oil, help stop time and brighten the face.</li>'
+            document.getElementById('rosp').innerHTML =
+                '1. Fill the jar with herbs and a <b><u> Silk coconut oil</u></b><br>2. Place it a double boiler and bring to a slow simmer<br>Heat the mixture to a temperature of 50-60 degrees Celsius and keep it the heat nice and low for a longer simmer time (5-6 hours) to help release medicinal properties. <br>3. Heat the mixture to a temperature of 50-60 degrees Celsius and keep it the heat nice and low for a longer simmer time (5-6 hours) to help release medicinal properties. <br>4. Then remove the oil fill it with the second batch of petals and repeat the process as many times till the Silk coconut oil takes on the color and the scent.<br>5. By gradual maceration of the rose petals in oil, you will be able to obtain a high quality and biologically effective rose infused oil.'
+            z
             //  All titles
             // Navbar Conversions
             document.getElementById("homen").innerHTML = "Home"
