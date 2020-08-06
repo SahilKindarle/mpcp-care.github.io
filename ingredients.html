@@ -578,22 +578,18 @@
 
     <div id="onion" class="modal">
         <div class="modal-content">
-            <h4 style="text-align: center;">ONION BENEFITS</h4>
+            <h4 style="text-align: center;" id="onih">ONION BENEFITS</h4>
             <div id="content">
                 <h5 class="healbef">HEALTHY BENEFITS :-</h5>
                 <p>
-                    <li>When added to the hair and scalp, onion juice can provide extra sulphur to support strong and
-                        thick hair, thus preventing hair loss and promoting hair growth.
-                    </li>
-                    <li>The sulphur from onions may also help promote collagen production. Collagen in turn helps the
-                        production of healthy skin cells and hair growth.
-                    </li>
-                    <li>It’s also believed that onions may boost circulation. Applying onion juice to the hair and scalp
-                        could increase blood supply to hair follicles, which in turn improves hair growth.
-                    </li>
+                    <ol style="list-style-type: circle;" id="oniol">
+                        <li>When added to the hair and scalp, onion juice can provide extra sulphur to support strong and thick hair, thus preventing hair loss and promoting hair growth.</li>
+                        <li>The sulphur from onions may also help promote collagen production. Collagen in turn helps the production of healthy skin cells and hair growth.</li>
+                        <li>It’s also believed that onions may boost circulation. Applying onion juice to the hair and scalp could increase blood supply to hair follicles, which in turn improves hair growth.</li>
+                    </ol>
                 </p>
                 <h5 class="tips">TIPS-</h5>
-                <p>
+                <p id="onip">
                     1. Saturate a cotton pad with the onion juice.
                     <br>
                     2. Use the saturated cotton pad to dab your scalp with the onion juice.
@@ -2193,6 +2189,11 @@
                 'एक क्रीम या तेल आधारित मॉइस्चराइज़र जैसे हल्दी आवश्यक तेल की कुछ बूँदें जोड़ें जैसे <b> <u> रेशम नारियल तेल </u> </b> और इसे अपने नियमित मॉइस्चराइज़र के रूप में उपयोग करें।'
 
 
+            // Onions
+            document.getElementById('onih').innerHTML = 'प्याज के लाभ'
+            document.getElementById('oniol').innerHTML = '<li> जब बालों और खोपड़ी में जोड़ा जाता है, तो प्याज का रस मजबूत और घने बालों का समर्थन करने के लिए अतिरिक्त सल्फर प्रदान कर सकता है, इस प्रकार बालों के झड़ने को रोकता है और बालों के विकास को बढ़ावा देता है। </li> <li> प्याज से सल्फर कोलेजन को बढ़ावा देने में भी मदद कर सकता है। । बदले में कोलेजन स्वस्थ त्वचा कोशिकाओं और बालों के विकास में मदद करता है। </li> <li> यह भी माना जाता है कि प्याज परिसंचरण को बढ़ावा दे सकता है। बालों और खोपड़ी पर प्याज का रस लगाने से बालों के रोम में रक्त की आपूर्ति बढ़ सकती है, जिससे बालों का विकास बेहतर होता है। </li>'
+            document.getElementById('onip').innerHTML = '1 प्याज के रस के साथ एक कपास पैड को संतृप्त करें। <br> 2 प्याज के रस के साथ अपनी खोपड़ी को थपथपाने के लिए संतृप्त कपास पैड का उपयोग करें। <br> 3 एक बार आपकी पूरी खोपड़ी ढक जाने के बाद, कुछ मिनट के लिए अपनी खोपड़ी की मालिश करें। <br> 4 रस को लगभग 15 मिनट से एक घंटे तक छोड़ दें। <br> 5 अपने बालों को माइल्ड शैम्पू से धोएं। <br>'
+
 
             //  All titles
 
@@ -2349,6 +2350,14 @@
                 '<li>Natural oils in Oranges help to moisturise skin, providing softer healthier looking skin for longer.</li><li>Vitamin C helps the body to form collagen and elastin which will keep your skin looking younger and more supple.</li><li>Oranges could also prevent skin sagging, and may improve firmness.</li>'
             document.getElementById('orgp').innerHTML =
                 'Oranges are also essential for healthy hair growth. It is rich in Vitamin B12 and Vitamin E which is very important for long, thick and beautiful hair. In order to get the best results, you may simply oil your hair first with Our hair oils. After that, apply a fresh paste of oranges and honey all over your hair and let it stay for half n hour. Rinse with water and wash with a mild shampoo. This will help you fight hair thinning and hair balding.'
+
+
+             // Onions
+             document.getElementById('onih').innerHTML = 'ONION BENEFITS'
+            document.getElementById('oniol').innerHTML = '<li>When added to the hair and scalp, onion juice can provide extra sulphur to support strong and thick hair, thus preventing hair loss and promoting hair growth.</li><li>The sulphur from onions may also help promote collagen production. Collagen in turn helps the production of healthy skin cells and hair growth.</li><li>It’s also believed that onions may boost circulation. Applying onion juice to the hair and scalp could increase blood supply to hair follicles, which in turn improves hair growth.</li>'
+            document.getElementById('onip').innerHTML = '1. Saturate a cotton pad with the onion juice.<br>2. Use the saturated cotton pad to dab your scalp with the onion juice.<br>3. Once your entire scalp is covered, massage your scalp for a couple of minutes.<br>4. Leave the juice on for about 15 minutes to an hour.<br>5. Wash your hair with a mild shampoo. <br>'
+
+
 
 
             //  All titles
