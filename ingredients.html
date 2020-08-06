@@ -206,25 +206,27 @@
 
     <div id="jasmine" class="modal">
         <div class="modal-content">
-            <h4>JASMINE BENEFITS</h4>
+            <h4 id="jash">JASMINE BENEFITS</h4>
             <div id="content">
                 <h5 class="healbef">HEALTHY BENEFITS :-</h5>
                 <p>
-
-                    <li>Boost immunity & fight infections.
-                    </li>
-                    <li>Boost skin and hair health.
-                    </li>
-                    <li>Promotes restful sleep.
-                    </li>
-                    <li>Alleviate aches & pain.
-                    </li>
+                    <ol id="jasp" style="list-style-type:circle">
+                        <li>Boost immunity & fight infections.
+                        </li>
+                        <li>Boost skin and hair health.
+                        </li>
+                        <li>Promotes restful sleep.
+                        </li>
+                        <li>Alleviate aches & pain.
+                        </li>
+                    </ol>
 
                 </p>
                 <h5 class="tips">TIPS-</h5>
-                <p>
+                <p id="jasin">
                     <b>Here are ways to use <u> Silk Jasmine Oil:</u> </b>
-                    <ol>
+                </p>
+                    <ol id="jasp1" style="list-style-type:circle">
                         <li> In a diffuser</li>
                         <li> Inhale directly from the bottle</li>
                         <li> Add to a bowl of hot water to create aromatic steam</li>
@@ -233,7 +235,7 @@
                             topically or use as a massage oil.</li>
                     </ol>
 
-                </p>
+                
                 <div class="row">
                     <div class="col s12 m6">
                         <div class="center">
@@ -2098,11 +2100,23 @@
             // Vanilla
             document.getElementById("vanh").innerHTML = "वानीला के लाभ"
 
-            document.getElementById('vanp').innerHTML = '<ol id="vanp" style="list-style-type:circle"><li>प्रतिरक्षा को बढ़ावा और संक्रमण से लड़ने। त्वचा और बालों के स्वास्थ्य को बढ़ावा देना।</li><li> आरामदायक नींद को बढ़ावा देता है। </li><li>दर्द और दर्द को कम करता है।</li></ol>'
-                
-            document.getElementById("vanp1").innerHTML = 'यहाँ रेशम जैस्मीन तेल का उपयोग करने के तरीके दिए गए हैं| एक विसारक में बोतल से सीधे श्वास लें सुगंधित भाप बनाने के लिए गर्म पानी की एक कटोरी में जोड़ें एक वाहक तेल (रेशम नारियल तेल) में पतला और एक गर्म स्नान में जोड़ें एक वाहक तेल के साथ मिलाएं, जैसे कि रेशम नारियल तेल, बादाम का तेल, और ऊपर से लागू करें या मालिश तेल के रूप में उपयोग करें।'
+            document.getElementById('vanp').innerHTML =
+                '<ol id="vanp" style="list-style-type:circle"><li>प्रतिरक्षा को बढ़ावा और संक्रमण से लड़ने। त्वचा और बालों के स्वास्थ्य को बढ़ावा देना।</li><li> आरामदायक नींद को बढ़ावा देता है। </li><li>दर्द और दर्द को कम करता है।</li></ol>'
+
+            document.getElementById("vanp1").innerHTML =
+                'यहाँ रेशम जैस्मीन तेल का उपयोग करने के तरीके दिए गए हैं| एक विसारक में बोतल से सीधे श्वास लें सुगंधित भाप बनाने के लिए गर्म पानी की एक कटोरी में जोड़ें एक वाहक तेल (रेशम नारियल तेल) में पतला और एक गर्म स्नान में जोड़ें एक वाहक तेल के साथ मिलाएं, जैसे कि रेशम नारियल तेल, बादाम का तेल, और ऊपर से लागू करें या मालिश तेल के रूप में उपयोग करें।'
 
 
+            // JASMINE
+            document.getElementById("jash").innerHTML = "चमेली के लाभ"
+
+            document.getElementById("jasp").innerHTML =
+                '<ol id="jasp" style="list-style-type:circle"><li>प्रतिरक्षा को बढ़ाता है और संक्रमण से लड़ता है।</li><li>त्वचा और बालों को स्वास्थ्य देता है।</li><li>आरामदायक नींद को बढ़ावा देता है।</li><li>दर्द को कम करता है।</li</ol>';
+
+            document.getElementById("jasin").innerHTML = "<b>यहाँ <u>रेशम जैस्मीन तेल</u> का उपयोग करने के तरीके दिए गए हैं |<b>";
+            // console.log("cleaered")
+            document.getElementById("jasp1").innerHTML =
+                '<li>एक विसारक में</li><li>बोतल से सीधे श्वास लें</li><li>सुगंधित भाप बनाने के लिए गर्म पानी की एक कटोरी में जोड़ें</li><li>एक वाहक तेल (<b> <u> रेशम नारियल तेल </ u> </ b>) में पतला और एक गर्म स्नान में जोड़ें</li><li>एक वाहक तेल के साथ मिलाएं, जैसे कि <b> <u> रेशम नारियल तेल </ u> </ b>, बादाम का तेल, और शीर्ष पर लागू करें या मालिश तेल के रूप में उपयोग करें।</li>'
 
 
             //  All titles
@@ -2166,11 +2180,23 @@
             // Vanilla
             document.getElementById("vanh").innerHTML = "VANILLA BENEFITS"
 
-            document.getElementById('vanp').innerHTML = '<ol id="vanp" style="list-style-type:circle"><li>Promotes relaxation.</li><li>Improves sleep quality.</li><li>Defends against disease.</li><li>Boosts skin and hair health.</li></ol>'
-                
-            document.getElementById("vanp1").innerHTML = ' To use vanilla oil as a DIY perfume, add 10–20 drops to a spray bottle and mix it with equal parts carrier oil (like <b> <u> Silk Coconut oil</u></b> or almond oil) and water. You can spray this vanilla oil mixture on your sheets, furniture, body and hair.'
+            document.getElementById('vanp').innerHTML =
+                '<ol id="vanp" style="list-style-type:circle"><li>Promotes relaxation.</li><li>Improves sleep quality.</li><li>Defends against disease.</li><li>Boosts skin and hair health.</li></ol>'
+
+            document.getElementById("vanp1").innerHTML =
+                ' To use vanilla oil as a DIY perfume, add 10–20 drops to a spray bottle and mix it with equal parts carrier oil (like <b> <u> Silk Coconut oil</u></b> or almond oil) and water. You can spray this vanilla oil mixture on your sheets, furniture, body and hair.'
 
 
+
+
+            // JASMINE
+            document.getElementById("jash").innerHTML = "JASMINE BENEFITS"
+
+            document.getElementById("jasp").innerHTML =
+                '<ol id="jasp" style="list-style-type:circle"><li>Boost immunity & fight infections.</li><li>Boost skin and hair health.</li><li>Promotes restful sleep.</li><li>Alleviate aches & pain.</li></ol>'
+
+            document.getElementById("jasp1").innerHTML =
+                '<b>Here are ways to use <u> Silk Jasmine Oil:</u></b> <ol style="list-style-type:circle"><li> In a diffuser</li><li> Inhale directly from the bottle</li><li> Add to a bowl of hot water to create aromatic steam</li><li> Dilute in a carrier oil ( <b> <u> silk coconut oil </u> </b>) and add to a warm bath</li><li> Mix with a carrier oil, such as <b><u> silk coconut oil</u></b> , almond oil, and apply topically or use as a massage oil.</li></ol>'
 
 
             document.getElementById("englishButton").style.display = "none"
