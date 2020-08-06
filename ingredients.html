@@ -401,12 +401,13 @@
 
     <div id="sandle" class="modal">
         <div class="modal-content">
-            <h4 style="text-align: center;">SANDALWOOD BENEFITS</h4>
+            <h4 style="text-align: center;" id="sanh">SANDALWOOD BENEFITS</h4>
             <div id="content">
                 <h5 class="healbef">HEALTHY BENEFITS :-</h5>
-                <p>
+                <p id="sanp">
                     <b>There are many ways to use sandalwood oil in aromatherapy at home. You can:</b> <br>
-
+                </p>
+                <ol style="list-style-type: circle;" id="sanol">
                     <li>Apply it directly to your skin.
                     </li>
                     <li>Put a few drops in your lotion.
@@ -416,11 +417,9 @@
                     <li>Evaporate it using an essential oil infuser.
                     </li>
                     <li>Add it to your bath water.</li>
-
-
-                </p>
-                <p>
-                    <h5 class="tips">TIPS-</h5>
+                </ol>
+                <h5 class="tips">TIPS-</h5>
+                <p id="sanp1">
                     1. It possesses a unique, gentle, warm, velvety and milky prized wood-scent which renders a
                     long-lasting base to several perfumes.
                     <br>
@@ -2146,14 +2145,24 @@
                 '<li> हेयर कंडीशनर। </li> <li> फेस क्लींजर। </li> <li> मुँहासे और Blemishes से छुटकारा पाना। </li> <li> सनबर्न का इलाज करना। </li>'
             document.getElementById("honp1").innerHTML =
                 'अपने बालों को शैम्पू करने के बाद, गुनगुने पानी से रिंस करने से पहले, जड़ से लेकर सिरे तक शहद लगाएं और तीन-चार मिनट तक लगा रहने दें। आप तुरंत परिणाम देखेंगे। आप इसे थोड़ा <b> <u> रेशम नारियल तेल </u> </b> के साथ भी मिला सकते हैं और तम फ्रिज़ी बालों को शैम्पू करने से पहले अपने बालों पर लगा सकते हैं।'
-            
+
 
             // OliveOil
             document.getElementById("olih").innerHTML = 'जैतून के तेल के लाभ'
             document.getElementById("olip").innerHTML =
                 '<li> बालों का उपचार करने से पहले शैम्पू करें। </li> <li> एक फटे-होंठ को ठीक करने के लिए जैतून के तेल के एक चम्मच के साथ मोटे चीनी को मिलाएं। </li> <li> शाइन सीरम। </li> <li> जीवाणुरोधी बाम। </li>'
-                document.getElementById('olip1').innerHTML = '1. माइक्रोवेव या गर्म पानी में जैतून का तेल गर्म करें। <br> 2. फिर इसे उदारतापूर्वक बालों और खोपड़ी के सिरों पर लागू करें। <br> 3. इसे 10 से 20 मिनट के लिए छोड़ दें, और फिर इसे शैम्पू कर लें। <br> 4. इससे बालों को चमक और स्मूथनेस मिलेगी। <br>'
+            document.getElementById('olip1').innerHTML =
+                '1. माइक्रोवेव या गर्म पानी में जैतून का तेल गर्म करें। <br> 2. फिर इसे उदारतापूर्वक बालों और खोपड़ी के सिरों पर लागू करें। <br> 3. इसे 10 से 20 मिनट के लिए छोड़ दें, और फिर इसे शैम्पू कर लें। <br> 4. इससे बालों को चमक और स्मूथनेस मिलेगी। <br>'
 
+
+            // sandalwood
+            document.getElementById('sanh').innerHTML = 'चंदन के लाभ'
+            document.getElementById('sanp').innerHTML =
+                '<b> घर पर अरोमाथेरेपी में चंदन के तेल का उपयोग करने के कई तरीके हैं। आप कर सकते हैं: </b> <br>'
+            document.getElementById('sanol').innerHTML =
+                ' <ol style="list-style-type: circle;"><li> इसे सीधे अपनी त्वचा पर लागू करें। </li> <li> अपने लोशन में कुछ बूँदें डालें। </li> <li> इसे पानी की एक छोटी सी केतली में गर्म करें। अपने घर को सुगंधित करने के लिए। </li> <li> एक आवश्यक तेल infuser का उपयोग करके इसे वाष्पित करें। </li> <li> इसे अपने नहाने के पानी में जोड़ें। </li></ol>'
+            document.getElementById('sanp1').innerHTML =
+                '1. इसमें एक अद्वितीय, सौम्य, गर्म, मखमली और दूधिया बेशकीमती लकड़ी की खुशबू है, जो कई इत्रों के लिए लंबे समय तक चलने वाले आधार का निर्माण करती है। <br> 2. चंदन या इंद्र के चंदन के पेड़ का नाम भगवान इंद्र के नाम पर रखा गया है क्योंकि यह सुगंध फैलाता है। पूरा स्वर्ग <br> 3. चंदन का तेल साबुन प्राकृतिक रोगाणुरोधी और हाइड्रेटिंग गुणों का मालिक है और सभी प्रकार की त्वचा के लिए क्लींजर के रूप में काम करता है <br> 4. चंदन पाउडर को एक महीन पेस्ट में पानी के साथ मिश्रित किया जाता है जो शीर्ष पर लागू होने पर ठंडा प्रभाव डालता है और पित्त की गर्मी को कम करता है और कई अन्य स्थितियों जैसे सनबर्न, मुँहासे, चकत्ते, बुखार, दाद, घाव और अल्सर को ठीक करता है। <br>'
             //  All titles
 
 
@@ -2261,10 +2270,18 @@
             document.getElementById("olih").innerHTML = 'OLIVE OIL BENEFITS'
             document.getElementById("olip").innerHTML =
                 '<li>Pre-shampoo Hair Treatment. </li><li>Combine coarse sugar with a teaspoon of olive oil for a chapped-lip fix.</li><li>Shine Serum. </li><li>Antibacterial Balm.</li>'
-                document.getElementById('olip1').innerHTML = '1. Warm the olive oil in the microwave or in hot water. <br>2. Then apply it generously to the ends of hair and scalp. <br>3. Leave it for 10 to 20 minutes, and then shampoo it out. <br>4. This will give shine and smoothening to hair.<br>'
+            document.getElementById('olip1').innerHTML =
+                '1. Warm the olive oil in the microwave or in hot water. <br>2. Then apply it generously to the ends of hair and scalp. <br>3. Leave it for 10 to 20 minutes, and then shampoo it out. <br>4. This will give shine and smoothening to hair.<br>'
 
 
-
+            // sandalwood
+            document.getElementById('sanh').innerHTML = 'SANDALWOOD BENEFITS'
+            document.getElementById('sanp').innerHTML =
+                '<b>There are many ways to use sandalwood oil in aromatherapy at home. You can:</b> <br>'
+            document.getElementById('sanol').innerHTML =
+                '<li>Apply it directly to your skin.</li><li>Put a few drops in your lotion.</li><li>Heat it in a small kettle of water to scent your home.</li><li>Evaporate it using an essential oil infuser.</li> <li>Add it to your bath water.</li>'
+            document.getElementById('sanp1').innerHTML =
+                '1. It possesses a unique, gentle, warm, velvety and milky prized wood-scent which renders a long-lasting base to several perfumes.<br> 2. Chandana or Indra’s Sandalwood tree named after Lord Indra as it spreads the fragrance to the whole of paradise <br>3. Sandalwood oil soap owns natural antimicrobial and hydrating properties and works as a cleanser for all types of skin<br>4. Sandalwood powder is blended with water into a fine paste which exerts a cooling effect when applied topically and eases Pitta heat and heals several other conditions like sunburn, acne, rashes, fever, herpes, sores and ulcers.<br>'
 
             document.getElementById("englishButton").style.display = "none"
             document.getElementById("hindiButton").style.display = "block"
