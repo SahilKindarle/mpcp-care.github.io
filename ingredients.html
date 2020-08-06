@@ -2104,6 +2104,18 @@
         }
 
         function applyEnglish() {
+
+            for (i = 0; i < 36; i++) {
+                document.getElementsByClassName("healbef")[i].innerHTML = "HEALTHY BENEFITS :-"
+
+                document.getElementsByClassName("agreebtn")[i].innerHTML = "Agree"
+            }
+
+            for (j = 0; j < 33; j++) {
+                document.getElementsByClassName("tips")[j].innerHTML = "TIPS"
+            }
+
+
             document.getElementById("englishButton").style.display = "none"
             document.getElementById("hindiButton").style.display = "block"
 
