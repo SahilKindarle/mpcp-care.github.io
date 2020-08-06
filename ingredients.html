@@ -119,13 +119,15 @@
                 <div id="content">
                     <h5 class="healbef">HEALTHY BENEFITS :-</h5>
                     <p>
-                        <li>Reduce dry skin.
-                        </li>
-                        <li>Improve brain health and function.
-                        </li>
-                        <li>Reduce premature pigment loss from hair, or greying .
-                        <li>Reduce the appearance of scars, blemishes, age spots, and wrinkles.
-                        </li>
+                        <ul id="amlap">
+                            <li>Reduce dry skin.
+                            </li>
+                            <li>Improve brain health and function.
+                            </li>
+                            <li>Reduce premature pigment loss from hair, or greying .
+                            <li>Reduce the appearance of scars, blemishes, age spots, and wrinkles.
+                            </li>
+                        </ul>
                     </p>
 
                     <h5 class="tips">TIPS-</h5>
@@ -2046,9 +2048,13 @@
         })
         $(document).ready(function () {
             $('.lotus').modal();
+
         })
     </script>
     <script>
+        // $('#amlap').empty();
+        // var node = document.getElementById("amlap");
+        // node.innerHTML = "";
         AOS.init({
             duration: 1100,
         })
@@ -2063,6 +2069,10 @@
             document.getElementById("hindiButton").style.display = "none"
             document.getElementById("englishButton").style.display = "block"
 
+            var parent1 = document.getElementById('amlap');
+            console.time("innnertHTML");
+            parent1.innerHTML = "";
+            console.timeEnd("innnertHTML");
             // Navbar Conversions
             document.getElementById("homen").innerHTML = "मुख पृष्ठ"
             document.getElementById("productsn").innerHTML = "उत्पाद"
@@ -2100,6 +2110,9 @@
             for (j = 0; j < 33; j++) {
                 document.getElementsByClassName("tips")[j].innerHTML = "युक्तियाँ"
             }
+
+            // Amla
+            // document.getElementById("amlap").innerHTML = "<li>शुष्क त्वचा को कम करें।</li><li>मस्तिष्क स्वास्थ्य और कार्य में सुधार।</li><li>बालों से समय से पहले पिगमेंट कम हो जाना, या ग्रे होना।</li><li>निशान, blemishes, उम्र के धब्बे, और झुर्रियों की उपस्थिति को कम करें।</li>"
 
         }
 
