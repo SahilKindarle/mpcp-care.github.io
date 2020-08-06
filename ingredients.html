@@ -336,20 +336,19 @@
 
     <div id="honey" class="modal">
         <div class="modal-content">
-            <h4>HONEY BENEFITS</h4>
+            <h4 id="honh">HONEY BENEFITS</h4>
             <div id="content">
                 <h5 class="healbef">HEALTHY BENEFITS :-</h5>
                 <p>
-                    <li>Hair Conditioner.</li>
-                    <li>Face Cleanser.
-                    </li>
-                    <li>Getting Rid of Acne and Blemishes.
-                    </li>
-                    <li>Treating Sunburn.
-                    </li>
+                    <ol id="honp" style="list-style-type: circle;">
+                        <li>Hair Conditioner.</li>
+                        <li>Face Cleanser.</li>
+                        <li>Getting Rid of Acne and Blemishes.</li>
+                        <li>Treating Sunburn.</li>
+                    </ol>
                 </p>
                 <h5 class="tips">TIPS-</h5>
-                <p>
+                <p id="honp1">
                     After you shampoo your hair, apply honey from the root to tip and let it sit for three-four minutes,
                     before rinsing with lukewarm water. You will immediately see the results. You can also mix it with a
                     little <b> <u> Silk coconut oil </u></b> and apply on your hair before shampooing tame frizzy hair.
@@ -2138,6 +2137,15 @@
             document.getElementById('ginp1').innerHTML =
                 'अदरक बालों के विकास को बढ़ावा देने में सक्षम है। अदरक में मौजूद विटामिन, खनिज और फैटी एसिड का संयोजन बालों के रोम को मजबूत करता है और बालों के झड़ने का मुकाबला करता है। <br> इसी तरह, यह आपके खोपड़ी के माध्यम से रक्त परिसंचरण में सुधार करता है जो बालों के विकास को उत्तेजित करता है। <br> इसके अलावा, इसमें एंटीसेप्टिक गुण होते हैं जो रूसी को खत्म करते हैं और ठीक करते हैं। <br> अदरक के रस को 3 बड़े चम्मच <b> <u> सिल्क नारियल तेल </u> </b> के साथ मिलाएं। <br> इसे मालिश करें और अपने बालों को धोने से पहले इसे आधे घंटे के लिए छोड़ दें। बेहतर परिणाम के लिए बालों को धोने से पहले इसे हर बार दोहराएं। <br> यह सूखे और भंगुर बालों के साथ विभाजन के सिरों का भी इलाज करता है।'
 
+
+            // Honey
+            document.getElementById('honh').innerHTML = 'हनी के लाभ'
+            document.getElementById('honp').innerHTML =
+                '<li> हेयर कंडीशनर। </li> <li> फेस क्लींजर। </li> <li> मुँहासे और Blemishes से छुटकारा पाना। </li> <li> सनबर्न का इलाज करना। </li>'
+            document.getElementById("honp1").innerHTML =
+                'अपने बालों को शैम्पू करने के बाद, गुनगुने पानी से रिंस करने से पहले, जड़ से लेकर सिरे तक शहद लगाएं और तीन-चार मिनट तक लगा रहने दें। आप तुरंत परिणाम देखेंगे। आप इसे थोड़ा <b> <u> रेशम नारियल तेल </u> </b> के साथ भी मिला सकते हैं और तम फ्रिज़ी बालों को शैम्पू करने से पहले अपने बालों पर लगा सकते हैं।'
+
+
             //  All titles
 
 
@@ -2231,6 +2239,14 @@
                 " <li>Fade Scars And Marks.</li><li>Anti Ageing Mask.</li><li> Hair Growth.</li>"
             document.getElementById('ginp1').innerHTML =
                 'Ginger is affective in promoting hair growth.The combination of vitamins, minerals and fatty acids present in ginger strengthen hair follicles and combats hair loss. <br> Similarly, it also improves blood circulation through your scalp that stimulates hair growth. <br> Also, it has antiseptic properties that eliminate and cure dandruff. <br> Mix ginger juice with 3 tablespoons of <b><u> Silk coconut oil</u></b>. <br> Massage it and leave it for half an hour before washing your hair. Repeat this every time before a hair wash for better results.<br> It also treats split ends along with dry and brittle hair.'
+
+
+            // Honey
+            document.getElementById('honh').innerHTML = 'HONEY BENEFITS'
+            document.getElementById('honp').innerHTML =
+                '<li>Hair Conditioner.</li><li>Face Cleanser.</li><li>Getting Rid of Acne And Blemishes.</li><li>Treating Sunburn.</li>'
+            document.getElementById("honp1").innerHTML =
+                'After you shampoo your hair, apply honey from the root to tip and let it sit for three-four minutes,before rinsing with lukewarm water. You will immediately see the results. You can also mix it with a little <b> <u> Silk coconut oil </u></b> and apply on your hair before shampooing tame frizzy hair.'
 
 
             document.getElementById("englishButton").style.display = "none"
