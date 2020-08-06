@@ -694,25 +694,19 @@
 
     <div id="lavender" class="modal">
         <div class="modal-content">
-            <h4 style="text-align: center;">LAVENDER BENEFITS</h4>
+            <h4 style="text-align: center;" id="lavh">LAVENDER BENEFITS</h4>
             <div id="content">
                 <h5 class="healbef">HEALTHY BENEFITS :-</h5>
                 <p>
-                    <li>Lavender oil is believed to have antiseptic and anti-inflammatory properties, which can help to
-                        heal minor burns and bug bites.
-                    </li>
-                    <li>Research suggests that it may be useful for treating anxiety, insomnia, depression, and
-                        restlessness.
-                    </li>
-                    <li>The study showed that Lavandula oil is potent and demonstrates anti-fungal activity on a wide
-                        spectrum.
-                    </li>
+                    <ol style="list-style-type: circle;" id="lavol">
+                        <li>Lavender oil is believed to have antiseptic and anti-inflammatory properties, which can help to heal minor burns and bug bites.</li>
+                        <li>Research suggests that it may be useful for treating anxiety, insomnia, depression, and restlessness.</li>
+                        <li>The study showed that Lavandula oil is potent and demonstrates anti-fungal activity on a wide spectrum.</li>
+                    </ol>
+
                 </p>
                 <h5 class="tips">TIPS-</h5>
-                <p>Cold sores can be both painful and nagging. A mixture of a drop of lavender essential oil diluted
-                    with 10-15 drops of fractionated <b><u> Silk coconut oil </u></b>can be applied directly to the cold
-                    sore to speed up the healing process.
-                </p>
+                <p id="lavp">Cold sores can be both painful and nagging. A mixture of a drop of lavender essential oil diluted with 10-15 drops of fractionated <b><u> Silk coconut oil </u></b>can be applied directly to the cold sore to speed up the healing process.</p>
                 <div class="row">
                     <div class="col s12 m12">
                         <div class="center">
@@ -2217,6 +2211,12 @@
                 'दो चम्मच ताजा एलोवेरा जेल को एक चम्मच शहद और तीन चम्मच <b> <u> रेशम के नारियल के तेल के साथ मिलाएं। </u> </b> बालों में अच्छी तरह से मालिश करें, आधे घंटे तक आराम करें। शैम्पू से धो लें। यह मास्क आपके सूखे और सुस्त बालों को नमी और उछाल को जोड़ देगा।'
 
 
+            // Lavender
+            document.getElementById('lavh').innerHTML = 'लैवेंडर के लाभ'
+            document.getElementById('lavol').innerHTML = '<li>माना जाता है कि लैवेंडर के तेल में एंटीसेप्टिक और एंटी-इंफ्लेमेटरी गुण होते हैं, जो मामूली जलन और बग के काटने को ठीक करने में मदद कर सकते हैं। </li> <li> शोध से पता चलता है कि यह चिंता, अनिद्रा, अवसाद, और उपचार के लिए उपयोगी हो सकता है। बेचैनी। </li> <li> अध्ययन से पता चला कि लवंडुला तेल शक्तिशाली है और एक व्यापक स्पेक्ट्रम पर एंटी-फंगल गतिविधि को दर्शाता है। </li>'
+            document.getElementById('lavp').innerHTML = 'ठंड घावों दर्दनाक और सता दोनों हो सकते हैं। लैवेंडर आवश्यक तेल की एक बूंद का मिश्रण, आंशिक रूप से <b> <u> रेशम नारियल तेल </u> </b> की 10-15 बूंदों के साथ पतला होता है, जो घाव भरने की प्रक्रिया को तेज करने के लिए सीधे ठंड में लागू किया जा सकता है।'
+
+                
 
             //  All titles
 
@@ -2402,6 +2402,14 @@
                 '<li>Heartburn relief.</li><li>An alternative to mouthwash.</li><li>Lowering your blood sugar.</li><li>You can use aloe vera to keep your skin clear and hydrated.</li>'
             document.getElementById('alop').innerHTML =
                 'Mix two teaspoons of fresh aloe vera gel with one teaspoon of honey and three teaspoons of <b><u>Silk coconut oil.</u></b> Massage well into the hair ,let it rest for half an hour and then wash with shampoo. This mask will deep condition your dry and dull hair adding moisture and bounce.'
+
+
+
+            // Lavender
+            document.getElementById('lavh').innerHTML = 'LAVENDER BENEFITS'
+            document.getElementById('lavol').innerHTML = '<li>Lavender oil is believed to have antiseptic and anti-inflammatory properties, which can help to heal minor burns and bug bites.</li> <li>Research suggests that it may be useful for treating anxiety, insomnia, depression, and restlessness.</li><li>The study showed that Lavandula oil is potent and demonstrates anti-fungal activity on a wide spectrum.</li>'
+
+            document.getElementById('lavp').innerHTML = 'Cold sores can be both painful and nagging. A mixture of a drop of lavender essential oil diluted with 10-15 drops of fractionated <b><u> Silk coconut oil </u></b>can be applied directly to the cold sore to speed up the healing process.'
 
 
             //  All titles
