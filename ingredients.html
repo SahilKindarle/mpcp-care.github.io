@@ -2091,13 +2091,14 @@
             document.getElementById("pp").innerHTML = "गोपनीयता नीति"
             document.getElementById("tou").innerHTML = "उपयोग की शर्तें"
 
-            for(i=0;i<40;i++) {
-                
-            document.getElementsByClassName("healbef")[i].innerHTML = "सस्वास्थ्य सुविधाएं"
-
-            document.getElementsByClassName("tips")[i].innerHTML = "युक्तियाँ"
+            for (i = 0; i < 36; i++) {
+                document.getElementsByClassName("healbef")[i].innerHTML = "सस्वास्थ्य सुविधाएं"
             }
-            
+
+            for (j = 0; j < 33; j++) {
+                document.getElementsByClassName("tips")[j].innerHTML = "युक्तियाँ"
+            }
+
         }
 
         function applyEnglish() {
