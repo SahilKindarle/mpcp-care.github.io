@@ -443,21 +443,19 @@
 
     <div id="apricot" class="modal">
         <div class="modal-content">
-            <h4 style="text-align: center;">APRICOT BENEFITS</h4>
+            <h4 style="text-align: center;" id="aprh">APRICOT BENEFITS</h4>
             <div id="content">
                 <h5 class="healbef">HEALTHY BENEFITS :-</h5>
                 <p>
-                    <li>High in antioxidants.
-                    </li>
-                    <li>Promote eye health.
-                    </li>
-                    <li>Boost skin health.
-                    </li>
-                    <li>Very hydrating.
-                    </li>
+                    <ol style="list-style-type: circle;" id="aprol">
+                        <li>High in antioxidants.</li>
+                        <li>Promote eye health.</li>
+                        <li>Boost skin health.</li>
+                        <li>Very hydrating.</li>
+                    </ol>
                 </p>
                 <h5 class="tips">TIPS-</h5>
-                <p>
+                <p id="aprp">
                     Clean and wash the apricot, remove its skin, and cut it into halves. Discard the seed of the fruit
                     and mash it into smooth pulp by using your hand. You can also make small dices of the apricot and
                     crush them in a blender. Now, add honey and <b> <u> Silk coconut oil </u> </b> to the apricot pulp
@@ -2163,6 +2161,11 @@
                 ' <ol style="list-style-type: circle;"><li> इसे सीधे अपनी त्वचा पर लागू करें। </li> <li> अपने लोशन में कुछ बूँदें डालें। </li> <li> इसे पानी की एक छोटी सी केतली में गर्म करें। अपने घर को सुगंधित करने के लिए। </li> <li> एक आवश्यक तेल infuser का उपयोग करके इसे वाष्पित करें। </li> <li> इसे अपने नहाने के पानी में जोड़ें। </li></ol>'
             document.getElementById('sanp1').innerHTML =
                 '1. इसमें एक अद्वितीय, सौम्य, गर्म, मखमली और दूधिया बेशकीमती लकड़ी की खुशबू है, जो कई इत्रों के लिए लंबे समय तक चलने वाले आधार का निर्माण करती है। <br> 2. चंदन या इंद्र के चंदन के पेड़ का नाम भगवान इंद्र के नाम पर रखा गया है क्योंकि यह सुगंध फैलाता है। पूरा स्वर्ग <br> 3. चंदन का तेल साबुन प्राकृतिक रोगाणुरोधी और हाइड्रेटिंग गुणों का मालिक है और सभी प्रकार की त्वचा के लिए क्लींजर के रूप में काम करता है <br> 4. चंदन पाउडर को एक महीन पेस्ट में पानी के साथ मिश्रित किया जाता है जो शीर्ष पर लागू होने पर ठंडा प्रभाव डालता है और पित्त की गर्मी को कम करता है और कई अन्य स्थितियों जैसे सनबर्न, मुँहासे, चकत्ते, बुखार, दाद, घाव और अल्सर को ठीक करता है। <br>'
+
+            // Apricot
+            document.getElementById('aprh').innerHTML = 'खुबानी के लाभ'
+            document.getElementById('aprol').innerHTML = '<li> एंटीऑक्सिडेंट्स में उच्च। </li> <li> नेत्र स्वास्थ्य को बढ़ावा दें। </li> <li> त्वचा स्वास्थ्य को बढ़ावा दें। </li> <li> बहुत हाइड्रेटिंग। </li>'
+            document.getElementById('aprp').innerHTML = 'खुबानी को साफ और धो लें, इसकी त्वचा को हटा दें, और इसे आधा में काट लें। फल के बीज को त्यागें और अपने हाथ का उपयोग करके इसे चिकनी गूदे में मैश करें। आप खुबानी के छोटे-छोटे डाइस भी बना सकते हैं और उन्हें ब्लेंडर में क्रश कर सकते हैं। अब, शहद और <b> <u> रेशम नारियल का तेल </u> </b> जोड़ें और खूबानी के गूदे को मिलाएं और अच्छी तरह से मिलकर गाढ़ा गाढ़ा पेस्ट बनाएं। अपने चेहरे को सादे पानी से साफ़ करें और पोछें और उस पर मास्क लगाएँ। इसे 10 से 15 मिनट तक बैठने दें। एक बार जब यह सूखने लगे तो गुनगुने पानी से धीरे-धीरे रगड़ें। अधिकतम परिणाम के लिए हर हफ्ते कम से कम एक बार इस मास्क का उपयोग करें। एक अमीर पेस्ट के लिए शहद को इसके गाढ़े रूप में उपयोग करने की कोशिश करें।'
             //  All titles
 
 
@@ -2285,6 +2288,12 @@
 
             document.getElementById("englishButton").style.display = "none"
             document.getElementById("hindiButton").style.display = "block"
+
+
+            // Apricot
+            document.getElementById('aprh').innerHTML = 'APRICOT BENEFITS'
+            document.getElementById('aprol').innerHTML = '<li>High in antioxidants.</li><li>Promote eye health.</li><li>Boost skin health.</li><li>Very hydrating.</li>'
+            document.getElementById('aprp').innerHTML = 'Clean and wash the apricot, remove its skin, and cut it into halves. Discard the seed of the fruit and mash it into smooth pulp by using your hand. You can also make small dices of the apricot and crush them in a blender. Now, add honey and <b> <u> Silk coconut oil </u> </b> to the apricot pulp and combine well to form a rich paste of thick consistency. Cleanse and dampen your face with plain water and apply the mask all over it. Let it sit for 10 to 15 minutes. Once it starts drying, rinse gently with lukewarm water. Use this mask at least once every week for maximum results. Try to use honey in its thicker form for a richer paste.'
 
             //  All titles
             // Navbar Conversions
