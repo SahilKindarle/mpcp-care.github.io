@@ -952,21 +952,19 @@
 
     <div id="neem" class="modal">
         <div class="modal-content">
-            <h4 style="text-align: center;">NEEM BENEFITS</h4>
+            <h4 style="text-align: center;" id='neeh'>NEEM BENEFITS</h4>
             <div id="content">
                 <h5 class="healbef">HEALTHY BENEFITS :-</h5>
                 <p>
-                    <li>Soothe irritated skin.
-                    </li>
-                    <li>A skin cleanser.
-                    </li>
-                    <li>An anti-dandruff hair solution.
-                    </li>
-                    <li>A nourishing face pack.
-                    </li>
+                    <ol id="neeol" style="list-style-type: circle;">
+                        <li>Soothe irritated skin.</li>
+                        <li>A skin cleanser.</li>
+                        <li>An anti-dandruff hair solution.</li>
+                        <li>A nourishing face pack.</li>
+                    </ol>
                 </p>
                 <h5 class="tips">TIPS-</h5>
-                <p>
+                <p id="neep">
                     Mix a few drops of neem oil with a few drops of <b><u> Silk coconut oil</u></b> and massage this
                     gently on the affected areas. Leave on till it dries. Rinse with lukewarm water and pat dry.
                 </p>
@@ -2270,6 +2268,13 @@
                 '<li> पानी लिली त्वचा पर चकत्ते और जलन को दूर करता है। </li> <li> जल लिली चमक और चमक पैदा करता है। </li> <li> पानी लिली सूखी त्वचा को मॉइस्चराइज करता है। </li> <li> पानी लिली बालों पर अच्छी तरह से काम करता है। यह गाढ़ा और पुनर्जीवित करने, अशुद्धियों से छुटकारा पाने और सौंदर्य को चमकने की अनुमति देता है। </li>'
 
 
+            // Neem
+            document.getElementById('neeh').innerHTML = 'नीम के लाभ'
+            document.getElementById('neeol').innerHTML =
+                '<li> जलन वाली त्वचा को सोखें। </li> <li> एक त्वचा को साफ़ करने वाला। </li> <li> एक एंटी-डैंड्रफ़ हेयर सॉल्यूशन। </li> <li> एक पौष्टिक फेस पैक। </li>'
+            document.getElementById('neep').innerHTML =
+                'नीम के तेल की कुछ बूंदों को <b> <u> रेशम नारियल तेल </u> </b> की कुछ बूंदों के साथ मिलाएं और प्रभावित क्षेत्रों पर धीरे से मालिश करें। सूखने तक छोड़ दें। गुनगुने पानी और पैट सूखी के साथ कुल्ला।'
+
 
             //  All titles
 
@@ -2514,6 +2519,14 @@
             document.getElementById('lilh').innerHTML = 'LILY BENEFITS'
             document.getElementById('lilol').innerHTML =
                 '<li> Water Lily Soothes Skin Rashes and Irritations. </li> <li> Water Lily Brightens and Creates Radiance. </li> <li> Water Lily Moisturises Dry Skin. </li> <li> water lily works well on hair. It helps thicken and revitalize it, getting rid of impurities and allowing the beauty to shine through. </li>'
+
+
+            // Neem
+            document.getElementById('neeh').innerHTML = 'NEEM BENEFITS'
+            document.getElementById('neeol').innerHTML =
+                '<li>Soothe irritated skin.</li><li>A skin cleanser.</li><li>An anti-dandruff hair solution.</li><li>A nourishing face pack.</li>'
+            document.getElementById('neep').innerHTML =
+                'Mix a few drops of neem oil with a few drops of <b><u> Silk coconut oil</u></b> and massage this gently on the affected areas. Leave on till it dries. Rinse with lukewarm water and pat dry.'
 
 
 
