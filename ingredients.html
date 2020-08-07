@@ -1378,73 +1378,14 @@
             <a href="#!" class="modal-close waves-effect waves-green btn-flat agreebtn">Agree</a>
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <section style="width: 90%; margin: auto 5%; background-color: white; margin-bottom: 20px;">
+   <section style="width: 90%; margin: auto 5%; background-color: white; margin-bottom: 20px;">
         <div class="row" style="margin-top: 0vh;">
             <div class="col s12 m3" style="margin-top: 15vh;">
                 <div class="center">
                     <div class="flex-container" id="modal1" class="modal bottom-sheet">
                         <span> <img src="images/1.png" alt="" width="100%" data-aos="zoom-out" href="#amla"
                                 class="waves-effect waves-light  modal-trigger"></span>
-                        <span class="ingredSpan">AMLA</span>
+                        <span class="ingredSpan" id="amlt">AMLA</span>
                     </div>
                 </div>
             </div>
@@ -1453,7 +1394,7 @@
                     <div class="flex-container">
                         <span> <img src="images/4.png" alt="" width="100%" data-aos="zoom-out" href="#vanilla"
                                 class="waves-effect waves-light  modal-trigger"></span>
-                        <span class="ingredSpan">VANILLA</span>
+                        <span class="ingredSpan" id="vant">VANILLA</span>
 
                     </div>
                 </div>
@@ -1463,7 +1404,7 @@
                     <div class="flex-container">
                         <span> <img src="images/2.png" alt="" width="100%" data-aos="zoom-out" href="#jasmine"
                                 class="waves-effect waves-light  modal-trigger"></span>
-                        <span class="ingredSpan">JASMINE</span>
+                        <span class="ingredSpan" id="jast">JASMINE</span>
 
                         </a>
                     </div>
@@ -1474,7 +1415,7 @@
                     <div class="flex-container">
                         <span> <img src="images/32.png" alt="" width="100%" data-aos="zoom-out" href="#coconut"
                                 class="waves-effect waves-light  modal-trigger"></span>
-                        <span class="ingredSpan">COCONUT</span>
+                        <span class="ingredSpan" id="coct">COCONUT</span>
 
                         </a>
                     </div>
@@ -1487,7 +1428,7 @@
                     <div class="flex-container" id="modal1" class="modal bottom-sheet">
                         <span> <img src="images/5.png" data-aos="zoom-out" width="100%" href="#ginger"
                                 class="waves-effect waves-light  modal-trigger"></span>
-                        <span class="ingredSpan">GINGER</span>
+                        <span class="ingredSpan" id="gint">GINGER</span>
 
                         </a>
                     </div>
@@ -1498,7 +1439,7 @@
                     <div class="flex-container">
                         <span> <img src="images/6.png" data-aos="zoom-out" width="100%" href="#honey"
                                 class="waves-effect waves-light  modal-trigger"></span>
-                        <span class="ingredSpan">HONEY</span>
+                        <span class="ingredSpan" id='hont'>HONEY</span>
 
                         </a>
                     </div>
@@ -1509,7 +1450,7 @@
                     <div class="flex-container">
                         <span> <img src="images/7.png" data-aos="zoom-out" width="100%" href="#olive"
                                 class="waves-effect waves-light  modal-trigger"></span>
-                        <span class="ingredSpan">OLIVE OIL</span>
+                        <span class="ingredSpan" id='olit'>OLIVE OIL</span>
 
                         </a>
                     </div>
@@ -1520,7 +1461,7 @@
                     <div class="flex-container">
                         <span> <img src="images/8.png" data-aos="zoom-out" width="100%" href="#sandle"
                                 class="waves-effect waves-light  modal-trigger"></span>
-                        <span class="ingredSpan">SANDALWOOD</span>
+                        <span class="ingredSpan" id="sant">SANDALWOOD</span>
 
                         </a>
                     </div>
@@ -1533,7 +1474,7 @@
                     <div class="flex-container" id="modal1" class="modal bottom-sheet">
                         <span> <img src="images/9.png" data-aos="zoom-out" width="100%" href="#apricot"
                                 class="waves-effect waves-light  modal-trigger"></span>
-                        <span class="ingredSpan">APRICOT</span>
+                        <span class="ingredSpan" id="aprt">APRICOT</span>
 
                         </a>
                     </div>
@@ -1544,7 +1485,7 @@
                     <div class="flex-container">
                         <span> <img src="images/10.png" data-aos="zoom-out" width="100%" href="#almond"
                                 class="waves-effect waves-light  modal-trigger"></span>
-                        <span class="ingredSpan">ALMOND</span>
+                        <span class="ingredSpan" id="almt">ALMOND</span>
 
                         </a>
                     </div>
@@ -1555,7 +1496,7 @@
                     <div class="flex-container">
                         <span> <img src="images/11.png" data-aos="zoom-out" width="100%" href="#orange"
                                 class="waves-effect waves-light  modal-trigger"></span>
-                        <span class="ingredSpan">ORANGE</span>
+                        <span class="ingredSpan" id="orat">ORANGE</span>
 
                         </a>
                     </div>
@@ -1566,7 +1507,7 @@
                     <div class="flex-container">
                         <span> <img src="images/12.png" data-aos="zoom-out" width="100%" href="#turmeric"
                                 class="waves-effect waves-light  modal-trigger"></span>
-                        <span class="ingredSpan">TURMERIC</span>
+                        <span class="ingredSpan" id="turt">TURMERIC</span>
 
                         </a>
                     </div>
@@ -1579,7 +1520,7 @@
                     <div class="flex-container" id="modal1" class="modal bottom-sheet">
                         <span> <img src="images/13.png" data-aos="zoom-out" width="100%" href="#onion"
                                 class="waves-effect waves-light  modal-trigger"></span>
-                        <span class="ingredSpan">ONION</span>
+                        <span class="ingredSpan" id="onit">ONION</span>
 
                         </a>
                     </div>
@@ -1590,7 +1531,7 @@
                     <div class="flex-container">
                         <span> <img src="images/14.png" data-aos="zoom-out" width="100%" href="#heena"
                                 class="waves-effect waves-light  modal-trigger"></span>
-                        <span class="ingredSpan">HEENA</span>
+                        <span class="ingredSpan" id="heet">HEENA</span>
 
                         </a>
                     </div>
@@ -1601,7 +1542,7 @@
                     <div class="flex-container">
                         <span> <img src="images/16.png" data-aos="zoom-out" width="100%" href="#aloevera"
                                 class="waves-effect waves-light  modal-trigger"></span>
-                        <span class="ingredSpan">ALOEVERA</span>
+                        <span class="ingredSpan" id="alot">ALOEVERA</span>
 
                         </a>
                     </div>
@@ -1612,7 +1553,7 @@
                     <div class="flex-container">
                         <span> <img src="images/17.png" data-aos="zoom-out" width="100%" href="#lavender"
                                 class="waves-effect waves-light  modal-trigger"></span>
-                        <span class="ingredSpan">LAVENDER</span>
+                        <span class="ingredSpan" id="lavt">LAVENDER</span>
 
                         </a>
                     </div>
@@ -1625,7 +1566,7 @@
                     <div class="flex-container" id="modal1" class="modal bottom-sheet">
                         <span> <img src="images/18.png" data-aos="zoom-out" width="100%" href="#rose"
                                 class="waves-effect waves-light  modal-trigger"></span>
-                        <span class="ingredSpan">ROSE</span>
+                        <span class="ingredSpan" id='rost'>ROSE</span>
 
                         </a>
                     </div>
@@ -1636,7 +1577,7 @@
                     <div class="flex-container">
                         <span> <img src="images/19.png" data-aos="zoom-out" width="100%" href="#sparemint"
                                 class="waves-effect waves-light  modal-trigger"></span>
-                        <span class="ingredSpan">SPEARMINT</span>
+                        <span class="ingredSpan" id="spet">SPEARMINT</span>
 
                         </a>
                     </div>
@@ -1647,7 +1588,7 @@
                     <div class="flex-container">
                         <span> <img src="images/20.png" data-aos="zoom-out" width="100%" href="#lily"
                                 class="waves-effect waves-light  modal-trigger"></span>
-                        <span class="ingredSpan">LILY</span>
+                        <span class="ingredSpan" id="lilt">LILY</span>
 
                         </a>
                     </div>
@@ -1658,7 +1599,7 @@
                     <div class="flex-container">
                         <span> <img src="images/21.png" data-aos="zoom-out" width="100%" href="#hibiscus"
                                 class="waves-effect waves-light  modal-trigger"></span>
-                        <span class="ingredSpan">HIBISCUS</span>
+                        <span class="ingredSpan" id="hibt">HIBISCUS</span>
 
                         </a>
                     </div>
@@ -1671,7 +1612,7 @@
                     <div class="flex-container" id="modal1" class="modal bottom-sheet">
                         <span> <img src="images/22.png" data-aos="zoom-out" width="100%" href="#lime"
                                 class="waves-effect waves-light  modal-trigger"></span>
-                        <span class="ingredSpan">LIME</span>
+                        <span class="ingredSpan" id="limt">LIME</span>
 
                         </a>
                     </div>
@@ -1682,7 +1623,7 @@
                     <div class="flex-container">
                         <span> <img src="images/23.png" data-aos="zoom-out" width="100%" href="#peppermint"
                                 class="waves-effect waves-light  modal-trigger"></span>
-                        <span class="ingredSpan">PEPPER MINT</span>
+                        <span class="ingredSpan" id="pept">PEPPERMINT</span>
 
                         </a>
                     </div>
@@ -1693,7 +1634,7 @@
                     <div class="flex-container">
                         <span> <img src="images/24.png" data-aos="zoom-out" width="100%" href="#neem"
                                 class="waves-effect waves-light  modal-trigger"></span>
-                        <span class="ingredSpan">NEEM</span>
+                        <span class="ingredSpan" id="neet">NEEM</span>
 
                         </a>
                     </div>
@@ -1704,7 +1645,7 @@
                     <div class="flex-container">
                         <span> <img src="images/25.png" data-aos="zoom-out" width="100%" href="#jojoba"
                                 class="waves-effect waves-light  modal-trigger"></span>
-                        <span class="ingredSpan">JOJOBA OIL</span>
+                        <span class="ingredSpan" id="jojt">JOJOBA OIL</span>
 
                         </a>
                     </div>
@@ -1717,7 +1658,7 @@
                     <div class="flex-container" id="modal1" class="modal bottom-sheet">
                         <span> <img src="images/26.png" data-aos="zoom-out" width="100%" href="#sunflower"
                                 class="waves-effect waves-light  modal-trigger"></span>
-                        <span class="ingredSpan">SUNFLOWER SEED</span>
+                        <span class="ingredSpan" id="sunt">SUNFLOWER SEED</span>
 
                         </a>
                     </div>
@@ -1728,7 +1669,7 @@
                     <div class="flex-container">
                         <span> <img src="images/27.png" data-aos="zoom-out" width="100%" href="#mogra"
                                 class="waves-effect waves-light  modal-trigger"></span>
-                        <span class="ingredSpan">MOGRA</span>
+                        <span class="ingredSpan" id='mogt'>MOGRA</span>
 
                         </a>
                     </div>
@@ -1739,7 +1680,7 @@
                     <div class="flex-container">
                         <span> <img src="images/28.png" data-aos="zoom-out" width="100%" href="#coconutmilk"
                                 class="waves-effect waves-light  modal-trigger"></span>
-                        <span class="ingredSpan">COCONUT MILK</span>
+                        <span class="ingredSpan" id="cocmt">COCONUT MILK</span>
 
                         </a>
                     </div>
@@ -1750,7 +1691,7 @@
                     <div class="flex-container">
                         <span> <img src="images/29.png" data-aos="zoom-out" width="100%" href="#coccinia"
                                 class="waves-effect waves-light  modal-trigger"></span>
-                        <span class="ingredSpan">COCCINIA</span>
+                        <span class="ingredSpan" id="cocct">COCCINIA</span>
 
                         </a>
                     </div>
@@ -1763,7 +1704,7 @@
                     <div class="flex-container" id="modal1" class="modal bottom-sheet">
                         <span> <img src="images/30.png" data-aos="zoom-out" width="100%" href="#tarmarind"
                                 class="waves-effect waves-light  modal-trigger"></span>
-                        <span class="ingredSpan">TARMARIND</span>
+                        <span class="ingredSpan" id='tamt'>TARMARIND</span>
 
                         </a>
                     </div>
@@ -1774,7 +1715,7 @@
                     <div class="flex-container">
                         <span> <img src="images/31.png" data-aos="zoom-out" width="100%" href="#tulsi"
                                 class="waves-effect waves-light  modal-trigger"></span>
-                        <span class="ingredSpan">TULSI</span>
+                        <span class="ingredSpan" id="tult">TULSI</span>
 
                         </a>
                     </div>
@@ -1785,7 +1726,7 @@
                     <div class="flex-container">
                         <span> <img src="images/38.png" data-aos="zoom-out" width="100%" href="#fennel"
                                 class="waves-effect waves-light  modal-trigger"></span>
-                        <span class="ingredSpan">FENNEL</span>
+                        <span class="ingredSpan" id='fent'>FENNEL</span>
 
                         </a>
                     </div>
@@ -1796,7 +1737,7 @@
                     <div class="flex-container">
                         <span> <img src="images/33.png" data-aos="zoom-out" width="100%" href="#walnut"
                                 class="waves-effect waves-light  modal-trigger"></span>
-                        <span class="ingredSpan">WALNUT</span>
+                        <span class="ingredSpan" id="walt">WALNUT</span>
 
                         </a>
                     </div>
@@ -1809,7 +1750,7 @@
                     <div class="flex-container" id="modal1" class="modal bottom-sheet">
                         <span> <img src="images/34.png" data-aos="zoom-out" width="100%" href="#multani"
                                 class="waves-effect waves-light  modal-trigger"></span>
-                        <span class="ingredSpan">MULTANI MITTI</span>
+                        <span class="ingredSpan" id="mulmit">MULTANI MITTI</span>
 
                         </a>
                     </div>
@@ -1820,7 +1761,7 @@
                     <div class="flex-container">
                         <span> <img src="images/35.png" data-aos="zoom-out" width="100%" href="#tea"
                                 class="waves-effect waves-light  modal-trigger"></span>
-                        <span class="ingredSpan">TEA</span>
+                        <span class="ingredSpan" id="teat">TEA</span>
 
                         </a>
                     </div>
@@ -1831,7 +1772,7 @@
                     <div class="flex-container">
                         <span> <img src="images/36.png" data-aos="zoom-out" width="100%" href="#glycerine"
                                 class="waves-effect waves-light  modal-trigger"></span>
-                        <span class="ingredSpan">GLYCERINE</span>
+                        <span class="ingredSpan" id="glyt">GLYCERINE</span>
 
                         </a>
                     </div>
@@ -1842,7 +1783,7 @@
                     <div class="flex-container">
                         <span> <img src="images/37.png" data-aos="zoom-out" href="#lotus" width="100%"
                                 class="waves-effect waves-light  modal-trigger"></span>
-                        <span class="ingredSpan">LOTUS</span>
+                        <span class="ingredSpan" id="lott">LOTUS</span>
                         <!-- <a  class="waves-effect waves-light btn modal-trigger"></a> -->
 
                         </a>
@@ -2734,6 +2675,51 @@
 
 
             //  All titles
+            document.getElementById('amlt').innerHTML = 'AMLA'
+            document.getElementById('vant').innerHTML = 'VANILLA'
+            document.getElementById('jast').innerHTML = 'JASMINE'
+            document.getElementById('coct').innerHTML = 'COCONUT'
+            document.getElementById('gint').innerHTML = 'GINGER'
+            document.getElementById('hont').innerHTML = 'HONEY'
+            document.getElementById('olit').innerHTML = 'OLIVE OIL'
+            document.getElementById('sant').innerHTML = 'SANDALWOOD'
+            document.getElementById('aprt').innerHTML = 'APRICOT'
+            document.getElementById('almt').innerHTML = 'ALMOND'
+            document.getElementById('orat').innerHTML = 'ORANGE'
+            document.getElementById('turt').innerHTML = 'TURMERIC'
+            document.getElementById('onit').innerHTML = 'ONION'
+            document.getElementById('heet').innerHTML = 'HEENA'
+            document.getElementById('alot').innerHTML = 'ALOEVERA'
+            document.getElementById('lavt').innerHTML = 'LAVENDER'
+            document.getElementById('rost').innerHTML = 'ROSE'
+            document.getElementById('spet').innerHTML = 'SPEARMINT'
+            document.getElementById('lilt').innerHTML = 'LILY'
+            document.getElementById('hibt').innerHTML = 'HIBISCUS'
+            document.getElementById('limt').innerHTML = 'LIME'
+            document.getElementById('pept').innerHTML = 'PEPPERMINT'
+            document.getElementById('neet').innerHTML = 'NEEM'
+            document.getElementById('jojt').innerHTML = 'JOJOBA OIL'
+            document.getElementById('sunt').innerHTML = 'SUNFLOWER SEED'
+            document.getElementById('mogt').innerHTML = 'MOGRA'
+            document.getElementById('cocmt').innerHTML = 'COCONUT MILK'
+            document.getElementById('cocct').innerHTML = 'COCCINIA'
+            document.getElementById('tamt').innerHTML = 'TAMARIND'
+            document.getElementById('tult').innerHTML = 'TULSI'
+            document.getElementById('fent').innerHTML = 'FENNEL'
+            document.getElementById('walt').innerHTML = 'WALNUT'
+            document.getElementById('mulmit').innerHTML = 'MULTANI MITTI'
+            document.getElementById('teat').innerHTML = 'TEA'
+            document.getElementById('glyt').innerHTML = 'GLYCERINE'
+            document.getElementById('lott').innerHTML = 'LOTUS'
+
+
+
+            
+            
+
+
+
+
             // Navbar Conversions
             document.getElementById("homen").innerHTML = "Home"
             document.getElementById("productsn").innerHTML = "Products"
