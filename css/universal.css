@@ -237,13 +237,56 @@ color: white !important;
   background-size: cover;
 }
 
+.lolwa {
+  position: relative;
+  text-align: center;
+  color: white;
+  background-color: #f1e0e2;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+
 .iris {
   /* background-image: url("../images/Artboard\ 2upt.png"); */
-  background-image: url('../images/bgtest.png');
+  background-image: url("../images/Artboard21.png");
+  /* background-image: url('../images/bgtest.png'); */
   background-repeat: no-repeat;
-  height: 100vh;
-  /* width: 100vh; */
-  background-size: cover;
+  /* height: 100vh; */
+  width: 100%;
+  background-size: contain;
   /* padding-bottom: 20px; */
 }
 
