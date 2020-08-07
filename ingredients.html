@@ -776,21 +776,19 @@
 
     <div id="sparemint" class="modal">
         <div class="modal-content">
-            <h4 style="text-align: center;">SPARE MINT BENEFITS</h4>
+            <h4 style="text-align: center;" id="sprh">SPEARMINT BENEFITS</h4>
             <div id="content">
                 <h5 class="healbef">HEALTHY BENEFITS :-</h5>
                 <p>
-                    <li>Lowers Blood Sugar.
-                    </li>
-                    <li>Fights Bacterial Infections.
-                    </li>
-                    <li>Reduce Facial Hair in Women.
-                    </li>
-                    <li>Good for Digestive Upsets.
-                    </li>
+                    <ol id="sprol" style="list-style-type: circle;">
+                        <li>Lowers Blood Sugar.</li>
+                        <li>Fights Bacterial Infections.</li>
+                        <li>Reduce Facial Hair in Women.</li>
+                        <li>Good for Digestive Upsets.</li>
+                    </ol>
                 </p>
                 <h5 class="tips">TIPS-</h5>
-                <p>
+                <p id="sprp">
                     1. Inhale from cupped hands to reduce feelings of nausea.
                     <br>
                     2. Massage 1-2 drops (diluted) over achy muscles.
@@ -2231,6 +2229,13 @@
                 '1. जड़ी बूटियों के साथ जार भरें और एक <b> <u> रेशम नारियल तेल </u> </b> <br> 2। इसे एक डबल बायलर रखें और धीमी गति से उबाल लें। मिश्रण को 50-60 डिग्री सेल्सियस के तापमान पर गर्म करें और इसे उबालने के लिए अच्छा और कम रखें और अधिक समय तक (5-6 घंटे) औषधीय गुणों को छोड़ने में मदद करें। । <br> 3। मिश्रण को 50-60 डिग्री सेल्सियस के तापमान पर गर्म करें और औषधीय गुणों को छोड़ने में मदद करने के लिए इसे अधिक लंबे समय तक (5-6 घंटे) तक गर्म और कम रखें। <br> 4। फिर तेल को पंखुड़ियों के दूसरे बैच के साथ भरें और प्रक्रिया को कई बार दोहराएं जब तक रेशम नारियल का तेल रंग और गंध पर न हो जाए। <br> 5। तेल में गुलाब की पंखुड़ियों के क्रमिक मैक्रेशन द्वारा, आप एक उच्च गुणवत्ता और जैविक रूप से प्रभावी संक्रमित तेल प्राप्त करने में सक्षम होंगे। <br/>'
 
 
+            // Spearmint
+            document.getElementById('sprh').innerHTML = 'भाले के लाभ'
+            document.getElementById('sprol').innerHTML =
+                '<li> रक्त शर्करा को कम करता है। </li> <li> बैक्टीरियल संक्रमण से लड़ता है। </li> <li> महिलाओं में चेहरे के बालों को कम करना। </li> <li> पाचन तंत्र के लिए अच्छा है। </li>'
+            document.getElementById('sprp').innerHTML =
+                '1. मतली की भावनाओं को कम करने के लिए क्यूप्ड हाथों से श्वास लें। <br> 2. मांसपेशियों की मांसपेशियों पर 1-2 बूंदों (पतला) की मालिश करें। <br> 3. एक माउथवॉश के रूप में पानी में 1-2 बूँदें <br> 4. भारी मासिक धर्म को कम करने में मदद करने के लिए गर्दन और पेट के पीछे 1-2 बूंदें लगाएं। <br> 5. थकान की भावनाओं से लड़ने में कठिनाई। <br> 6. सिर के तनाव को कम करने के लिए गर्दन के पीछे की तरफ ऊपर की ओर लगाएं। <br> 7. ताज़ा महसूस करना मुश्किल। <br> 8. तनाव की भावनाओं को कम करने के लिए गर्दन के पीछे लागू करें। <br> 9. शरीर की प्रणालियों की सहायता के लिए पैरों के नीचे 1-2 बूंदें (पतला) लगाएं। <br>'
+
 
 
             //  All titles
@@ -2435,7 +2440,16 @@
                 '<li>Effectively increases skin tone.</li><li>Relaxes and cleanses.</li><li>Nourishes and regenerates.</li><li>Roses relieve irritation, rejuvenate and moisturize skin in conjunction with oil, help stop time and brighten the face.</li>'
             document.getElementById('rosp').innerHTML =
                 '1. Fill the jar with herbs and a <b><u> Silk coconut oil</u></b><br>2. Place it a double boiler and bring to a slow simmer<br>Heat the mixture to a temperature of 50-60 degrees Celsius and keep it the heat nice and low for a longer simmer time (5-6 hours) to help release medicinal properties. <br>3. Heat the mixture to a temperature of 50-60 degrees Celsius and keep it the heat nice and low for a longer simmer time (5-6 hours) to help release medicinal properties. <br>4. Then remove the oil fill it with the second batch of petals and repeat the process as many times till the Silk coconut oil takes on the color and the scent.<br>5. By gradual maceration of the rose petals in oil, you will be able to obtain a high quality and biologically effective rose infused oil.'
-            z
+
+
+            // Spearmint
+            document.getElementById('sprh').innerHTML = 'SPEARMINT BENEFITS'
+            document.getElementById('sprol').innerHTML =
+                '<li>Lowers Blood Sugar.</li><li>Fights Bacterial Infections.</li><li>Reduce Facial Hair in Women.</li><li>Good for Digestive Upsets.</li>'
+            document.getElementById('sprp').innerHTML =
+                '1. Inhale from cupped hands to reduce feelings of nausea.<br>2. Massage 1-2 drops (diluted) over achy muscles.<br>3. Swish 1-2 drops in water as a mouthwash <br>4. Apply 1-2 drops over back of neck and abdomen to help reduce heavy menstruation. <br>5. Diffuse to fight feelings of fatigue.<br>6. Apply topically to the back of neck to reduce head tension.<br>7. Diffuse to feel refreshed.<br>8. Apply to the back of the neck to reduce feelings of stress.<br>9. Apply 1-2 drops (diluted) on the bottom of the feet to help body systems. <br>'
+
+
             //  All titles
             // Navbar Conversions
             document.getElementById("homen").innerHTML = "Home"
