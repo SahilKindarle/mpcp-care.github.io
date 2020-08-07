@@ -907,20 +907,22 @@
 
     <div id="peppermint" class="modal">
         <div class="modal-content">
-            <h4 style="text-align: center;">PEPPER MINT BENEFITS</h4>
+            <h4 style="text-align: center;" id="peph">PEPPERMINT BENEFITS</h4>
             <div id="content">
                 <h5 class="healbef">HEALTHY BENEFITS :-</h5>
                 <p>
-                    <li>Peppermint calms the stomach muscles and improves the flow of bile.
-                    </li>
-                    <li>It is believed to have calming effects.
-                    </li>
-                    <li>Peppermint essential oil is used in tinctures, chest rubs, and creams.
-                    </li>
+                    <ol id="pepol" style="list-style-type: circle;">
+                        <li>Peppermint calms the stomach muscles and improves the flow of bile.
+                        </li>
+                        <li>It is believed to have calming effects.
+                        </li>
+                        <li>Peppermint essential oil is used in tinctures, chest rubs, and creams.
+                        </li>
+                    </ol>
                 </p>
-                <h6>For peppermint oil
+                <h6 id="peph1">For peppermint oil
                 </h6>
-                <p>
+                <p id="pepp">
                     1. Crush or muddle fresh peppermint leaves in a glass jar with a tight lid.
                     <br>
                     2. Cover the leaves with olive or grapeseed oil. Close the jar and shake.
@@ -2254,6 +2256,14 @@
                 '"नारियल में चूना" और इसे कई सालों तक प्राकृतिक स्ट्रेटनर के रूप में इस्तेमाल किया जाता है। इस क्लासिक रेसिपी की हमारी थोड़ी सी भिन्नता दो कप नारियल के दूध, एक नींबू, दो बड़े चम्मच अरारोट पाउडर और दो बड़े चम्मच <b का उपयोग करने के लिए है। > <u> रेशम नारियल का तेल </u> </b> एक स्टोव शीर्ष पर कम गर्मी पर अपने सभी अवयवों को गरम करें और रात भर छोड़ दें। जब आप तैयार हों, तो अपने बालों में उंगली से कंघी करें, सिरे से जड़ों तक। , और कम से कम एक घंटे के लिए छोड़ दें। यह विधि गर्मी के साथ सबसे अच्छा काम करेगी, इसलिए या तो एक भाप उपचार या एक हुड हेयर ड्रायर का उपयोग करें। मेरा संदेह (सूत्रों के आधार पर) यह है कि यह सीधा चाल गांठदार कर्ल और सीधी लहरों को लम्बा खींच देगा। ।'
 
 
+            // Peppermint
+            document.getElementById('peph').innerHTML = 'पुदीना के लाभ'
+            document.getElementById('pepol').innerHTML =
+                '<li> पुदीना पेट की मांसपेशियों को शांत करता है और पित्त के प्रवाह में सुधार करता है। </li> <li> यह माना जाता है कि शांत प्रभाव पड़ता है। </li> <li> पेपरमिंट एसेंशियल ऑयल का उपयोग टिंचर्स, चेस्ट रूब और क्रीम में किया जाता है। </li>'
+            document.getElementById('peph1').innerHTML = 'पुदीना तेल के लिए'
+            document.getElementById('pepp').innerHTML =
+                '1. एक तंग ढक्कन के साथ एक ग्लास जार में ताजा पुदीना के पत्तों को कुचलने या गलाने के लिए <br> 2. पत्तियों को जैतून या अंगूर के तेल के साथ कवर करें। जार बंद करें और हिलाएं। <br> 3. तीन दिन तक स्टोर करें। एक कटोरे में तनाव और पत्तियों को त्यागें। <br> 4. जार को ताजी पत्तियों के साथ पैक करें, तेल को जार में वापस डालें और ताजा तेल के साथ कवर करें। जब तक आपके पास वांछित राशि न हो तब तक दोहराएं। <br> 5. तेल की बीस बूंदों को दूसरे तेल के 1.5 औंस के साथ पतला किया जाना चाहिए <b> <u> रेशम नारियल तेल </u> </b> या बादाम, उदाहरण के लिए - इसे शीर्ष रूप से उपयोग करने से पहले, और पानी के साथ (1 कप पांच) माउथवॉश के लिए तेल की 10 बूँदें)। कभी भी अपनी त्वचा पर सीधे तेल न डालें (वे जल सकते हैं)। <br>'
+
 
 
             //  All titles
@@ -2484,6 +2494,20 @@
                 '<li>Rejuvenates skin.</li> <li>Improves digestion.</li><li>Fights infections.</li><li>Helps with weight loss.</li>'
             document.getElementById('limp').innerHTML =
                 `“The Lime in the Coconut" and it's been used as a natural straightener for many years. Our slight variation of this classic recipe is to use two cups of coconut milk, one lime, two tablespoons of arrowroot powder, and two tablespoons of <b><u> Silk coconut oil </u></b>. Heat all your ingredients on low heat over a stove top and leave overnight. When you're ready, finger comb throughout your hair, starting from the ends to the roots, and leave on for at least an hour. This method will work best with heat, so use either a steam treatment or a hooded hair dryer. My suspicion (based off sources) is that this straightening trick will elongate kinky curls and straighten out waves.`
+
+
+            // Peppermint
+            document.getElementById('peph').innerHTML = 'PEPPERMINT BENEFITS'
+            document.getElementById('pepol').innerHTML =
+                '<li>Peppermint calms the stomach muscles and improves the flow of bile. </li><li>It is believed to have calming effects.</li><li>Peppermint essential oil is used in tinctures, chest rubs, and creams.</li>'
+            document.getElementById('peph1').innerHTML = 'पुदीना तेल के लिए'
+            document.getElementById('pepp').innerHTML =
+                '1. Crush or muddle fresh peppermint leaves in a glass jar with a tight lid <br>2. Cover the leaves with olive or grapeseed oil. Close the jar and shake.<br>3. Store for three days. Strain into a bowl and discard the leaves.<br>4. Pack the jar with fresh leaves, pour the oil back in the jar and cover with fresh oil. Repeat until you have the desired amount.<br>5. Twenty drops of the oil should be diluted with 1.5 ounces of another oil <b><u> Silk coconut oil</u></b> or almond, for example — before using it topically, and with water (1 cup per five to 10 drops of oil) for mouthwash. Never put essential oils directly on your skin (they can burn).<br>'
+
+
+
+
+
 
 
 
