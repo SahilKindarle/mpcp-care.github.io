@@ -984,15 +984,17 @@
 
     <div id="jojoba" class="modal">
         <div class="modal-content">
-            <h4 style="text-align: center;">JOJOBA OIL BENEFITS</h4>
+            <h4 style="text-align: center;" id='jojh'>JOJOBA OIL BENEFITS</h4>
             <div id="content">
                 <h5 class="healbef">HEALTHY BENEFITS :-</h5>
                 <p>
-                    <li>Deeply-Hydrating. </li>
-                    <li> Long-Lasting Moisturization. </li>
-                    <li>Nutritious for Skin. </li>
-                    <li>Soothes Dry Skin.</li>
-                    <li>Soothes Sunburn.</li>
+                    <ol id="jojol" style="list-style-type: circle;">
+                        <li>Deeply-Hydrating. </li>
+                        <li> Long-Lasting Moisturization. </li>
+                        <li>Nutritious for Skin. </li>
+                        <li>Soothes Dry Skin.</li>
+                        <li>Soothes Sunburn.</li>
+                    </ol>
                 </p>
             </div>
         </div>
@@ -2276,6 +2278,13 @@
                 'नीम के तेल की कुछ बूंदों को <b> <u> रेशम नारियल तेल </u> </b> की कुछ बूंदों के साथ मिलाएं और प्रभावित क्षेत्रों पर धीरे से मालिश करें। सूखने तक छोड़ दें। गुनगुने पानी और पैट सूखी के साथ कुल्ला।'
 
 
+            // Jojoba Oil
+            document.getElementById('neeh').innerHTML = 'जोजोबा के तेल के लाभ'
+            document.getElementById('jojol').innerHTML =
+                '<li> गहराई से-हाइड्रेटिंग। </li> <li> लंबे समय तक चलने वाला मॉइस्चराइजेशन। </li> <li> त्वचा के लिए पौष्टिक। </li> <li> सूखी त्वचा को निखारता है। </li> <li> सूत को सूँघता है। </li>'
+
+
+
             //  All titles
 
 
@@ -2529,6 +2538,10 @@
                 'Mix a few drops of neem oil with a few drops of <b><u> Silk coconut oil</u></b> and massage this gently on the affected areas. Leave on till it dries. Rinse with lukewarm water and pat dry.'
 
 
+            // Jojoba Oil
+            document.getElementById('neeh').innerHTML = 'JOJOBA OIL BENEFITS'
+            document.getElementById('jojol').innerHTML =
+                '<li>Deeply-Hydrating. </li><li> Long-Lasting Moisturization. </li><li>Nutritious for Skin. </li><li>Soothes Dry Skin.</li><li>Soothes Sunburn.</li>'
 
 
 
