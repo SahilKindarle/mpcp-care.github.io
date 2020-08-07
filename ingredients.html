@@ -1040,22 +1040,20 @@
 
     <div id="mogra" class="modal">
         <div class="modal-content">
-            <h4 style="text-align: center;">MOGRA BENEFITS</h4>
+            <h4 style="text-align: center;" id="mogh">MOGRA BENEFITS</h4>
             <div id="content">
                 <h5 class="healbef">HEALTHY BENEFITS :-</h5>
                 <p>
-                    <li>They tend to reduce stress and depression just by being in an area near you.
-                    </li>
-                    <li>While providing a light coat of moisture to improve suppleness.
-                    </li>
-                    <li>These effects, when combined, give you more natural volume (thicker-looking hair), fewer
-                        breakages and shinier hair.
-                    </li>
-                    <li>It's oils are still used in massage therapies that can help aid arthritis.
-                    </li>
+                    <ol id="mogol" style="list-style-type: circle;">
+                        <li>They tend to reduce stress and depression just by being in an area near you.</li>
+                        <li>While providing a light coat of moisture to improve suppleness.</li>
+                        <li>These effects, when combined, give you more natural volume (thicker-looking hair), fewer
+                            breakages and shinier hair.</li>
+                        <li>It's oils are still used in massage therapies that can help aid arthritis.</li>
+                    </ol>
                 </p>
                 <h5 class="tips">TIPS-</h5>
-                <p>
+                <p id="mogp">
                     Mogra oils have incredible properties that can have a variety of benefits. But do ensure to use it
                     with some carrier oils like sweet almond or <b><u> Silk coconut oil.</u></b>
                 </p>
@@ -2277,17 +2275,26 @@
 
 
             // Jojoba Oil
-            document.getElementById('neeh').innerHTML = 'जोजोबा के तेल के लाभ'
+            document.getElementById('jojh').innerHTML = 'जोजोबा के तेल के लाभ'
             document.getElementById('jojol').innerHTML =
                 '<li> गहराई से-हाइड्रेटिंग। </li> <li> लंबे समय तक चलने वाला मॉइस्चराइजेशन। </li> <li> त्वचा के लिए पौष्टिक। </li> <li> सूखी त्वचा को निखारता है। </li> <li> सूत को सूँघता है। </li>'
 
 
             // sunflower seeds
-            document.getElementById('neeh').innerHTML = 'सूरजमुखी के बीज के लाभ'
+            document.getElementById('sunh').innerHTML = 'सूरजमुखी के बीज के लाभ'
             document.getElementById('sunol').innerHTML =
                 '<li> दिल की गर्मी को बढ़ावा देता है। </li> <li> आपकी त्वचा के लिए अच्छा है। </li> <li> ऊर्जा बूस्टर। </li> <li> सुंदर बाल देता है </li>'
             document.getElementById('sunp').innerHTML =
                 'सूरजमुखी के तेल की एक छोटी बूंद लें और इसे सीधे अपने खोपड़ी में मालिश करें (आप इसे गीले या सूखे बालों पर कर सकते हैं)। इसे बालों से जड़ से अंत तक मिलाएं। अपने बालों को एक गर्म तौलिया में लपेटें और इसे कम से कम 30 मिनट के लिए छोड़ दें, फिर शैम्पू और सामान्य स्थिति। <br> हमारे उत्पाद में सूरजमुखी का तेल- <b> <u> रेशम अग्रिम आंवला तेल </u></b>'
+
+
+            // Mogra
+            document.getElementById('mogh').innerHTML = 'मोगरा के लाभ'
+            document.getElementById('mogol').innerHTML =
+                '<li> वे आपके आस-पास के क्षेत्र में होने से तनाव और अवसाद को कम करते हैं। </li> <li> कोमलता को बेहतर बनाने के लिए नमी का एक हल्का कोट प्रदान करते हैं। </li> <li> संयुक्त होने पर ये प्रभाव, आपको अधिक प्राकृतिक आयतन (घने दिखने वाले बाल), कम टूटने वाले और शिनियर बाल </li> <li> यह तेल अब भी मालिश उपचारों में उपयोग किया जाता है जो गठिया की सहायता कर सकते हैं। </li>'
+            document.getElementById('mogp').innerHTML =
+                'मोगरा तेलों में अविश्वसनीय गुण होते हैं जिनसे कई प्रकार के लाभ हो सकते हैं। लेकिन कुछ वाहक तेलों जैसे कि मीठे बादाम या <b> <u> रेशम नारियल तेल </u> </b>के साथ इसका उपयोग करना सुनिश्चित करें। '
+
 
 
             //  All titles
@@ -2557,6 +2564,13 @@
                 'Take a small drop of sunflower oil and massage it directly into your scalp (you can do this on wet or dry hair). Comb it through the hair from root to end. Wrap your hair in a warm towel and leave it on for at least 30 minutes, then shampoo and condition as normal.<br>Our product containing sunflower oil- <b><u> Silk Advance Amla oil</u></b>'
 
 
+            // Mogra
+            document.getElementById('mogh').innerHTML = 'MOGRA BENEFITS'
+            document.getElementById('mogol').innerHTML =
+                `<li>They tend to reduce stress and depression just by being in an area near you.</li><li>While providing a light coat of moisture to improve suppleness.</li><li>These effects, when combined, give you more natural volume (thicker-looking hair), fewer breakages and shinier hair.</li><li>It's oils are still used in massage therapies that can help aid arthritis.</li>`
+            document.getElementById('mogp').innerHTML =
+                'Mogra oils have incredible properties that can have a variety of benefits. But do ensure to use it with some carrier oils like sweet almond or <b><u> Silk coconut oil.</u></b>'
+            
             //  All titles
             // Navbar Conversions
             document.getElementById("homen").innerHTML = "Home"
