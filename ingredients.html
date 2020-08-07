@@ -1180,24 +1180,23 @@
 
     <div id="fennel" class="modal">
         <div class="modal-content">
-            <h4 style="text-align: center;">FENNEL BENEFITS</h4>
+            <h4 style="text-align: center;" id="fenh">FENNEL BENEFITS</h4>
             <div id="content">
                 <h5 class="healbef">HEALTHY BENEFITS :-</h5>
                 <p>
-                    <li>The antioxidants and antimicrobial properties in fennel seeds may help treat a host of hair
-                        ailments. The seeds may help treat dandruff, scalp itchiness, hair breakage, and hair fall.
-                    </li>
-                    <li>May Improve Digestive Health.
-                    </li>
-                    <li>Promote Weight Loss.
-                    </li>
-                    <li>Improve Skin Appearance.
-                    </li>
+                    <ol id="fenol" style="list-style-type: circle;">
+                        <li>The antioxidants and antimicrobial properties in fennel seeds may help treat a host of hair
+                            ailments. The seeds may help treat dandruff, scalp itchiness, hair breakage, and hair fall.
+                        </li>
+                        <li>May Improve Digestive Health.</li>
+                        <li>Promote Weight Loss.</li>
+                        <li>Improve Skin Appearance.</li>
+                    </ol>
                 </p>
                 <h5 class="tips">TIPS-</h5>
                 <p>
-                    <h6>FOR SKIN</h6>
-                    <P>
+                    <h6 id="fenh1">FOR SKIN</h6>
+                    <P id="fenp">
                         * Grind a teaspoon of fennel seeds until it turns into a coarse powder. <br>
                         * Add a teaspoon of honey and yoghurt each and mix. <br>
                         * Now apply this mix on your face and neck using a brush. <br>
@@ -1207,8 +1206,8 @@
 
                     </P>
 
-                    <h6>FOR HAIR</h6>
-                    <p>
+                    <h6 id='fenh2'>FOR HAIR</h6>
+                    <p id="fenp1">
                         1. First, prepare fennel seed tea. You can pound three tablespoons of fennel seeds.
                         Alternatively, you may choose to invest in readymade fennel seed powder. <br>
                         2. Boil two cups of water and add it to the powdered seeds. Keep the solution aside for about 15
@@ -2325,6 +2324,16 @@
                 'क्विंटसेशियल कड़ा - उबलते गर्म पानी में अदरक, तुलसी के पत्ते, पेपरकॉर्न (कुचले हुए) का मिश्रण - आमतौर पर एक औषधि के रूप में देखा जाता है जो ज्यादातर बीमारियों को सीधा कर सकता है।'
 
 
+            // Fennel
+            document.getElementById('fenh').innerHTML = 'सौंफ़ के लाभ'
+            document.getElementById('fenol').innerHTML =
+                '<li> सौंफ़ के बीज में एंटीऑक्सिडेंट और रोगाणुरोधी गुण बालों की बीमारियों के एक मेजबान का इलाज करने में मदद कर सकते हैं। बीज रूसी, खोपड़ी की खुजली, बालों के टूटने और बालों के झड़ने का इलाज करने में मदद कर सकते हैं। </li> <li> पाचन स्वास्थ्य में सुधार कर सकते हैं। </li> <li> वजन घटाने को बढ़ावा दें। </li> <li> त्वचा की बनावट में सुधार करें। । </li>'
+            document.getElementById('fenh1').innerHTML = 'त्वचा के लिए'
+            document.getElementById('fenp').innerHTML =
+                '* सौंफ के बीज का एक चम्मच पीस लें जब तक कि यह मोटे पाउडर में बदल न जाए। <br> * एक चम्मच शहद और दही में से प्रत्येक को मिलाएं और मिलाएं। <br> * अब एक ब्रश का उपयोग करके इस मिश्रण को अपने चेहरे और गर्दन पर लगाएं। <br> * इसे लगभग 10 मिनट तक सूखने दें और स्क्रब करें। अब बस अपने चेहरे को ठंडे पानी से धोएं और अपनी त्वचा को थपथपाएं। <br>'
+            document.getElementById('fenh2').innerHTML = 'बालों के लिए'
+            document.getElementById('fenp1').innerHTML =
+                '1. सबसे पहले, सौंफ के बीज की चाय तैयार करें। आप सौंफ के बीज के तीन बड़े चम्मच पाउंड कर सकते हैं। वैकल्पिक रूप से, आप रेडीमेड सौंफ़ बीज पाउडर में निवेश करना चुन सकते हैं। <br> 2. दो कप पानी उबालें और पीसा हुआ बीज में जोड़ें। लगभग 15 मिनट के लिए समाधान को अलग रखें। <br> 3. अपने बालों को शैम्पू करने और कंडीशन करने के बाद इसे अंतिम कुल्ला के रूप में उपयोग करें। <br> 4. यह बालों के स्वास्थ्य को बढ़ावा देने और बालों के टूटने और बालों के झड़ने को रोक सकता है।'
 
             //  All titles
 
@@ -2632,6 +2641,16 @@
             document.getElementById('tulp').innerHTML =
                 'The quintessential kadha – a mix of ginger, tulsi leaves, peppercorn (crushed) in boiling hot water - is usually seen as a potion that can put most illnesses straight.'
 
+            // Fennel
+            document.getElementById('fenh').innerHTML = 'FENNEL BENEFITS'
+            document.getElementById('fenol').innerHTML =
+                '<li>The antioxidants and antimicrobial properties in fennel seeds may help treat a host of hair ailments. The seeds may help treat dandruff, scalp itchiness, hair breakage, and hair fall.</li><li>May Improve Digestive Health.</li><li>Promote Weight Loss.</li><li>Improve Skin Appearance.</li>'
+            document.getElementById('fenh1').innerHTML = 'FOR SKIN'
+            document.getElementById('fenp').innerHTML =
+                '* Grind a teaspoon of fennel seeds until it turns into a coarse powder.<br>* Add a teaspoon of honey and yoghurt each and mix. <br>* Now apply this mix on your face and neck using a brush. <br>* Let it dry for about 10 minutes and scrub. Now simply wash your face with cool water and pat dry your skin. <br>'
+            document.getElementById('fenh2').innerHTML = 'FOR HAIR'
+            document.getElementById('fenp1').innerHTML =
+                '1. First, prepare fennel seed tea. You can pound three tablespoons of fennel seeds. Alternatively, you may choose to invest in readymade fennel seed powder. <br>2. Boil two cups of water and add it to the powdered seeds. Keep the solution aside for about 15 minutes.<br>3. Use it as the last rinse after you have shampooed and conditioned your hair. <br>4. This may boost hair health and prevent hair breakage and hair fall.'
 
             //  All titles
             // Navbar Conversions
