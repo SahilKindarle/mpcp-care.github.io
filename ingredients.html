@@ -1288,22 +1288,22 @@
 
     <div id="tea" class="modal">
         <div class="modal-content">
-            <h4 style="text-align: center;">TEA BENEFITS</h4>
+            <h4 style="text-align: center;" id="teah">TEA BENEFITS</h4>
             <div id="content">
                 <h5 class="healbef">HEALTHY BENEFITS :-</h5>
                 <p>
-                    <li>Tea may reduce your risk of heart attack and stroke.</li>
-                    <li>Tea may help with weight loss.
-                    </li>
-                    <li>Tea may help protect your bones
-                    </li>
-                    <li>Tea may boost the immune system
-                    </li>
+                    <ol id="teaol">
+                        <li>Tea may reduce your risk of heart attack and stroke.</li>
+                        <li>Tea may help with weight loss.</li>
+                        <li>Tea may help protect your bones</li>
+                        <li>Tea may boost the immune system</li>
+                    </ol>
                 </p>
                 <h5 class="tips">TIPS-</h5>
-                <p>Packed with antioxidants, black tea fights also free radicals in the body and slows the signs of
-                    aging. It also has anti-inflammatory properties and encourages a healthy immune system due to the
-                    high caffeine levels, which can prevent colds and viruses that negatively affect our skin. </p>
+                <p id='teap'>Packed with antioxidants, black tea fights also free radicals in the body and slows the
+                    signs of aging. It also has anti-inflammatory properties and encourages a healthy immune system due
+                    to the high caffeine levels, which can prevent colds and viruses that negatively affect our skin. 
+                </p>
             </div>
         </div>
         <div class="modal-footer">
@@ -1313,21 +1313,19 @@
 
     <div id="glycerine" class="modal">
         <div class="modal-content">
-            <h4 style="text-align: center;">GLYCERINE BENEFITS</h4>
+            <h4 style="text-align: center;" id="glyh">GLYCERINE BENEFITS</h4>
             <div id="content">
                 <h5 class="healbef">HEALTHY BENEFITS :-</h5>
                 <p>
-                    <li>Treats oily skin conditions, like acne, skin infections, wrinkles and fine lines.
-                    </li>
-                    <li>Attracts moisture to skin.
-                    </li>
-                    <li>Acts an emollient, making skin moist, soft and supple.
-                    </li>
-                    <li>Enhances Skin Appearance.
-                    </li>
+                    <ol id="glyol" style="list-style-type: circle;">
+                        <li>Treats oily skin conditions, like acne, skin infections, wrinkles and fine lines.</li>
+                        <li>Attracts moisture to skin.</li>
+                        <li>Acts an emollient, making skin moist, soft and supple.</li>
+                        <li>Enhances Skin Appearance.</li>
+                    </ol>
                 </p>
                 <h5 class="tips">TIPS-</h5>
-                <p>
+                <p id="glyp">
                     <b>While using glycerin face masks at home, make sure that you follow these preventive measures
                         religiously to make the most of your regime:
                     </b> <br>
@@ -2348,6 +2346,23 @@
                 '<b> हनी और मुल्तानी मिट्टी फेस पैक बनाएं: - </ b> <br> 1. 1 बड़ा चम्मच मुल्तानी मिट्टी में 1 बड़ा चम्मच शहद मिलाएं। <br> 2. अपने चेहरे पर मिश्रण को लागू करें और इसे 15-20 मिनट तक बैठने दें। <br> 3. गुनगुने पानी से कुल्ला। <br> 4. सर्वोत्तम परिणामों के लिए सप्ताह में दो बार पैक लागू करें। <br>'
 
 
+            // Tea
+            document.getElementById('teah').innerHTML = 'चाय के लाभ'
+            document.getElementById('teaol').innerHTML =
+                '<li> चाय आपके दिल के दौरे और स्ट्रोक के जोखिम को कम कर सकती है। </li> <li> चाय वजन घटाने में मदद कर सकती है। </li> <li> चाय आपकी हड्डियों को बचाने में मदद कर सकती है </li> <li> चाय प्रतिरक्षा प्रणाली को बढ़ाएँ </li>'
+            document.getElementById('teap').innerHTML =
+                'एंटीऑक्सिडेंट के साथ पैक किया जाता है, काली चाय के झगड़े शरीर में मुक्त कणों से लड़ते हैं और उम्र बढ़ने के संकेत को धीमा कर देते हैं। यह भी विरोधी भड़काऊ गुण है और उच्च कैफीन के स्तर के कारण एक स्वस्थ प्रतिरक्षा प्रणाली को प्रोत्साहित करता है, जो सर्दी और वायरस को रोक सकता है जो हमारी त्वचा को नकारात्मक रूप से प्रभावित करता है।'
+
+
+
+            // glycerine
+            document.getElementById('glyh').innerHTML = 'ग्लिसरीन के लाभ'
+            document.getElementById('glyol').innerHTML =
+                '<li> तैलीय त्वचा की स्थिति का इलाज करता है, जैसे कि मुँहासे, त्वचा संक्रमण, झुर्रियाँ और महीन रेखाएँ। </li> <li> त्वचा की नमी को आकर्षित करता है। </li> <li> त्वचा को नम, मुलायम और कोमल बनाने का काम करता है। </li> <li> त्वचा की बनावट को बढ़ाता है। </li>'
+            document.getElementById('glyp').innerHTML =
+                '<b> घर पर ग्लिसरीन फेस मास्क का उपयोग करते समय, सुनिश्चित करें कि आप अपने शासन का अधिकतम लाभ उठाने के लिए धार्मिक रूप से इन निवारक उपायों का पालन करें: </b> <br> 1. ग्लिसरीन को कभी भी सीधे अपनी त्वचा पर इस्तेमाल न करें। इसका उपयोग सादे पानी या गुलाब जल के साथ पतला करके किया जाता है। <br> 2. इसे अधिक उपयोग न करें या इसे लंबी अवधि के लिए लागू रखें। यह आपकी त्वचा को चिकना बना देगा और बहुत सारी धूल खींचेगा। <br> 3.बाहर जाते समय, ग्लिसरीन लगाने के बाद अपने चेहरे पर सनस्क्रीन लगाएं क्योंकि इससे कुछ लोगों में सन सेंसिटिविटी हो सकती है। <br>'
+
+
 
             //  All titles
 
@@ -2684,6 +2699,20 @@
                 ' <b>Make a Honey and Multani Mitti Face Pack:-</b> <br>1. Mix 1 tablespoon of multani mitti with 1 tablespoon of honey.<br>2. Apply the mixture to your face and let it sit for 15-20 minutes.<br>3. Rinse off with lukewarm water.<br>4. Apply the pack twice a week for best results.<br>'
 
 
+            // Tea
+            document.getElementById('teah').innerHTML = 'TEA BENEFITS'
+            document.getElementById('teaol').innerHTML =
+                '<li>Tea may reduce your risk of heart attack and stroke.</li><li>Tea may help with weight loss.</li><li>Tea may help protect your bones</li><li>Tea may boost the immune system</li>'
+            document.getElementById('teap').innerHTML =
+                'Packed with antioxidants, black tea fights also free radicals in the body and slows the signs of aging. It also has anti-inflammatory properties and encourages a healthy immune system due to the high caffeine levels, which can prevent colds and viruses that negatively affect our skin.'
+
+
+            // glycerine
+            document.getElementById('glyh').innerHTML = 'GLYCERINE BENEFITS'
+            document.getElementById('glyol').innerHTML =
+                '<li>Treats oily skin conditions, like acne, skin infections, wrinkles and fine lines.</li><li>Attracts moisture to skin.</li><li>Acts an emollient, making skin moist, soft and supple.</li><li>Enhances Skin Appearance.</li>'
+            document.getElementById('glyp').innerHTML =
+                '<b>While using glycerin face masks at home, make sure that you follow these preventive measures religiously to make the most of your regime:</b> <br>1. Never use glycerin directly on your skin. It is best used by diluting with plain water or rose water.<br>2. Don’t overuse it or keep it applied for a longer duration. It will make your skin greasy and draw a lot of dust.<br>3. While going out, apply sunscreen to your face after applying glycerin as it may cause sun sensitivity in some people.<br>'
 
 
 
