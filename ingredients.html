@@ -1255,21 +1255,19 @@
 
     <div id="multani" class="modal">
         <div class="modal-content">
-            <h4 style="text-align: center;">MULTANI MITTI BENEFITS</h4>
+            <h4 style="text-align: center;" id="mulh">MULTANI MITTI BENEFITS</h4>
             <div id="content">
                 <h5 class="healbef">HEALTHY BENEFITS :-</h5>
                 <p>
-                    <li>Multani Mitti is known to fight acne and pimples.
-                    </li>
-                    <li>Removes excess sebum and oil.
-                    </li>
-                    <li>Deep cleanses skin removing dirt, sweat and impurities.
-                    </li>
-                    <li>Effective in treating sunburn, skin rashes and infections.
-                    </li>
+                    <ol id="mulol" style="list-style-type: circle;">
+                        <li>Multani Mitti is known to fight acne and pimples.</li>
+                        <li>Removes excess sebum and oil.</li>
+                        <li>Deep cleanses skin removing dirt, sweat and impurities.</li>
+                        <li>Effective in treating sunburn, skin rashes and infections.</li>
+                    </ol>
                 </p>
                 <h5 class="tips">TIPS-</h5>
-                <p>
+                <p id="mulp">
                     <b>Make a Honey & Multani Mitti Face Pack:-
                     </b> <br>
                     1. Mix 1 tablespoon of multani mitti with 1 tablespoon of honey.
@@ -2342,7 +2340,12 @@
                 '<b> मुट्ठी भर अखरोट का सेवन करने के अलावा, निम्न उपचार से स्वस्थ खोपड़ी को प्राप्त करने में मदद मिल सकती है: </b> <br> आधा लीटर पानी में 10 मिनट के लिए 3 से 4 अखरोट की टहनियों को पकाएं। टहनियों का उपयोग करते समय, उनके पर्ण के साथ इसका उपयोग करें। पोशन को रोकें और गर्म होने पर, इसे सीधे बालों की जड़ों पर रगड़ें, साथ ही साथ कंघी के समान वितरण के लिए कंघी से ब्रश भी करें। यह नुस्खा बालों के झड़ने को गिरफ्तार करता है और एक स्वस्थ खोपड़ी देता है। लेकिन, एक बदलाव को देखने के लिए, इसे नियमित रूप से किया जाना चाहिए।'
 
 
-
+            // multani mitti
+            document.getElementById('mulh').innerHTML = 'मुलतानी मिटटी के लाभ'
+            document.getElementById('mulol').innerHTML =
+                '<li> मुल्तानी मिट्टी मुहांसों और फुंसियों से लड़ने के लिए जानी जाती है। </li> <li> अतिरिक्त सीबम और तेल को हटाता है। </li> <li> त्वचा की गंदगी, पसीने और अशुद्धियों को दूर करके त्वचा साफ करता है। </li> <li> धूप की कालिमा, त्वचा पर चकत्ते और संक्रमण के उपचार में प्रभावी। </li>'
+            document.getElementById('mulp').innerHTML =
+                '<b> हनी और मुल्तानी मिट्टी फेस पैक बनाएं: - </ b> <br> 1. 1 बड़ा चम्मच मुल्तानी मिट्टी में 1 बड़ा चम्मच शहद मिलाएं। <br> 2. अपने चेहरे पर मिश्रण को लागू करें और इसे 15-20 मिनट तक बैठने दें। <br> 3. गुनगुने पानी से कुल्ला। <br> 4. सर्वोत्तम परिणामों के लिए सप्ताह में दो बार पैक लागू करें। <br>'
 
 
 
@@ -2670,6 +2673,15 @@
                 '<li>Reduces dark circles and puffiness.</li><li>Highlight natural hair-colour.</li><li>Keeps the skin hydrated.</li><li>Reduces fine lines and prevents premature ageing.</li>'
             document.getElementById('walp').innerHTML =
                 '<b>Apart from consuming a handful of walnuts, the following treatment can help in achieving a healthy scalp:</b> <br>Cook 3 to 4 walnut twigs for 10 minutes in half a litre of water. When using the twigs, use it with their foliage. Strain the potion and when warm, rub it directly onto the hair roots, while simultaneously brushing it with a comb for an even distribution of the decoction. This recipe arrests hair fall and gives a healthy scalp. But, to see a change, it should be done regularly.'
+
+
+
+            // multani mitti
+            document.getElementById('mulh').innerHTML = 'MULTANI MITTI BENEFITS'
+            document.getElementById('mulol').innerHTML =
+                '<li>Multani Mitti is known to fight acne and pimples.</li><li>Removes excess sebum and oil.</li><li>Deep cleanses skin removing dirt, sweat and impurities.</li><li>Effective in treating sunburn, skin rashes and infections.</li>'
+            document.getElementById('mulp').innerHTML =
+                ' <b>Make a Honey and Multani Mitti Face Pack:-</b> <br>1. Mix 1 tablespoon of multani mitti with 1 tablespoon of honey.<br>2. Apply the mixture to your face and let it sit for 15-20 minutes.<br>3. Rinse off with lukewarm water.<br>4. Apply the pack twice a week for best results.<br>'
 
 
 
