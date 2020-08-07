@@ -1348,19 +1348,21 @@
 
     <div id="lotus" class="modal">
         <div class="modal-content">
-            <h4 style="text-align: center;">LOTUS BENEFITS</h4>
+            <h4 style="text-align: center;" id="loth">LOTUS BENEFITS</h4>
             <div id="content">
                 <h5 class="healbef">HEALTHY BENEFITS :-</h5>
                 <p>
-                    <li>Acts as a Moisturising Agent.</li>
-                    <li>Heals Flaky and Dry Skin.</li>
-                    <li>Prevents Acne Breakouts.</li>
-                    <li>Conditions Hair.</li>
-                    <li>Adds Volume and Natural Shine.</li>
-                    <li>Prevents Premature Graying.</li>
+                    <ol id="lotol" style="list-style-type: circle;">
+                        <li>Acts as a Moisturising Agent.</li>
+                        <li>Heals Flaky and Dry Skin.</li>
+                        <li>Prevents Acne Breakouts.</li>
+                        <li>Conditions Hair.</li>
+                        <li>Adds Volume and Natural Shine.</li>
+                        <li>Prevents Premature Graying.</li>
+                    </ol>
                 </p>
                 <h5 class="tips">TIPS-</h5>
-                <p>
+                <p id="lotp">
                     1. Clean 10-12 lotus petals and crush them with 5 tbsp. s of raw milk. Massage this paste onto your
                     face and let it stay for 10 minutes. Rinse with cold water. For glowing skin. <br> <br>
                     2. Take 10 lotus petals and cleanse them. Grind the petals in a blender with ½ teaspoon milk. Add 2
@@ -2363,6 +2365,13 @@
                 '<b> घर पर ग्लिसरीन फेस मास्क का उपयोग करते समय, सुनिश्चित करें कि आप अपने शासन का अधिकतम लाभ उठाने के लिए धार्मिक रूप से इन निवारक उपायों का पालन करें: </b> <br> 1. ग्लिसरीन को कभी भी सीधे अपनी त्वचा पर इस्तेमाल न करें। इसका उपयोग सादे पानी या गुलाब जल के साथ पतला करके किया जाता है। <br> 2. इसे अधिक उपयोग न करें या इसे लंबी अवधि के लिए लागू रखें। यह आपकी त्वचा को चिकना बना देगा और बहुत सारी धूल खींचेगा। <br> 3.बाहर जाते समय, ग्लिसरीन लगाने के बाद अपने चेहरे पर सनस्क्रीन लगाएं क्योंकि इससे कुछ लोगों में सन सेंसिटिविटी हो सकती है। <br>'
 
 
+            // Lotus
+            document.getElementById('loth').innerHTML = 'कमल के लाभ'
+            document.getElementById('lotol').innerHTML =
+                '<li> एक मॉइस्चराइजिंग एजेंट के रूप में कार्य करता है। </li> <li> परतदार और शुष्क त्वचा को ठीक करता है। </li> <li> मुँहासे टूटने से बचाता है। </li> <li> शर्तें बाल। </li> <li> वॉल्यूम और प्राकृतिक शाइन जोड़ता है। </li> <li> समय से पहले सफ़ेद होना रोकता है। </li>'
+            document.getElementById('lotp').innerHTML =
+                '1. 10-12 कमल की पंखुड़ियों को साफ करें और उन्हें 5 बड़े चम्मच के साथ कुचल दें। कच्चे दूध की। इस पेस्ट को अपने चेहरे पर मालिश करें और इसे 10 मिनट तक रहने दें। ठंडे पानी से कुल्ला। चमकती त्वचा के लिए। <br> 2. 10 कमल की पंखुड़ियां लें और उन्हें साफ करें। एक ब्लेंडर में पंखुड़ियों को in चम्मच दूध के साथ पीसें। 2tbsp जोड़ें। चंदन पाउडर और 1/2 बड़ा चम्मच। इसमें शहद। अच्छी तरह से मिलाएं और इसे अपने चेहरे और गर्दन पर लगाएं। 30 मिनट तक इसे लगा रहने दें और फिर गर्म पानी से धो लें। कोमल त्वचा पाने के लिए। <br> 3. 3 बड़े चम्मच मिलाएं। jojoba तेल के 2 अंडे के साथ और 2-3 बूँदें कमल आवश्यक तेल जोड़ें। इस पेस्ट को अपने बालों पर लगाएं और इसे 40 मिनट तक रहने दें। अपने बालों को हमेशा की तरह धोएं। प्राकृतिक रूप से चिकने बाल पाने के लिए। <br> <br>'
+
 
             //  All titles
 
@@ -2714,6 +2723,14 @@
             document.getElementById('glyp').innerHTML =
                 '<b>While using glycerin face masks at home, make sure that you follow these preventive measures religiously to make the most of your regime:</b> <br>1. Never use glycerin directly on your skin. It is best used by diluting with plain water or rose water.<br>2. Don’t overuse it or keep it applied for a longer duration. It will make your skin greasy and draw a lot of dust.<br>3. While going out, apply sunscreen to your face after applying glycerin as it may cause sun sensitivity in some people.<br>'
 
+
+
+            // Lotus
+            document.getElementById('loth').innerHTML = 'LOTUS BENEFITS'
+            document.getElementById('lotol').innerHTML =
+                '<li>Acts as a Moisturising Agent.</li><li>Heals Flaky and Dry Skin.</li><li>Prevents Acne Breakouts.</li><li>Conditions Hair.</li><li>Adds Volume and Natural Shine.</li><li>Prevents Premature Graying.</li>'
+            document.getElementById('lotp').innerHTML =
+                '1. Clean 10-12 lotus petals and crush them with 5 tbsp. s of raw milk. Massage this paste onto your face and let it stay for 10 minutes. Rinse with cold water. For glowing skin. <br> <br>2. Take 10 lotus petals and cleanse them. Grind the petals in a blender with ½ teaspoon milk. Add 2tbsp. Sandalwood powder and 1/2 tbsp. honey to it. Mix well and apply it on your face and neck.Leave it on for 30 minutes then rinse with warm water. To get supple skin. <br> <br>3. Mix 3 tbsp. of jojoba oil with 2 eggs and add 2-3 drops of lotus essential oil. Apply this paste on to your hair and let it stay for 40 minutes. Wash your hair as usual. To get smooth hair naturally. <br> <br>'
 
 
             //  All titles
