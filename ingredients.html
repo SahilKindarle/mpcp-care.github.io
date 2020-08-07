@@ -1102,17 +1102,18 @@
 
     <div id="coccinia" class="modal">
         <div class="modal-content">
-            <h4 style="text-align: center;">COCCINIA BENEFITS</h4>
+            <h4 style="text-align: center;" id="coch">COCCINIA BENEFITS</h4>
             <div id="content">
                 <h5 class="healbef">HEALTHY BENEFITS :-</h5>
                 <p>
-                    <li> Aid in the treatment of diabetes.</li>
-                    <li>Weight Loss.</li>
-                    <li> Controls hypertension.</li>
-
+                    <ol id='cocol' style="list-style-type: circle;">
+                        <li> Aid in the treatment of diabetes.</li>
+                        <li>Weight Loss.</li>
+                        <li> Controls hypertension.</li>
+                    </ol>
                 </p>
                 <h5 class="tips">TIPS-</h5>
-                <p>
+                <p id="cocp">
                     Available as a dietary supplement, coccinia is said to have potent anti-inflammatory and antioxidant
                     effects that may aid in the prevention or treatment of a diverse range of health conditions, from
                     diabetes and high cholesterol to high blood pressure and obesity.
@@ -2302,6 +2303,12 @@
                 'आप सूखापन का मुकाबला करने और स्वस्थ चमकती त्वचा को बढ़ावा देने के लिए नारियल के दूध को सीधे 20-30 मिनट तक अपनी त्वचा पर रगड़ सकते हैं। आप एक टब में 1 कप गुलाब की पंखुड़ियों, of कप गुलाब जल और 1 कप नारियल के दूध को गुनगुने पानी में मिला सकते हैं। लगभग 15 मिनट के लिए इस स्नान में भिगोने से सूखी त्वचा में नमी को बहाल करने में मदद मिलेगी। इसके अलावा, आप 1/2 कप पुराने जमाने की दलिया को पीस सकते हैं और इसे 1-2 कप नारियल के दूध और 1 चम्मच शहद के साथ मिला सकते हैं। यह अद्भुत काम करता है!'
 
 
+            // Coccinia
+            document.getElementById('coch').innerHTML = 'Cocconia के लाभ'
+            document.getElementById('cocol').innerHTML =
+                '<li> मधुमेह के उपचार में सहायता। </li> <li> वजन कम करना। </li> <li> उच्च रक्तचाप को नियंत्रित करता है। </li>'
+            document.getElementById('cocp').innerHTML =
+                'आहार अनुपूरक के रूप में उपलब्ध, कोकीन को शक्तिशाली विरोधी भड़काऊ और एंटीऑक्सिडेंट प्रभाव कहा जाता है जो मधुमेह और उच्च कोलेस्ट्रॉल से लेकर उच्च रक्तचाप और मोटापे तक, विभिन्न स्वास्थ्य स्थितियों की रोकथाम या उपचार में सहायता कर सकता है।'
             //  All titles
 
 
@@ -2583,6 +2590,14 @@
                 '<li>Gets rid of dandruff.</li><li>Restores dry hair and scalp.</li><li>Coconut milk has high levels of Vitamin C which helps maintain elasticity and flexibility of skin.</li><li>It is also rich in copper, and prevents wrinkles, sagging skin and age spots.</li>'
             document.getElementById('comp').innerHTML =
                 'You can rub coconut milk on your skin directly for 20-30 minutes to combat dryness and promote healthy glowing skin. You can even add 1 cup of rose petals, ½ cup of rose water and 1 cup of coconut milk to lukewarm water in a tub. Soaking in this bath for about 15 minutes will help restore moisture in dry skin. Also, you can grind 1/2 cup of old fashioned oatmeal and mix it with 1-2 cups of coconut milk and 1 tablespoon of honey. It works wonders!'
+
+
+            // Coccinia
+            document.getElementById('coch').innerHTML = 'COCCINIA BENEFITS'
+            document.getElementById('cocol').innerHTML =
+                '<li> Aid in the treatment of diabetes.</li><li>Weight Loss.</li><li> Controls hypertension.</li>'
+            document.getElementById('cocp').innerHTML =
+                'Available as a dietary supplement, coccinia is said to have potent anti-inflammatory and antioxidant effects that may aid in the prevention or treatment of a diverse range of health conditions, from diabetes and high cholesterol to high blood pressure and obesity.'
 
             //  All titles
             // Navbar Conversions
