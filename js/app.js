@@ -36,8 +36,8 @@ particlesJS('particles-js',
         },
         "image": {
           "src": "../images/bluedrop.png",
-          "width": 80,
-          "height": 100
+          "width": 90,
+          "height": 170
         }
       },
       "opacity": {
