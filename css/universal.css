@@ -239,7 +239,7 @@ color: white !important;
 
 .lolwa {
   position: relative;
-  text-align: center;
+  /* text-align: center; */
   color: white;
   background-color: #f1e0e2;
 }
@@ -253,7 +253,7 @@ color: white !important;
 .top-left {
   position: absolute;
   top: 8px;
-  left: 16px;
+  /* left: 16px; */
 }
 
 .top-right {
