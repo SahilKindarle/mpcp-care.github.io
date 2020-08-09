@@ -242,6 +242,7 @@ color: white !important;
   /* text-align: center; */
   color: white;
   background-color: #f1e0e2;
+  height: 100vh;
 }
 
 .bottom-left {
