@@ -16,7 +16,7 @@
   height: 100vh;
   z-index: 99999999;
   overflow: visible;
-  background: #fff url("../img/loading.gif") no-repeat center center;
+  background: #fff url("../img/cartoonloader.gif") no-repeat center center;
 }
 
 .grid-container {
