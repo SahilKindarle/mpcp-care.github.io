@@ -19,6 +19,44 @@
   background: #fff url("../img/cartoonloader.gif") no-repeat center center;
 }
 
+.notification {
+  background-color: #6cd84e;
+  color: white;
+  text-decoration: none;
+  top: -5%;
+  right: -20%;
+  /* padding: 10px; */
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  display: inline-block;
+  border-radius: 2px;
+}
+.notification1 {
+  background-color: #adcdee;
+  color: white;
+  text-decoration: none;
+  top: -5%;
+  right: -20%;
+  /* padding: 10px; */
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  display: inline-block;
+  border-radius: 2px;
+}
+
+.notification .badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+}
+
+
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto auto;
@@ -134,8 +172,8 @@ a:focus {
 }
 
 .codrops-icon--drop:before {
-  /* content: "\e001"; */
-  content: url(../img/MPCP_Logo.png);
+  content: "\e001";
+  /* content: url(../img/MPCP_Logo.png); */
 }
 
 .codrops-icon--prev:before {
