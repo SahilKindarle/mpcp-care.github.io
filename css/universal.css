@@ -48,7 +48,7 @@
   height: 100vh;
   z-index: 99999999;
   overflow: visible;
-  background: white url("../images/bottleloaderok.gif") no-repeat center center;
+  /* background: white url("../images/bottleloaderok.gif") no-repeat center center; */
 }
 
 .parallax-container .parallax .banner img {
