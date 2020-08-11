@@ -17,11 +17,16 @@
 	<link rel="stylesheet" type="text/css" href="../esc/fonts/font-awesome-4.3.0/css/font-awesome.css" />
 	<link rel="stylesheet" type="text/css" href="css/demo.css" />
 	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<link rel="stylesheet" href="css/materialize.min.css">
+    <script src="js/materialize.min.js"></script>
 	<!--[if IE]>
   		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 </head>
 <style>
+	body{
+		background-color: #F5F5F5;
+	}
 	#lol {
 		background-image: url('../images/22.png');
 	}
@@ -45,6 +50,40 @@
 	.heading {
 		padding-left: 65px;
 	}
+	.row{
+		display: flex;
+		/* margin: 2% auto; */
+		justify-content: space-evenly;
+		flex-direction: row;
+		margin-left: -45px;
+		width: 100%;
+		margin-top: 15vh
+	}
+	.center{
+		width: 200px;
+		/* height: 200px; */
+	}
+	.amla , .jasmine, .hansa ,.coco, .sargam {
+		width: 325px;
+		/* margin:  auto 10%; */
+	}
+	.ingredSpan{
+		text-align: center;
+		width: 100%;
+	}
+	.lol{
+		width: 100%;
+		text-align: center;
+	}
+	#resourcesIngred{
+		margin: 10% 11%;
+		text-align: center;
+		width: 100%;
+	}
+	/* .jasmine{
+		
+		width: 75%;
+	} */
 
 	@media only screen and (max-width: 600px) {
 		.heading {
@@ -59,24 +98,103 @@
 		#cocooil {
 			height: 180px;
 		}
+		.row{
+		display: flex;
+		/* margin: 2% auto; */
+		/* justify-content: space-evenly; */
+		flex-direction: column;
+		/* margin-left: -45px; */
+		width: 100%;
+		}
+		.amla , .jasmine, .hansa ,.coco, .sargam {
+		/* width: 325px; */
+		/* margin:  auto 45%; */
+		/* width: 100%; */
+		}
 	}
 </style>
 
 <body>
+	<header class="codrops-header">
+		<div class="grid" style="border: 2px solid black;">
+			<a href="../index.html"><img src="img/arrow.png" alt="" width="30"></a>
+			<img src="../images/logotrans.png" alt="" height="27">
+		</div>
+		<h1>PRODUCTS</h1>
+	</header>
 
-
+	<hr>
+	
+	<section>
+			<div class="row" style="margin-top: 0vh;">
+				<div class="col s12 m3" >
+					<div class="center">
+						<div class="flex-container" id="modal1" class="modal bottom-sheet">
+							<span> <img src="../images/amlapro.png" alt="" width="100%" data-aos="zoom-out" href="#amla"
+									class="waves-effect waves-light  modal-trigger amla"></span>
+							<!-- <div class="lol"><span class="ingredSpan" id="amlt">AMLA</span></div> -->
+						</div>
+					</div>
+				</div>
+				<div class="col s12 m3" >
+					<div class="center">
+						<div class="flex-container">
+							<span> <img src="../images/jasminepro.png" alt="" width="100%" data-aos="zoom-out" href="#vanilla"
+									class="waves-effect waves-light  modal-trigger jasmine"></span>
+							<!-- <span class="ingredSpan" id="vant">VANILLA</span> -->
+	
+						</div>
+					</div>
+				</div>
+				<div class="col s12 m3" >
+					<div class="center">
+						<div class="flex-container">
+							<span> <img src="../images/cocopro.png" alt="" width="100%" data-aos="zoom-out" href="#jasmine"
+									class="waves-effect waves-light  modal-trigger coco"></span>
+							<!-- <span class="ingredSpan" id="jast">JASMINE</span> -->
+	
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col s12 m3" >
+					<div class="center">
+						<div class="flex-container">
+							<span> <img src="../images/hansapro.png" alt="" width="100%" data-aos="zoom-out" href="#coconut"
+									class="waves-effect waves-light  modal-trigger hansa"></span>
+							<!-- <span class="ingredSpan" id="coct">COCONUT</span> -->
+	
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col s12 m3" >
+					<div class="center">
+						<div class="flex-container">
+							<span> <img src="../images/sargampro.png" alt="" width="100%" data-aos="zoom-out" href="#coconut"
+									class="waves-effect waves-light  modal-trigger sargam"></span>
+							<!-- <span class="ingredSpan" id="coct">COCONUT</span> -->
+	
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<hr>
 	<div id="loader">
 
 	</div>
 
 	<div class="container" id="particles-js">
-		<header class="codrops-header">
+		<!-- <header class="codrops-header">
 			<div class="grid" style="border: 2px solid black;">
 				<a href="../index.html"><img src="img/arrow.png" alt="" width="30"></a>
 				<img src="../images/logotrans.png" alt="" height="27">
 			</div>
 			<h1>PRODUCTS</h1>
-		</header>
+		</header> -->
+		
 		<div id="slideshow" class="slideshow">
 
 			<div class="slide">
