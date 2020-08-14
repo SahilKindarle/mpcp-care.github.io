@@ -189,6 +189,14 @@ color: white !important;
   position: absolute;
 }
 
+.explore{
+  width: 220px;
+}
+
+.buy{
+  width: 220px;
+}
+
 @media only screen and (max-width: 600px) {
   .footer {
     display: flex;
@@ -198,6 +206,15 @@ color: white !important;
   .tiltdata{
     margin-top: 0vh;
   }
+
+  .aboutUsButton.explore{
+    margin-top: -40px;
+  }
+
+  .explore , .buy{
+    width: 300px;
+    margin-top: -50px;
+  } 
 
   /* img.tiltdata{
     margin-top: -100px;
