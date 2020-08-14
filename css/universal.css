@@ -195,6 +195,24 @@ color: white !important;
     flex-direction: column;
     margin: 20px 30px;
   }
+  .tiltdata{
+    margin-top: 0vh;
+  }
+
+  /* img.tiltdata{
+    margin-top: -100px;
+  } */
+
+  .amlaa{
+    margin-left: 40px;
+  }
+
+  div.tiltdata{
+    margin-top: -80px;
+  }
+  .aboutUsButton{
+    margin-top: 0px;
+  }
   .logofooter {
     max-width: 15vw;
   }
@@ -223,7 +241,7 @@ color: white !important;
   }
 
   .products .row .s12 {
-    margin-bottom: 50%;
+    margin-bottom: 35%;
   }
 
 
@@ -498,6 +516,10 @@ flex-container,
   text-align: center;
   /* margin-top: 30%; */
   /* margin-bottom: 10%; */
+}
+
+.tiltdata{
+  margin-top: 20vh;
 }
 
 .ingredientConnect{
