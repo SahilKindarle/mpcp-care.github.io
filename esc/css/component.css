@@ -411,11 +411,7 @@
 	color: whitesmoke;
 }
 
-.upper{
-	margin-top: 30px;
-	/* margin-bottom: 70px; */
-	/* width: 900px; */
-}
+
 .lower{
 	margin-top: 50px;
 }
@@ -431,6 +427,11 @@
 	.deco--title {
 		right: -50px;
 		left: -50px;
+	}
+	.upper{
+		margin-top: -125px;
+		/* margin-bottom: 70px; */
+		/* width: 900px; */
 	}
 	.deco--circle,
 	.slide__inner {
