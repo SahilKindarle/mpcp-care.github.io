@@ -207,13 +207,24 @@ color: white !important;
     margin-top: 0vh;
   }
 
-  .aboutUsButton.explore{
-    margin-top: -40px;
+  #hansa{
+    margin-top: -50px;
   }
+  #sargam{
+    margin-top: -250px;
+  }
+  .aboutUsButton.explore{
+    margin-top: -300px;
+  }
+
+  .aboutUsButton.buy{
+    margin-top: -170px;
+  }
+
 
   .explore , .buy{
     width: 300px;
-    margin-top: -50px;
+    margin-top: -200px;
   } 
 
   /* img.tiltdata{
