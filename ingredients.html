@@ -52,6 +52,12 @@
     #content {
         padding: 25px;
     }
+    @media only screen and (max-width: 600px) {
+        .modal h4{
+            font-size: x-large;
+            padding-top: 10px;
+        }
+    }
 </style>
 
 <body>
@@ -286,11 +292,19 @@
                     wrap it into a bun, and put a shower cap over it. Let it sit for an hour,
                     then rinse thoroughly with warm water for shiny, beautiful hair!
                 </p>
-                <div class="row">
+                <div class="row show-on-medium-and-up hide-on-small-only">
                     <div class="col s12 m12">
                         <div class="center">
                             <h6><b> Our Recommended Product</b></h6>
                             <a href="./esc/slider.html#coco"><img src="images/CoconutOildrive .png" alt="" width="500"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row show-on-small hide-on-med-and-up">
+                    <div class="col s12 m12">
+                        <div class="center">
+                            <h6><b> Our Recommended Product</b></h6>
+                            <a href="./esc/slider.html#coco"><img src="images/CoconutOildrive .png" alt="" width="200"></a>
                         </div>
                     </div>
                 </div>
