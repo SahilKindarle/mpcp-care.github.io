@@ -551,6 +551,7 @@ flex-container,
 }
 
 .ingredientConnect{
+  z-index: 01;
   background-color: white;
 }
 
