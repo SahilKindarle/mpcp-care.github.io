@@ -214,17 +214,17 @@ color: white !important;
     margin-top: -250px;
   }
   .aboutUsButton.explore{
-    margin-top: -300px;
+    /* margin-top: -300px; */
   }
 
   .aboutUsButton.buy{
-    margin-top: -170px;
+    /* margin-top: -170px; */
   }
 
 
   .explore , .buy{
     width: 300px;
-    margin-top: -200px;
+    /* margin-top: -200px; */
   } 
 
   /* img.tiltdata{
@@ -272,6 +272,9 @@ color: white !important;
     margin-bottom: 35%;
   }
 
+  #bollob{
+    margin-bottom: 0%;
+  }
 
 }
 
