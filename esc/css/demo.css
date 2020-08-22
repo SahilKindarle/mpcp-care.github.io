@@ -59,8 +59,24 @@
 
 .grid-container {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto auto auto;
+  grid-gap: 10px;
+  /* background-color: #2196F3; */
+  padding: 10px;
 }
+
+.grid-container > div {
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.grid-container > div > img{
+  width: 100%;
+}
+
+
 *,
 *:after,
 *:before {
@@ -233,4 +249,9 @@ a:focus {
     width: 100%;
     padding: 1em 0;
   }
+}
+
+
+.resourcesIngred{
+  
 }

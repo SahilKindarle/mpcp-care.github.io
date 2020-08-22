@@ -214,17 +214,17 @@ color: white !important;
     margin-top: -250px;
   }
   .aboutUsButton.explore{
-    margin-top: -300px;
+    /* margin-top: -300px; */
   }
 
   .aboutUsButton.buy{
-    margin-top: -170px;
+    /* margin-top: -170px; */
   }
 
 
   .explore , .buy{
     width: 300px;
-    margin-top: -200px;
+    /* margin-top: -200px; */
   } 
 
   /* img.tiltdata{
@@ -272,6 +272,9 @@ color: white !important;
     margin-bottom: 35%;
   }
 
+  #bollob{
+    margin-bottom: 0%;
+  }
 
 }
 
@@ -551,6 +554,7 @@ flex-container,
 }
 
 .ingredientConnect{
+  z-index: 01;
   background-color: white;
 }
 
@@ -632,4 +636,13 @@ flex-container,
 
   color: white;
   font-weight: 400;
+}
+
+.headmob{
+  font-size: 60px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  /* padding-left: 30; */
+  text-align: center;
+
+  font-weight: 500;
 }
