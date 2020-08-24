@@ -95,8 +95,6 @@
 .products h3 {
   padding: 30px 50px 0 50px;
   font-size: 60px;
-  /* font-family: "ITC Avant Garde Gothic Std Book"; */
-  /* font-family: 'Open Sans', sans-serif; */
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 100;
 }
@@ -645,4 +643,11 @@ flex-container,
   text-align: center;
 
   font-weight: 500;
+}
+
+#ceomsg{
+  font-size: 20px;
+  font-weight: 200;
+  text-align: justify;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
