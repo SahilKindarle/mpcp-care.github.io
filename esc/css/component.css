@@ -479,5 +479,10 @@
 		width: 100%;
 		height: inherit;
 	}
+
+	#helloamla{
+		height: initial;
+		width: 90%;
+	}
 }
 
