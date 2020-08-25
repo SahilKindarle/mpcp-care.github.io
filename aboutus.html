@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/materialize.min.css">
     <script src="js/materialize.min.js"></script>
     <link rel="stylesheet" href="css/universal.css">
+
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="css/aos.css">
@@ -74,6 +75,8 @@
         </ul>
 
     </header>
+
+
     <div class="row show-on-medium-and-up hide-on-small-only" id="firstDiv">
         <div class="col s12 m6">
             <!-- <span id="abname">MPCP'S</span> Story</h1> -->
@@ -88,7 +91,7 @@
     </div>
     <div class="phnabt show-on-small hide-on-med-and-up">
         <img src="images/ediedkhanna1.png" style="width:100%;   margin-top: 20vh; ">
-        <div class="top-left" style="text-align: center; width: 100%;" >
+        <div class="top-left" style="text-align: center; width: 100%;">
             <p style="font-size: 35px; text-align: center; color:white;font-weight: 700;margin-top: 25%; " id="abhead2">
                 Essence of Purity
                 <br>By MPCP Care.
@@ -97,22 +100,28 @@
             data-aos-duration="1500"> -->
         </div>
     </div>
-    
+
 
 
     <div class="row">
         <div class="container center">
             <p class="quote" id="teamQuote">
                 'सभी के लिए अटूट विश्वास और समाधान। यही हमारा संकल्प और विधान है।'
-                <br/>- Manoj Gupta<br/>CEO
+                <br />- Manoj Gupta<br />CEO
             </p>
 
             <div class="col s12 m3 center">
-                <img src="images/ceo.png" alt="" class="circle responsive-img" width="90%" style="border: 1px solid white;background: #B7B6CE;"> 
+                <img src="images/ceo.png" alt="" class="circle responsive-img" width="90%"
+                    style="border: 1px solid white;background: #B7B6CE;">
             </div>
             <div class="col s12 m9">
                 <p id="ceomsg">
-                    Mr. Manoj Gupta is the Chairman and Founder of the MPCP Care. Manoj has been the driving force for MPCP Care's successful expansion into the market. In 1998, he started with coconut oil, now MPCP is Central India’s best hair-oil ,cosmetic products, hygiene product manufacturer. Under his leadership, MPCP Care has created a national footprint and has emerged as a national /international consumer products. Manoj Gupta is a visionary capable of leading any team to achieve the goals of local communities.
+                    Mr. Manoj Gupta is the Chairman and Founder of the MPCP Care. Manoj has been the driving force for
+                    MPCP Care's successful expansion into the market. In 1998, he started with coconut oil, now MPCP is
+                    Central India’s best hair-oil ,cosmetic products, hygiene product manufacturer. Under his
+                    leadership, MPCP Care has created a national footprint and has emerged as a national /international
+                    consumer products. Manoj Gupta is a visionary capable of leading any team to achieve the goals of
+                    local communities.
                 </p>
             </div>
         </div>
@@ -168,8 +177,7 @@
             </div>
             <div class="parallax" style="z-index: 0;">
                 <div class="banner">
-                    <img src="images/cocoleaf.jpg" class="pic1" alt=""
-                        style="filter: brightness(30%);">
+                    <img src="images/cocoleaf.jpg" class="pic1" alt="" style="filter: brightness(30%);">
 
                 </div>
             </div>
@@ -299,7 +307,24 @@
     <script>
         AOS.init();
         // document.getElementById("englishButton").style.display = "none"
-                document.getElementById("englishButton").style.display = "none"
+        document.getElementById("englishButton").style.display = "none"
+        window.onscroll = () => {
+            const nav = document.querySelector('nav');
+            if (this.scrollY <= 10) nav.className = 'defines';
+            else nav.className = 'scroll';
+        };
+
+        $(document).ready(function () {
+            // $("#loader").hide();
+            $('.slider').slider();
+            $('.parallax').parallax();
+            var tiltIntroHead = $('#intro-head').tilt({
+                glare: true,
+                maxTilt: 10
+                //disableAxis: "y"
+            });
+
+        });
 
         (function ($) {
             $(window).on('load', function () {
@@ -379,13 +404,15 @@
             document.getElementById("abhead").innerHTML = "पवित्रता का सार <br/> एमपीसीपी केयर द्वार।"
             document.getElementsByClassName("phnabt").innerHTML = "पवित्रता का सार <br/> एमपीसीपी केयर द्वार।"
 
-            document.getElementById("ceomsg").innerHTML = "श्री मनोज गुप्ता एमपीसीपी केयर के अध्यक्ष और संस्थापक हैं। मनोज जी एमपीसीपी केयर के बाजार में सफल विस्तार के लिए  प्रेरणा स्त्रोत हैं। 1998 में, उन्होंने नारियल तेल से शुरुआत की, अब MPCP मध्य भारत का सबसे अच्छा हेयर-ऑयल, कॉस्मेटिक उत्पाद, स्वच्छता उत्पादो का निर्माता है। उनके नेतृत्व में, एमपीसीपी केयर ने एक राष्ट्रीय  पहचान बनाई है और एक राष्ट्रीय / अंतर्राष्ट्रीय उपभोक्ता उत्पादों के रूप में उभरा है। मनोज गुप्ता में स्थानीय समुदायों के लक्ष्यों को हासिल करने के लिए और किसी भी टीम का नेतृत्व करने के लिए पूर्ण दूरदर्शीता हैं।"
+            document.getElementById("ceomsg").innerHTML =
+                "श्री मनोज गुप्ता एमपीसीपी केयर के अध्यक्ष और संस्थापक हैं। मनोज जी एमपीसीपी केयर के बाजार में सफल विस्तार के लिए  प्रेरणा स्त्रोत हैं। 1998 में, उन्होंने नारियल तेल से शुरुआत की, अब MPCP मध्य भारत का सबसे अच्छा हेयर-ऑयल, कॉस्मेटिक उत्पाद, स्वच्छता उत्पादो का निर्माता है। उनके नेतृत्व में, एमपीसीपी केयर ने एक राष्ट्रीय  पहचान बनाई है और एक राष्ट्रीय / अंतर्राष्ट्रीय उपभोक्ता उत्पादों के रूप में उभरा है। मनोज गुप्ता में स्थानीय समुदायों के लक्ष्यों को हासिल करने के लिए और किसी भी टीम का नेतृत्व करने के लिए पूर्ण दूरदर्शीता हैं।"
         }
 
 
         function applyEnglish() {
-            
-            document.getElementById("ceomsg").innerHTML = "Mr. Manoj Gupta is the Chairman and Founder of the MPCP Care. Manoj has been the driving force for MPCP Care's successful expansion into the market. In 1998, he started with coconut oil, now MPCP is Central India’s best hair-oil ,cosmetic products, hygiene product manufacturer. Under his leadership, MPCP Care has created a national footprint and has emerged as a national /international consumer products. Manoj Gupta is a visionary capable of leading any team to achieve the goals of local communities."
+
+            document.getElementById("ceomsg").innerHTML =
+                "Mr. Manoj Gupta is the Chairman and Founder of the MPCP Care. Manoj has been the driving force for MPCP Care's successful expansion into the market. In 1998, he started with coconut oil, now MPCP is Central India’s best hair-oil ,cosmetic products, hygiene product manufacturer. Under his leadership, MPCP Care has created a national footprint and has emerged as a national /international consumer products. Manoj Gupta is a visionary capable of leading any team to achieve the goals of local communities."
 
             document.getElementById("englishButton").style.display = "none"
             document.getElementById("hindiButton").style.display = "block"
@@ -446,8 +473,8 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-
     <script src="js/universal.js"></script>
+
 
 </body>
 
