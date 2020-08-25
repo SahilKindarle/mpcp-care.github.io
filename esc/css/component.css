@@ -480,6 +480,11 @@
 		height: inherit;
 	}
 
+	#hansar{
+		height: inherit;
+		width: 60%;
+	}
+
 	#helloamla{
 		height: initial;
 		width: 90%;
