@@ -39,6 +39,7 @@
 
 
     <div id="content">
+        
 
         <header style="margin-bottom: 0px;padding-bottom: 0px">
             <div class="navbar-fixed">
@@ -95,6 +96,7 @@
         </header>
 
 
+        
 
         <div class="lolwa show-on-medium-and-up hide-on-small-only">
             <img src="images/Artboard 21.png" alt="Snow" style="width:96%;height: 100vh;">
@@ -386,7 +388,17 @@
                 <a class="btn-large workButton" href="contact.html" id="resourcesbtn">Let's Work Together</a>
             </div>
         </section>
-
+       
+        <div class="fixed-action-btn">
+            <a class="btn-floating btn-large green lighten-2">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+    
+    
+    
+    
+      
         <footer style="background-color: white;">
             <div class="footer">
                 <div class="info">
@@ -458,6 +470,7 @@
         $(document).ready(function () {
             // $("#loader").hide();
             $('.slider').slider();
+            $('.fixed-action-btn').floatingActionButton();
             $('.parallax').parallax();
             var tiltIntroHead = $('#intro-head').tilt({
                 glare: true,
