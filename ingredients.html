@@ -2896,6 +2896,12 @@
             document.getElementById("tou").innerHTML = "TERMS OF USE"
 
         }
+
+        $(window).load(function () {
+            // Animate loader off screen
+            $("#loader").fadeOut("slow");
+            // setTimeout(function(){ $("#loader").fadeOut("slow"); }, 3000);
+        });
     </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
