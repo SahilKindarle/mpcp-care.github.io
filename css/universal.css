@@ -49,6 +49,7 @@
   z-index: 99999999;
   overflow: visible;
   background: white url("../images/loading.gif") no-repeat center center;
+  background-size: 600px;
 }
 
 .parallax-container .parallax .banner img {
@@ -196,6 +197,18 @@ color: white !important;
 }
 
 @media only screen and (max-width: 600px) {
+  #loader {
+    /* position: fixed;
+    width: 100%;
+    padding: 50%;
+    margin: 50%;
+    height: 100vh;
+    z-index: 99999999;
+    overflow: visible; */
+    background: white url("../images/loading.gif") no-repeat center center;
+    background-size: 300px;
+  }
+  
   .footer {
     display: flex;
     flex-direction: column;
