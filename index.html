@@ -10,16 +10,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="title" content="Home | Silk Advanced">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta name="description"
         content="MPCP Care Pvt. Ltd. is one of the most trusted names in the cosmetic industry, in the field Edible oil, Hair Oil and cosmetics">
     <meta name="keywords" content="hair oil, cosmetics, food grade oil, coconut oil, amla oil, jasmine oil, edible oil">
     <meta name="robots" content="index, follow">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="language" content="English">
+    <title>Home | Silk Advanced</title>
     <link rel="icon" type="image/png" href="images/MPCP_Logo.png">
     <link rel="stylesheet" href="css/materialize.css">
     <link rel="stylesheet" href="css/materialize.min.css">
-    <!-- <link rel="stylesheet" href="js/materialize.js"> -->
     <script src="js/materialize.js"></script>
     <script src="js/materialize.min.js"></script>
     <link rel="stylesheet" href="css/universal.css">
@@ -27,12 +29,26 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
     <link rel="stylesheet" href="css/aos.css">
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
-    <!-- <script src="https://unpkg.com/tilt.js@1.2.1/dest/tilt.jquery.min.js"></script> -->
+    
     <script src="js/aos.js"></script>
+<!-- 
+
+
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <script src="js/materialize.min.js"></script>
+    <link rel="stylesheet" href="css/universal.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/aboutus.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/aos.js"></script> -->
+
+
 
     <title>Home | MPCP Care</title>
 </head>
@@ -461,6 +477,7 @@
     </div>
     <script>
         AOS.init();
+            setTimeout(function(){ $("#loader").fadeOut("slow"); }, 3000);
         document.getElementById("englishButton").style.display = "none"
         window.onscroll = () => {
             const nav = document.querySelector('nav');
@@ -469,8 +486,7 @@
         };
         $(window).load(function () {
             // Animate loader off screen
-            $("#loader").fadeOut("slow");
-            // setTimeout(function(){ $("#loader").fadeOut("slow"); }, 3000);
+            // $("#loader").fadeOut("slow");
         });
         $(document).ready(function () {
             // $("#loader").hide();
